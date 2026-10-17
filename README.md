@@ -24,6 +24,15 @@ Opinionated, reusable workflows for planning, implementing, and checking softwar
 
 The library now includes eleven skills; [rename notes](RENAMES.md) record identifier changes. The [source review](inventory/README.md) and [extraction ledger](inventory/extractions.md) explain which repeated procedures were extracted and what stays project-specific. Discovery material is not an instruction set to load into an agent.
 
+## Two prompts to get started
+
+Copy either prompt into your coding agent:
+
+- [Improve an existing project](prompts/existing-project.md): inspect the current workflow, install useful skills, and add concise project instructions while preserving established choices.
+- [Start a new project](prompts/new-project.md): shape a small MVP, design around the preferred stack, define the visual system where needed, and agree on a first implementation slice.
+
+Both prompts work from the library URL or a local checkout and support project-local setup. The new-project prompt begins with planning; implementation follows your approval.
+
 ## Get It Together: use the whole workflow
 
 For a new product, run requirements → technical design → design system. Technical and visual design can happen in either order once the product context is clear. Bring each output into the next step; skip stages you already have.
