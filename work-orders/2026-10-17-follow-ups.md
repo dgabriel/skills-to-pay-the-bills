@@ -8,6 +8,8 @@ Shared rules for every part: follow AGENTS.md and the existing package format. D
 
 ## Part A: per-skill rules out of `check_library.py`
 
+Status: done (commit "fix: reject unknown skill names in check config")
+
 `scripts/check_library.py` hard-codes the history-derived skill names (for the "Pattern evidence" requirement) and a prose-edit-only em-dash rule. Move per-skill rules into skill metadata or one small config file, so adding a skill doesn't mean editing the checker.
 
 - Use the shape you proposed in the history-skills hand-back, or propose a better one first.

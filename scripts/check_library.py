@@ -18,6 +18,9 @@ def check(root=ROOT):
     # Per-skill rules are data; generic package checks remain below.
     skill_rules = json.loads((root / 'scripts/skill_checks.json').read_text())
     skills = sorted((root / 'skills').glob('*/SKILL.md'))
+    skill_names = {entry.parent.name for entry in skills}
+    for name in sorted(set(skill_rules) - skill_names):
+        errors.append(f'scripts/skill_checks.json: unknown skill name {name}')
     for entry in skills:
         text = entry.read_text()
         skill = entry.parent
