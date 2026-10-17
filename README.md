@@ -23,8 +23,9 @@ Opinionated, reusable workflows for planning, implementing, and checking softwar
 | [Prose edit](skills/prose-edit/SKILL.md) | Tightening existing copy in the author’s voice | Edited text with facts preserved |
 | [Diagnose First](skills/diagnose-first/SKILL.md) | Confirm and explain a reported problem before repair | Evidence-backed diagnosis and safe comparison plan |
 | [Docs Audit](skills/docs-audit/SKILL.md) | Compare documentation claims and coverage with actual behavior | Evidence-linked mismatches, missing docs, and requested diagrams |
+| [Agent Handoff Prompt](skills/agent-handoff-prompt/SKILL.md) | Write self-contained agent briefs or assess another agent’s output | Copy-pastable work order or evidence-backed verdict and fixes |
 
-The library now includes thirteen skills; [rename notes](RENAMES.md) record identifier changes. The [source review](inventory/README.md) and [extraction ledger](inventory/extractions.md) explain which repeated procedures were extracted and what stays project-specific. Discovery material is not an instruction set to load into an agent.
+The library now includes fourteen skills; [rename notes](RENAMES.md) record identifier changes. The [source review](inventory/README.md) and [extraction ledger](inventory/extractions.md) explain which repeated procedures were extracted and what stays project-specific. Discovery material is not an instruction set to load into an agent.
 
 ## Two prompts to get started
 

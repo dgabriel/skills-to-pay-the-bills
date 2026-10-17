@@ -2,7 +2,7 @@
 
 ## Current status
 
-As of 2026-10-17, the library contains **13 skill packages**. Skills are independently selectable; project policy and explicit owner decisions override defaults. Current checks cover structure, portable references, recorded evidence, and executable fixtures, not universal behavioral effectiveness.
+As of 2026-10-17, the library contains **14 skill packages**. Skills are independently selectable; project policy and explicit owner decisions override defaults. Current checks cover structure, portable references, recorded evidence, and executable fixtures, not universal behavioral effectiveness.
 
 **Latest executed checks:** `python3 scripts/check_library.py`, `python3 scripts/replay_evaluations.py`, and `python3 scripts/replay_history_evaluations.py` pass. Replay scores saved decisions, checks recorded fingerprints/artifacts, and executes the earlier booking-test, contrast, and review-defect fixtures. Expected assertion failures demonstrate known fixture defects; they are not application passes. These replay commands do not generate agent responses or fresh routing decisions.
 
@@ -10,7 +10,7 @@ As of 2026-10-17, the library contains **13 skill packages**. Skills are indepen
 
 **Latest paired evidence, reviewed statically:** triage and prose were actual text-generation runs on fictional inputs. Both conditions reached the same triage dispositions and preserved the prose facts; no quality gain was demonstrated. Assisted triage made identity/state accounting more explicit; prose was 51 baseline words versus 53 assisted words. No live review, dismissal, dashboard, network, or device workflow ran in those pairs.
 
-**Open limits:** no repeated statistical trial or blinded numerical quality grading establishes a general advantage. Native host discovery, real tracker/Git recovery, live stakeholder/UI sessions, and owner-device testing remain unverified. The later owner-approved triage override clarification has not received a new paired run. Privacy scans and static checks do not prove absence of every possible secret or name. Historical source, privacy, and execution qualifications remain below.
+**Open limits:** The three follow-up skills have structural checks and static scope review only until fresh routing is recorded; they have no behavioral comparison.  no repeated statistical trial or blinded numerical quality grading establishes a general advantage. Native host discovery, real tracker/Git recovery, live stakeholder/UI sessions, and owner-device testing remain unverified. The later owner-approved triage override clarification has not received a new paired run. Privacy scans and static checks do not prove absence of every possible secret or name. Historical source, privacy, and execution qualifications remain below.
 
 ## History (newest first)
 
@@ -22,9 +22,9 @@ Added `diagnose-first`. Its scope and safety/authority boundaries were reviewed 
 
 Added `docs-audit`. Its scope and safety/authority boundaries were reviewed against the approved request.
 
-These packages use supplied reviewer paraphrases and owner decisions, with no public source extraction or transcript access. Entry/package validators and static scope review ran; routing cases will be authored only after all three descriptions are frozen. No new behavioral run is claimed.
+Added `agent-handoff-prompt`. Its scope and safety/authority boundaries were reviewed against the approved request.
 
-### Checker configuration follow-up
+These packages use supplied reviewer paraphrases and owner decisions, with no public source extraction or transcript access. Entry/package validators and static scope review ran; routing cases will be authored only after all three descriptions are frozen. No new behavioral run is claimed.
 
 ### Checker configuration follow-up
 
