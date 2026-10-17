@@ -15,6 +15,8 @@ Reviewer estimate: about 20 sessions across at least four projects. The repeated
 
 ## Adaptation and boundaries
 
+Owner decision, 2026-10-17: retain the dismissal guardrail while allowing explicit per-finding overrides for confirmed defects, tracked with the owner’s rationale; accepted risks and design tradeoffs may use risk acceptance as rationale, never as blanket dismissal.
+
 Pattern evidence supplies the owner-led decision sequence and blocking unresolved-findings policy. Public dismissal/schema docs supply run-local versus stable identity, expiry, source-type distinctions, and reporting mechanics; the public project config corroborates explicit gate/dismissal and docs-only inversion controls. Provider settings, thresholds, actor identities, project paths, and any credentials from examples are not copied. The current public review-tool repository passed the license/visibility check; no local-only source was needed.
 
 The package retains both the library author’s and the review-tool source’s [MIT notices](LICENSE). Pattern counts are reviewer estimates, not an independently verified transcript audit.

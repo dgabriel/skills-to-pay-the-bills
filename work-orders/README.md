@@ -10,4 +10,6 @@ Each order starts with a status line:
 - `done (<commit>)`: completed; the commit is where the work landed
 - `superseded (<order>)`: replaced by a later order
 
+An order completed in its own commit uses `done (commit "<subject>")`, since a commit cannot contain its own hash.
+
 Name files `<YYYY-MM-DD>-<slug>.md`. Work orders follow the repository's privacy rules: no private repository names, local paths, credentials, session identifiers, or personal details. Evidence from session history stays paraphrased, as in the skills' provenance files.

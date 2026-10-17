@@ -1,6 +1,6 @@
-Status: done (:/^docs: record work orders and refresh validation status$)
+Status: done (commit "docs: record work orders and refresh validation status")
 
-The status uses a unique Git commit-subject revision so this record can be completed in the fix commit itself without amending or adding a second commit.
+The status identifies the completing commit by subject so this record can be completed in that commit itself without amending or adding a second commit.
 
 # Gatekeeper review: `codex/history-skills`
 
