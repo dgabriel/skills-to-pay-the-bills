@@ -1,0 +1,4 @@
+interface:
+  display_name: "Session Start and Close"
+  short_description: "Orient, resume, and hand off repository work"
+  default_prompt: "Use $session-start-and-close for this task: Use session-start-and-close to get your bearings and show ready work before continuing."
