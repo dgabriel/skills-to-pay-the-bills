@@ -1,0 +1,27 @@
+{
+  "base_sha": "930407d209ab17f19ea2639baed70992b5d3d213",
+  "date": "2026-10-17",
+  "source": "Reviewer paraphrases and author-stated rules supplied in the work order; no session transcripts accessed.",
+  "routing_cases": 16,
+  "paired_tasks": [
+    "review-findings-triage",
+    "prose-edit"
+  ],
+  "pair_execution": "Independent baseline and assisted sessions; two tasks each. Static text generation/analysis only; no review tool, dashboard, network, external issue, source edits, or device tests ran.",
+  "artifact_sha256": {
+    "results/baseline/review-findings-triage/output.md": "5a22cf581559f32a0a27870408734e07baf43a8b2c46c54f850bbbaafea5a329",
+    "results/baseline/review-findings-triage/upstream-issue-draft.md": "0d86f973b18ae9a9c1b61f63ad73e4e302f74b2db25d3671df57e1ef5e59b153",
+    "results/baseline/prose-edit/output.md": "064416d6dd512b912aa508f8f6e6d198cbe893d9cccaeeca9e3d2f14d7082614",
+    "results/with-skill/review-findings-triage/output.md": "aec5654bb443c02b73126eec240ad3b9205fb5ae41b72792912c2b4d5d21b6a3",
+    "results/with-skill/review-findings-triage/upstream-comment-fingerprint.md": "d1d98b2a62b028c345005899ca121f30ba53ead711078db5687e8b2f8fec6618",
+    "results/with-skill/review-findings-triage/upstream-existing-test-heuristic.md": "8b51621a36adf51887f50e0ed36a7dd2389fc67dd53718b550d81ae7f74852e5",
+    "results/with-skill/prose-edit/output.md": "9d9f5cf27461d7159ede5655ae1e3108d627f7e746ef7349e66e660f6a62ea5c"
+  },
+  "privacy_redactions": [
+    {
+      "artifact": "results/with-skill/review-findings-triage/output.md",
+      "raw_sha256": "e601c03efdb948f19f94daac10b448a19b39f1cffebe2feca7dae5bf0cfa34dc",
+      "reason": "Two fictional personal labels replaced by owner/caller role placeholders. No finding, action, uncertainty, score, or factual claim changed. Raw output retained outside checkout."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "checked_date": "2026-10-17",
+  "checks": [
+    {
+      "repo": "flaught/core",
+      "public": true,
+      "license": "MIT",
+      "eligible": true,
+      "commit": "6622fe772e0dcd4d0af74c7dc86111f73795cbd8",
+      "files_fetched": [
+        "LICENSE",
+        "README.md",
+        "docs/dashboard.md",
+        "docs/dismissals.md",
+        "docs/findings-schema.md",
+        "docs/prompt-templates.md",
+        "docs/troubleshooting.md"
+      ]
+    },
+    {
+      "repo": "dgabriel/MysteryMixClub",
+      "public": true,
+      "license": "MIT",
+      "eligible": true,
+      "commit": "3b406c4630e9c857495ebfdfdae76b5b79a70b71",
+      "files_fetched": [
+        ".advreview.yml",
+        ".agents/skills/run-mysterymixclub/SKILL.md",
+        "AGENTS.md",
+        "CLAUDE.md",
+        "LICENSE"
+      ]
+    },
+    {
+      "repo": "dgabriel/claude-code-project-template",
+      "public": true,
+      "license": "MIT",
+      "eligible": true,
+      "commit": "59616904f514d6351b8d8de1d6e16ae708057dc3",
+      "files_fetched": [
+        "CLAUDE.md",
+        "LICENSE"
+      ]
+    },
+    {
+      "repo": "dgabriel/cosmic-jev",
+      "public": true,
+      "license": null,
+      "eligible": false,
+      "reason": "No verified repository license declaration; no new procedure extracted."
+    },
+    {
+      "repo": "dgabriel/tktk",
+      "public": true,
+      "license": null,
+      "eligible": false,
+      "reason": "No verified repository license declaration; no new procedure extracted."
+    }
+  ]
+}

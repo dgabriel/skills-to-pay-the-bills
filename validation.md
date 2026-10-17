@@ -59,3 +59,34 @@ Run the two scripts above to replay deterministic evidence without calling a mod
 ## Editorial follow-up
 
 Stale display titles were corrected, change-history/rationale text moved from runtime instructions into provenance, and the cosmetic-findings rule was named directly. Descriptions, selection requests, expected answers, and behavioral rules were not changed or re-evaluated. The evaluation-time entry hashes remain in final-descriptions.json; [editorial update fingerprints](evaluations/editorial-updates.json) document the two current entry-point changes. Replay verifies both the unchanged descriptions and the explicit old/current fingerprints rather than replacing the original freeze. The heading checker was observed failing on the four stale headings before they were corrected, then passing afterward.
+
+## History-derived skills pass
+
+Base selection: PR #1 was open, so the local `codex/history-skills` branch starts at the PR head `930407d209ab17f19ea2639baed70992b5d3d213`, not main. This pass adds four packages from the supplied reviewer paraphrases and author-stated prose rules. No session transcript directory or transcript export was searched, read, quoted, or copied. No personal/global settings were changed.
+
+### Fresh selection, separate from all historical scores
+
+The new pass scored **16/16**, comprising two positive and two negative cases for each of the four new skills. The four entry points/descriptions were finalized and hashed before a separate author received descriptions and wrote the cases. A fresh evaluator received only all eleven descriptions and the shuffled request IDs/text. Expected labels and skill bodies were hidden. No prompts, labels, descriptions, or outcomes were edited after scoring. Target negatives exercise raw patch review/concept explanation, feature implementation/non-repository planning, staging deployment/test-code-only requests, and original writing/code changes.
+
+The earlier 32/35, prompt-edited 35/35, unchanged rerun 35/35, and previous fresh 28/28 remain separate historical results. No new score replaces them. [New evidence](evaluations/history-skills/README.md) contains all authored cases, frozen descriptions, actual decisions, fixtures, and paired outputs.
+
+### Paired baseline versus skill
+
+| New skill | Baseline | Assisted | Supported conclusion |
+| --- | --- | --- | --- |
+| review-findings-triage | Complete four-finding table, valid defect identified, same proposed dismissals, upstream draft, reviewer-quality assessment, gate unverified | Same decisions and unresolved state; more explicit run-local/fingerprint, approval, and application columns; two narrower upstream drafts | No improved finding classification or completed resolution demonstrated. The clearest difference is identity/state accounting and report detail. |
+| prose-edit | Preserved the supplied facts and removed the unwanted wording in 51 words | Preserved the same facts and removed unwanted wording in 53 words | Both matched the requested editing direction. The skill did not produce a shorter result or demonstrate a quality gain. |
+
+These were two actual agent sessions, each doing two fictional tasks with inherited settings and no overrides. Triage was static reasoning and command planning only. No review run, dismissal mutation, dashboard generation, upstream filing, Git action, external service, account seed, LAN server, or owner-device test was executed. Prose editing generated text; it did not commit or change a real site. The replay checks artifact integrity, all four finding labels, explicit unverified gate wording, preserved prose facts, word counts, and no em dashes. These checks do not grade every reasoning claim or prove native host routing.
+
+One assisted triage report introduced two fictional personal labels. Only those labels were replaced with role placeholders in the retained copy; raw and retained digests and the redaction reason are preserved. No behavioral result was changed. There is no randomized repetition, independent quality score, or causal proof that the skill alone caused the report differences.
+
+### Source, privacy, and execution checks
+
+Eligible public source metadata and MIT declarations were verified before file retrieval/use. The public review-tool docs supplied fingerprint/dismissal and dashboard semantics. Public project session/run instructions supplied orientation, handoff, readiness, and branch-preservation procedures. Two other public source candidates had no verified license declaration and were not extracted in this pass. The prose skill uses no public source; its rules are author-stated and its three examples were written for the package.
+
+The literal request for no hostnames or people's names anywhere in tracked files conflicts with required pinned public URLs, MIT attribution, and pre-existing fictional fixture labels. This pass retains required public references and notices, checks introduced text for operational endpoints/addresses, credentials and session-like identifiers, and manually reviews personal/source identifiers. New fictional personal labels in one response were removed as described above. It does not claim that a regex proves the absence of every possible personal name or that pre-existing evidence was scrubbed.
+
+All four packages passed the skill validator. All eleven packages pass the library checker, including explicit new-skill exclusions, Pattern evidence sections, synced contracts, and an enforced no-em-dash check over the complete prose package. Complete standalone package copies were checked for internal reference resolution. The scripted replay verifies the preserved earlier evidence and new frozen descriptions/artifacts; only the earlier executable booking/contrast/review fixtures execute code.
+
+Both required scripts are run from an isolated archive of each exact local commit, so later uncommitted files cannot make an earlier commit appear valid. Feature commits replay the existing evidence; new history-derived evidence and its replay checks arrive in the fifth, test-focused commit. Full per-commit outputs are retained outside the checkout for the reviewer handoff. No push, PR creation, remote-history mutation, or source-repository edit is part of this pass.
