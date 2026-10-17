@@ -32,6 +32,8 @@ For the [four history-derived skills](history-skills/README.md), a separate auth
 
 Earlier routing results remain separate: **32/35 initially**, **35/35 after description/request revisions**, **35/35 on the unchanged existing requests**, and **28/28 on an earlier fresh set**. Revised requests do not count as independent fresh evidence. No cases were edited to improve the sixteen-case result.
 
+The [three follow-up skills](follow-up-skills/README.md) add a separate **12/12** fresh opaque-ID selection result using fourteen descriptions. Their initial descriptive-ID run also scored 12/12 but could cue targets and is retained separately. Requests and labels were unchanged; only evaluator IDs were normalized before the fresh evaluator ran. No paired behavioral task was run for those three additions.
+
 ### 2. Paired tasks: does the skill improve the result?
 
 Two independent agent sessions get the same fictional tasks and raw inputs with the same inherited model/settings. Only the assisted session gets the skill packages. Neither sees the other's outputs or answer keys. We retain the actual responses and any generated code/logs, then compare them against observable task criteria.

@@ -115,15 +115,15 @@ Start at [catalog.md](catalog.md) for task routing and handoffs. Load only the s
 
 ## Check Your Head: quality and sources
 
-The original workflows were adapted from repeated public project instructions. The four history-derived workflows use reviewer-supplied paraphrases and author-stated rules, with eligible public sources checked for visibility and license before use. No session transcripts were searched or read. Each skill includes exact source provenance and the MIT notice so that it stays attributable when copied individually. Project-specific branches, deployment assumptions, and automatic cleanup actions have been removed.
+The original workflows were adapted from repeated public project instructions. The first four history-derived workflows use reviewer-supplied paraphrases and author-stated rules, with eligible public sources checked for visibility and license before use. No session transcripts were searched or read. Each skill includes exact source provenance and the MIT notice so that it stays attributable when copied individually. Project-specific branches, deployment assumptions, and automatic cleanup actions have been removed.
 
-Selection includes the unchanged 35-case rerun and earlier 28 fresh cases, plus a separate 16-case fresh evaluation for the four history-derived workflows. Cases were authored after their descriptions were frozen. Paired runs distinguish changed defaults/reporting from unchanged defect conclusions. The spec review default is diagnosis without unsolicited fixes; regression testing requires API contract coverage and trusted external oracles where applicable. See [validation.md](validation.md) for coverage and limitations. To propose a change, include the request that exposed the problem, the expected behavior, and a focused improvement. Keep each skill useful on its own and avoid turning one project's conventions into defaults for everyone.
+Selection includes the unchanged 35-case rerun and earlier 28 fresh cases, plus a separate 16-case fresh evaluation for the four history-derived workflows. A separate [follow-up evaluation](evaluations/follow-up-skills/README.md) adds 12/12 fresh opaque-ID target decisions for diagnose-first, docs-audit, and agent-handoff-prompt; its potentially cued descriptive-ID run is retained separately. Cases were authored after their descriptions were frozen. Paired runs distinguish changed defaults/reporting from unchanged defect conclusions. The spec review default is diagnosis without unsolicited fixes; regression testing requires API contract coverage and trusted external oracles where applicable. See [validation.md](validation.md) for coverage and limitations. To propose a change, include the request that exposed the problem, the expected behavior, and a focused improvement. Keep each skill useful on its own and avoid turning one project's conventions into defaults for everyone.
 
 Licensed under [MIT](LICENSE). Now put those skills to work.
 
 Maintainers: edit the execution boundary once in `shared/execution-contract.md`, then run `python3 scripts/sync_contract.py`. Generated copies keep standalone installs self-contained; `python3 scripts/check_library.py` checks drift, links, metadata, and privacy hygiene. See [evaluation cases](evaluations/cases.json) and [validation results](validation.md).
 
-The four new skills can be requested directly, using your host’s invocation syntax:
+The earlier four history-derived skills can be requested directly, using your host’s invocation syntax:
 
 ```text
 Use $review-findings-triage to explain every current review finding and propose actions first.
@@ -140,5 +140,5 @@ Maintenance helpers:
 | --- | --- |
 | `scripts/check_library.py` | Checks package structure, metadata, links, contract copies, stale names, pattern provenance, and the prose package’s no-em-dash rule. |
 | `scripts/replay_evaluations.py` | Runs deterministic checks against saved evidence and small executable fixtures, including the history helper below. It does not rerun agents. |
-| `scripts/replay_history_evaluations.py` | Checks the four new frozen entries, fresh routing records, paired output integrity, and fixture facts. It does not run review tools, dashboards, or device tests. |
+| `scripts/replay_history_evaluations.py` | Checks frozen history/follow-up entries, saved routing records, paired output integrity, and fixture facts. It does not run review tools, dashboards, or device tests. |
 | `scripts/sync_contract.py` | Updates packaged contract copies from the shared source; `--check` detects drift without writing. |

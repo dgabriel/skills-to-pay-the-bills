@@ -1,0 +1,82 @@
+[
+  {
+    "id": "fresh-docs-01",
+    "selected": [
+      "docs-audit"
+    ],
+    "rationale": "Checks documentation claims and missing setup coverage against code and configuration."
+  },
+  {
+    "id": "fresh-docs-04",
+    "selected": [],
+    "rationale": "Legal approval and enforceability judgments fall outside the supplied skill descriptions."
+  },
+  {
+    "id": "fresh-handoff-02",
+    "selected": [
+      "agent-handoff-prompt"
+    ],
+    "rationale": "Assesses another agent’s critique against the request and repository and asks for a verdict and required corrections."
+  },
+  {
+    "id": "fresh-diagnose-01",
+    "selected": [
+      "diagnose-first"
+    ],
+    "rationale": "Investigates a repeatedly unresolved bug through reproduction and comparison with the last working release before edits."
+  },
+  {
+    "id": "fresh-docs-02",
+    "selected": [
+      "docs-audit"
+    ],
+    "rationale": "Audits help, privacy, and architecture descriptions against the actual pipeline and retention configuration."
+  },
+  {
+    "id": "fresh-diagnose-04",
+    "selected": [
+      "spec-review"
+    ],
+    "rationale": "Requests a read-only patch acceptance review against specified behavior with cited deviations."
+  },
+  {
+    "id": "fresh-diagnose-03",
+    "selected": [],
+    "rationale": "Requests implementation of an agreed fix and running existing relevant tests; no supplied skill covers that implementation directly."
+  },
+  {
+    "id": "fresh-docs-03",
+    "selected": [
+      "prose-edit"
+    ],
+    "rationale": "Requests a wording-only edit of supplied prose while preserving its voice."
+  },
+  {
+    "id": "fresh-handoff-03",
+    "selected": [
+      "session-start-and-close"
+    ],
+    "rationale": "Closes the current session with Git status and durable notes for resuming remaining work."
+  },
+  {
+    "id": "fresh-handoff-01",
+    "selected": [
+      "agent-handoff-prompt"
+    ],
+    "rationale": "Requests a self-contained assignment for another coding assistant with boundaries, deliverables, and completion checks."
+  },
+  {
+    "id": "fresh-handoff-04",
+    "selected": [
+      "spec-review"
+    ],
+    "rationale": "Requests a read-only review of a diff against a specification with ranked, located mismatches."
+  },
+  {
+    "id": "fresh-diagnose-02",
+    "selected": [
+      "diagnose-first"
+    ],
+    "rationale": "Requests cause investigation of an environment-specific failure using the previous working revision and configuration before changes."
+  }
+]

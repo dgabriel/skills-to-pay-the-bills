@@ -1,0 +1,15 @@
+{
+  "standalone_packages": [
+    "diagnose-first",
+    "docs-audit",
+    "agent-handoff-prompt"
+  ],
+  "internal_links": 12,
+  "missing_pattern_evidence_rejected": [
+    "diagnose-first",
+    "docs-audit",
+    "agent-handoff-prompt"
+  ],
+  "scope": "Package/link checks and deliberate scratch failures; no behavioral task execution.",
+  "scratch_replay_changed_prompt_rejected": true
+}
