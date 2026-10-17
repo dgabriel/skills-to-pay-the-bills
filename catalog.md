@@ -15,6 +15,7 @@ Use this catalog to select a workflow; read the selected skill's `SKILL.md` befo
 | [session-start-and-close](skills/session-start-and-close/SKILL.md) | Orient, resume, explain session state, or close with durable handoff | Checkout, project instructions, Git/PR/tracker state | Brief state/next action or durable next-developer handoff | Feature implementation, generic planning, new tracker adoption |
 | [local-test-handoff](skills/local-test-handoff/SKILL.md) | Completed web feature needs owner testing locally | Feature revision, project runtime, dev account and devices | Verified local URL/revision, preserved dev data, pass/fail checklist | Staging/production deployment, native distribution, test-code-only task |
 | [prose-edit](skills/prose-edit/SKILL.md) | Tighten existing prose in the author’s voice | Source text, facts, audience and requested tone | Edited text; commits only when requested | Code changes, new factual research, original writing without source text |
+| [diagnose-first](skills/diagnose-first/SKILL.md) | Reported bug or repeated unsuccessful fixes need diagnosis | Symptom, code/logs, last working state | Confirmed facts, hypotheses, safe next check | Agreed implementation or patch acceptance review |
 
 ## Compose only when useful
 

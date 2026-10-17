@@ -21,8 +21,9 @@ Opinionated, reusable workflows for planning, implementing, and checking softwar
 | [Session start and close](skills/session-start-and-close/SKILL.md) | Orientation, interrupted-work recovery, and durable handoffs | Brief state/next-step report and tracker-backed follow-ups |
 | [Local test handoff](skills/local-test-handoff/SKILL.md) | Making feature-branch web work testable on local devices | Verified running revision, device URL, dev access, pass/fail checklist |
 | [Prose edit](skills/prose-edit/SKILL.md) | Tightening existing copy in the author’s voice | Edited text with facts preserved |
+| [Diagnose First](skills/diagnose-first/SKILL.md) | Confirm and explain a reported problem before repair | Evidence-backed diagnosis and safe comparison plan |
 
-The library now includes eleven skills; [rename notes](RENAMES.md) record identifier changes. The [source review](inventory/README.md) and [extraction ledger](inventory/extractions.md) explain which repeated procedures were extracted and what stays project-specific. Discovery material is not an instruction set to load into an agent.
+The library now includes twelve skills; [rename notes](RENAMES.md) record identifier changes. The [source review](inventory/README.md) and [extraction ledger](inventory/extractions.md) explain which repeated procedures were extracted and what stays project-specific. Discovery material is not an instruction set to load into an agent.
 
 ## Two prompts to get started
 

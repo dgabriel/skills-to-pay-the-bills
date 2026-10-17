@@ -2,21 +2,29 @@
 
 ## Current status
 
-As of 2026-10-17, the library contains **11 skill packages**. This documentation pass changes report layout only; skill instructions, evaluation fixtures, recorded outcomes, and work-order statuses are unchanged.
+As of 2026-10-17, the library contains **12 skill packages**. Skills are independently selectable; project policy and explicit owner decisions override defaults. Current checks cover structure, portable references, recorded evidence, and executable fixtures, not universal behavioral effectiveness.
 
-**Latest executed checks:** `python3 scripts/check_library.py`, `python3 scripts/replay_evaluations.py`, and `python3 scripts/replay_history_evaluations.py` pass. Replay scores saved decisions, checks recorded fingerprints/artifacts, and executes the earlier booking-test, contrast, and review-defect fixtures. Expected assertion failures demonstrate known fixture defects; they are not application passes. No new agent responses or routing evaluations were generated for this pass.
+**Latest executed checks:** `python3 scripts/check_library.py`, `python3 scripts/replay_evaluations.py`, and `python3 scripts/replay_history_evaluations.py` pass. Replay scores saved decisions, checks recorded fingerprints/artifacts, and executes the earlier booking-test, contrast, and review-defect fixtures. Expected assertion failures demonstrate known fixture defects; they are not application passes. These replay commands do not generate agent responses or fresh routing decisions.
 
 **Latest fresh routing:** the four history-derived skills scored **16/16 target decisions** on two positive and two negative cases each, written after descriptions were frozen and evaluated with labels hidden. This is description-based selection, not native host discovery. Keep this separate from the earlier seven-skill fresh set (**28/28**) and the historical/reused sets (**32/35**, revised **35/35**, unchanged rerun **35/35**).
 
 **Latest paired evidence, reviewed statically:** triage and prose were actual text-generation runs on fictional inputs. Both conditions reached the same triage dispositions and preserved the prose facts; no quality gain was demonstrated. Assisted triage made identity/state accounting more explicit; prose was 51 baseline words versus 53 assisted words. No live review, dismissal, dashboard, network, or device workflow ran in those pairs.
-
-**Checker follow-up:** per-skill rules now live in `scripts/skill_checks.json`. Scratch-copy comparisons matched the previous checker on intact inputs and three broken rules. A subsequent scratch test confirmed a misspelled skill key is rejected rather than silently disabling its rules. Those were executable checker tests, not behavioral skill evaluations.
 
 **Open limits:** no repeated statistical trial or blinded numerical quality grading establishes a general advantage. Native host discovery, real tracker/Git recovery, live stakeholder/UI sessions, and owner-device testing remain unverified. The later owner-approved triage override clarification has not received a new paired run. Privacy scans and static checks do not prove absence of every possible secret or name. Historical source, privacy, and execution qualifications remain below.
 
 ## History (newest first)
 
 The sections below retain the original results and pass-specific statements. “Current” inside an unchanged historical paragraph refers to that pass, not today's checkout.
+
+### Follow-up candidate skills (2026-10-17)
+
+Added `diagnose-first`. Its scope and safety/authority boundaries were reviewed against the approved request.
+
+These packages use supplied reviewer paraphrases and owner decisions, with no public source extraction or transcript access. Entry/package validators and static scope review ran; routing cases will be authored only after all three descriptions are frozen. No new behavioral run is claimed.
+
+### Checker configuration follow-up
+
+**Checker follow-up:** per-skill rules now live in `scripts/skill_checks.json`. Scratch-copy comparisons matched the previous checker on intact inputs and three broken rules. A subsequent scratch test confirmed a misspelled skill key is rejected rather than silently disabling its rules. Those were executable checker tests, not behavioral skill evaluations.
 
 ### History-derived skills pass
 

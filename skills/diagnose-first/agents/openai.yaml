@@ -1,0 +1,4 @@
+interface:
+  display_name: "Diagnose First"
+  short_description: "Confirm reported problems before changing code"
+  default_prompt: "Use $diagnose-first for this task: Explain why this started failing before attempting another fix."
