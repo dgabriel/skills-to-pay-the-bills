@@ -1,39 +1,19 @@
 ---
 name: technical-design-interview
-description: Derive a practical technical design from product requirements and resolve architecture decisions through focused questions. Use for planning or revising system architecture, not routine implementation or debugging.
+description: Derive or revise system architecture and a technical design from a PRD or concrete requirements, proposing data, access, API, and operational decisions. Not routine debugging or implementing a settled design.
 ---
 
 # Technical Design Interview
 
-## Use this skill
+**Inputs:** PRD or equivalent requirements, existing stack/code, and operating constraints.
+**Output:** Reviewable design, default `docs/technical/technical-design.md`, with decisions and acceptance checks.
+**Try:** “Use technical-design-interview to propose the smallest architecture that serves this PRD.” (use the skill name in your host's invocation syntax).
 
-Human prompt: “Use $technical-design-interview with docs/prd/prd.md to propose the smallest architecture that supports the MVP.”
+Honor the user’s task scope and target-project policy; preserve unrelated work. Use the [procedure](references/procedure.md) for detailed commands/examples and the [shared contract](references/execution-contract.md) when authorization or handoff scope needs clarification.
 
-Inputs: a PRD, feature brief, or sufficiently concrete requirements; existing code and architecture when available. An installed requirements skill is not required. If requirements are missing, clarify the core journey and constraints before choosing architecture. Do not force a separate interview or invent product scope.
+1. Read requirements and existing architecture first. Propose a design; ask the user about genuinely open decisions rather than making them design the database.
+2. For a greenfield web app, default to FastAPI, async SQLAlchemy, Postgres, Alembic, pydantic-settings, React/TypeScript, and environment-driven flags. Existing stack or explicit user choices override these defaults; state departures and why.
+3. Work through data/invariants → access → APIs/integrations → operations. Add queues, caches, or realtime only for a named requirement.
+4. Record decisions, rejected alternatives, deliberate simplifications, test gates, and open questions. Draft immediately when requested; unknowns remain explicit.
 
-Output: a reviewable technical design, normally `docs/technical/technical-design.md` in the target project. Follow existing structure and the user's requested destination; use an inline draft in chat-only environments.
-
-## Derive, then ask
-
-Read the supplied requirements and relevant project conventions first. Preserve existing stack choices unless the task calls for changing them. Propose the simplest design that meets actual requirements and explain meaningful tradeoffs. Do not ask the user to design the database for you.
-
-Discuss only unresolved decisions in short rounds:
-
-1. **Data and invariants:** propose entities, relationships, ownership, uniqueness, state transitions, and the boundary between user-created and derived data. Clarify retention, deletion, and audit needs where relevant.
-2. **Access:** propose sign-in and role boundaries, distinguish public/private operations, and identify enforcement points. Do not add authentication where the product does not need it.
-3. **Interfaces and integrations:** map required features to API or local interfaces. Identify required versus optional dependencies, failure behavior, and work that genuinely requires background processing or real-time updates.
-4. **Operations:** establish deployment constraints, realistic scale, data-loss tolerance, recovery expectations, and the first likely scaling limit. Leave undecided infrastructure explicit.
-
-Use the project's actual frameworks and conventions. Queues, caches, external services, and additional layers need a requirement or observed constraint that justifies them. If asked to draft immediately, label assumptions rather than waiting for every answer. If paused, save decisions and remaining questions without claiming approval.
-
-## Produce and check the design
-
-Cover overview, architecture, data/invariants, interfaces, access, configuration, operations, and testing strategy. Record consequential decisions with rationale and rejected alternatives, deliberate simplifications, limits, and open questions. Relate major components to requirements; flag requirements that the design does not yet satisfy.
-
-Describe schema migration and rollback verification where persistent data changes are proposed, using the target project's tooling. List proposed configuration keys without secret values and identify example-config updates needed during implementation. Designing alone does not authorize migrations, infrastructure changes, or edits to runtime configuration.
-
-Check consistency between ownership rules, interfaces, data model, failure handling, and tests. Name observable acceptance checks for the critical journey and invariants. Present the draft, revise on feedback, and distinguish recommendations from accepted decisions. Hand off the design path, PRD reference, open questions, and implementation prerequisites. Do not implement, commit, push, or deploy as an automatic follow-up. Work in the target project, not the installed skill folder.
-
-## Source
-
-Adapted from [docs/technical/technical-design-interview.md](https://github.com/dgabriel/claude-code-project-template/blob/59616904f514d6351b8d8de1d6e16ae708057dc3/docs/technical/technical-design-interview.md). See [PROVENANCE.md](PROVENANCE.md) for revision and adaptation details.
+Finish with the artifact or report, checks actually run, open decisions, and the next handoff. Resolve output paths in the target project. See [provenance](PROVENANCE.md) for source revisions and adaptations.
