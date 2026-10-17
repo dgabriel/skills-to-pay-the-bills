@@ -15,6 +15,8 @@ def check(root=ROOT):
     rename_notes = root / 'RENAMES.md'
     old_names = re.findall(r'renamed from `([^`]+)`', rename_notes.read_text()) if rename_notes.is_file() else []
     canonical = (root / 'shared/execution-contract.md').read_bytes()
+    # Per-skill rules are data; generic package checks remain below.
+    skill_rules = json.loads((root / 'scripts/skill_checks.json').read_text())
     skills = sorted((root / 'skills').glob('*/SKILL.md'))
     for entry in skills:
         text = entry.read_text()
@@ -28,19 +30,21 @@ def check(root=ROOT):
         required_files = ['PROVENANCE.md', 'LICENSE', 'agents/openai.yaml']
         if portable:
             required_files += ['references/procedure.md', 'references/execution-contract.md']
-        pattern_skills = {'review-findings-triage', 'session-start-and-close', 'local-test-handoff', 'prose-edit'}
-        if skill.name in pattern_skills:
-            provenance = skill / 'PROVENANCE.md'
-            if not provenance.is_file() or '## Pattern evidence' not in provenance.read_text():
-                errors.append(f'{skill.name}: missing pattern evidence')
-            description = next((line.removeprefix('description: ') for line in text.splitlines()
-                                if line.startswith('description: ')), '')
-            if 'not ' not in description.lower():
-                errors.append(f'{skill.name}: missing selection exclusion')
-        if skill.name == 'prose-edit':
+        rules = skill_rules.get(skill.name, {})
+        provenance = skill / 'PROVENANCE.md'
+        provenance_text = provenance.read_text() if provenance.is_file() else ''
+        for rule in rules.get('required_provenance_headings', []):
+            if rule['text'] not in provenance_text:
+                errors.append(f"{skill.name}: {rule['message']}")
+        description = next((line.removeprefix('description: ') for line in text.splitlines()
+                            if line.startswith('description: ')), '')
+        for rule in rules.get('required_description_text', []):
+            if rule['text'].lower() not in description.lower():
+                errors.append(f"{skill.name}: {rule['message']}")
+        for rule in rules.get('forbidden_characters', []):
             for resource in skill.rglob('*'):
-                if resource.is_file() and chr(0x2014) in resource.read_text():
-                    errors.append(f'{skill.name}: em dash in package')
+                if resource.is_file() and rule['text'] in resource.read_text():
+                    errors.append(f"{skill.name}: {rule['message']}")
         for required in required_files:
             if not (skill / required).is_file():
                 errors.append(f'{skill.name}: missing {required}')

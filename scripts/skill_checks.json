@@ -1,0 +1,64 @@
+{
+  "review-findings-triage": {
+    "required_provenance_headings": [
+      {
+        "text": "## Pattern evidence",
+        "message": "missing pattern evidence"
+      }
+    ],
+    "required_description_text": [
+      {
+        "text": "not ",
+        "message": "missing selection exclusion"
+      }
+    ]
+  },
+  "session-start-and-close": {
+    "required_provenance_headings": [
+      {
+        "text": "## Pattern evidence",
+        "message": "missing pattern evidence"
+      }
+    ],
+    "required_description_text": [
+      {
+        "text": "not ",
+        "message": "missing selection exclusion"
+      }
+    ]
+  },
+  "local-test-handoff": {
+    "required_provenance_headings": [
+      {
+        "text": "## Pattern evidence",
+        "message": "missing pattern evidence"
+      }
+    ],
+    "required_description_text": [
+      {
+        "text": "not ",
+        "message": "missing selection exclusion"
+      }
+    ]
+  },
+  "prose-edit": {
+    "required_provenance_headings": [
+      {
+        "text": "## Pattern evidence",
+        "message": "missing pattern evidence"
+      }
+    ],
+    "required_description_text": [
+      {
+        "text": "not ",
+        "message": "missing selection exclusion"
+      }
+    ],
+    "forbidden_characters": [
+      {
+        "text": "\u2014",
+        "message": "em dash in package"
+      }
+    ]
+  }
+}
