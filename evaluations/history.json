@@ -1,0 +1,13 @@
+{
+  "note": "Identifier-only normalization; raw historical prompts and behavioral responses are unchanged. Digests identify exact pre-normalization JSON held outside the checkout.",
+  "raw_sha256": {
+    "routing-answers-v2.json": "9bbb7080cec7b5a64f231f087b17d42a87bceddddec3bce58fd31e1b12e7e972",
+    "routing-input-v2.json": "d5de50d6a85e511894eccb41f009924273312ad9c43073908c92576fbd7ac03d",
+    "routing-output-v1.json": "608aff20d40fc419bf59f8f96eda8f5f3190702fa87c6e2703e0a39c269c251c",
+    "routing-output-v2.json": "207c2b96da062340888221f2e8a2dfc34149179ea721673c2c13fbd6624f3949",
+    "routing-answers-v1.json": "9bbb7080cec7b5a64f231f087b17d42a87bceddddec3bce58fd31e1b12e7e972",
+    "routing-input-v1.json": "3c45ab71cf8ef243ce1ca6a84cab6f953e954d133a34f7daa17347e8f525372a"
+  },
+  "historical_request_arrays_unchanged": true,
+  "current_existing_requests_equal_historical_v2": true
+}

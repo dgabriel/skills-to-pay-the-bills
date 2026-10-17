@@ -1,0 +1,221 @@
+[
+  {
+    "id": "route-10",
+    "selected": [],
+    "reason": "Implementing a specified CSS fix does not require creating a visual system or any other described workflow."
+  },
+  {
+    "id": "route-13",
+    "selected": [
+      "design-system-workshop"
+    ],
+    "reason": "Defining a new app visual guide fits creation of its visual system."
+  },
+  {
+    "id": "route-06",
+    "selected": [
+      "technical-design-interview"
+    ],
+    "reason": "Architecture for an MVP is a technical design task."
+  },
+  {
+    "id": "route-21",
+    "selected": [
+      "beads-workflow"
+    ],
+    "reason": "Ready work and blocker inspection are explicit Beads operations."
+  },
+  {
+    "id": "route-32",
+    "selected": [
+      "regression-testing"
+    ],
+    "reason": "Executing endpoint tests across happy, edge, and error behavior fits the testing workflow."
+  },
+  {
+    "id": "route-23",
+    "selected": [
+      "beads-workflow"
+    ],
+    "reason": "A durable Beads session handoff is explicitly covered."
+  },
+  {
+    "id": "route-30",
+    "selected": [],
+    "reason": "Summarizing an existing interview does not itself request defining or revising product requirements."
+  },
+  {
+    "id": "route-17",
+    "selected": [
+      "git-workflow"
+    ],
+    "reason": "Recovering missing commits after a squash merge is Git recovery work."
+  },
+  {
+    "id": "route-27",
+    "selected": [
+      "spec-review"
+    ],
+    "reason": "Checking an implementation against its issue and style guide is an acceptance review."
+  },
+  {
+    "id": "route-25",
+    "selected": [],
+    "reason": "The repository uses Jira rather than Beads, so the Beads workflow does not apply."
+  },
+  {
+    "id": "route-15",
+    "selected": [],
+    "reason": "An ordinary SQL fix does not request any of the described specialized workflows."
+  },
+  {
+    "id": "route-11",
+    "selected": [
+      "design-system-workshop"
+    ],
+    "reason": "Creating a visual system from mood input directly matches."
+  },
+  {
+    "id": "route-12",
+    "selected": [
+      "design-system-workshop"
+    ],
+    "reason": "Deliberately revising brand tokens and component rules directly matches."
+  },
+  {
+    "id": "route-28",
+    "selected": [
+      "spec-review"
+    ],
+    "reason": "A read-only pre-merge patch review fits the described acceptance-review workflow; available specifications should guide it."
+  },
+  {
+    "id": "route-09",
+    "selected": [],
+    "reason": "Diagnosing a unit test failure does not request writing and executing regression tests or revising architecture."
+  },
+  {
+    "id": "route-20",
+    "selected": [],
+    "reason": "A text edit without Git operations does not match these workflows."
+  },
+  {
+    "id": "route-31",
+    "selected": [
+      "regression-testing"
+    ],
+    "reason": "The request explicitly asks to write and run regression tests."
+  },
+  {
+    "id": "route-07",
+    "selected": [
+      "technical-design-interview"
+    ],
+    "reason": "Deriving data and authorization decisions from a PRD is technical design."
+  },
+  {
+    "id": "route-26",
+    "selected": [
+      "spec-review"
+    ],
+    "reason": "A patch correctness and security review fits a read-only patch review, with findings grounded in available requirements."
+  },
+  {
+    "id": "route-01",
+    "selected": [
+      "product-requirements-interview"
+    ],
+    "reason": "An MVP interview directly matches product requirements discovery."
+  },
+  {
+    "id": "route-34",
+    "selected": [],
+    "reason": "A documentation heading edit does not match these specialized workflows."
+  },
+  {
+    "id": "route-14",
+    "selected": [],
+    "reason": "Routine screen implementation using approved tokens is explicitly outside visual-system creation."
+  },
+  {
+    "id": "route-19",
+    "selected": [],
+    "reason": "Explaining an existing audience does not request a requirements interview or PRD revision."
+  },
+  {
+    "id": "route-03",
+    "selected": [
+      "product-requirements-interview"
+    ],
+    "reason": "Drafting requirements immediately from a supplied brief is explicitly supported."
+  },
+  {
+    "id": "route-33",
+    "selected": [
+      "regression-testing"
+    ],
+    "reason": "Feature verification and exact reproducible failure reporting imply executing behavior tests; application fixes are not necessary."
+  },
+  {
+    "id": "route-29",
+    "selected": [],
+    "reason": "Direct bug implementation without review or an explicit regression-testing task does not match these descriptions."
+  },
+  {
+    "id": "route-22",
+    "selected": [
+      "beads-workflow"
+    ],
+    "reason": "Legacy issue identifier lookup in an existing Beads project directly matches."
+  },
+  {
+    "id": "route-04",
+    "selected": [],
+    "reason": "A handler typo fix is an ordinary file edit."
+  },
+  {
+    "id": "route-24",
+    "selected": [],
+    "reason": "Ephemeral checklists are explicitly excluded from Beads."
+  },
+  {
+    "id": "route-05",
+    "selected": [],
+    "reason": "Implementation of a settled endpoint is outside product and technical design discovery."
+  },
+  {
+    "id": "route-35",
+    "selected": [
+      "spec-review"
+    ],
+    "reason": "A read-only code review matches the review workflow and explicitly excludes test execution."
+  },
+  {
+    "id": "route-16",
+    "selected": [
+      "git-workflow"
+    ],
+    "reason": "Preparing a branch for a PR under repository policy directly matches."
+  },
+  {
+    "id": "route-18",
+    "selected": [
+      "git-workflow"
+    ],
+    "reason": "Syncing a published feature branch requires repository Git policy."
+  },
+  {
+    "id": "route-02",
+    "selected": [
+      "product-requirements-interview"
+    ],
+    "reason": "Narrowing PRD launch scope is a product requirements revision."
+  },
+  {
+    "id": "route-08",
+    "selected": [
+      "technical-design-interview"
+    ],
+    "reason": "Revising architecture for offline operation is technical design."
+  }
+]

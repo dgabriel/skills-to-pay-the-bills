@@ -1,0 +1,42 @@
+{
+  "note": "Frozen before fresh selection cases were authored; identifiers reflect the approved renames.",
+  "skills": [
+    {
+      "name": "beads-workflow",
+      "description": "Use Beads (bd) for durable tasks, blockers, legacy issue lookup, claiming, completion, and session handoff in a repository that already uses Beads. Not for ephemeral checklists or adopting a new tracker."
+    },
+    {
+      "name": "design-system-workshop",
+      "description": "Create or deliberately revise a visual system from mood and product context, with semantic tokens and component rules; integrate agreed tokens when requested. Not routine screen work within an established system."
+    },
+    {
+      "name": "git-workflow",
+      "description": "Discover and apply a repository\u2019s Git policy when starting or syncing branches, preparing commits or PRs, resolving conflicts, or recovering missing work. Not for ordinary file edits without Git operations."
+    },
+    {
+      "name": "product-requirements-interview",
+      "description": "Define or revise a PRD, users, core journey, MVP scope, and success signals through an interview or immediate drafting from a supplied brief. Not for implementing an already specified feature."
+    },
+    {
+      "name": "regression-testing",
+      "description": "Write and execute regression tests for a changed behavior, bug, endpoint, or threshold, using specification-derived expectations and reproducible failures. Not prose edits, general testing theory, or a read-only review without test execution."
+    },
+    {
+      "name": "spec-review",
+      "description": "Review a patch against its issue/specification and documented design rules, reporting evidence-ranked deviations without fixes by default. Use for read-only acceptance reviews, not implementation or free-form visual critique."
+    },
+    {
+      "name": "technical-design-interview",
+      "description": "Derive or revise system architecture and a technical design from a PRD or concrete requirements, proposing data, access, API, and operational decisions. Not routine debugging or implementing a settled design."
+    }
+  ],
+  "entry_sha256": {
+    "beads-workflow": "bdc56978d948a4ae177375431eac62480fbd21e98b06045600a2fa2231acde67",
+    "design-system-workshop": "1318f7297e266ed4c87b65cad4bacf19ce5f475974417d8ec9d048a4927736d7",
+    "git-workflow": "659324d2b9563987c848350ba2f12bd226d915c5186bcef14b84c9ce0fb602b9",
+    "product-requirements-interview": "45629681a822111031fba97850c4e5ab909229114610022ccc92715932ed7217",
+    "regression-testing": "fc8be83b22218b81510ce3a823dad1458e8264a1a2787781e1a80fbc16088ca1",
+    "spec-review": "328e0560cc2d9c83102fba6859629b60c0727dba07790114de51026fe6edf418",
+    "technical-design-interview": "c21fe96b17d4087ea4ef2fe901d476e50fb765148241a8fa25a614473d361dc6"
+  }
+}

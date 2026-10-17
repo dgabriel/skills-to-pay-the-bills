@@ -1,0 +1,132 @@
+{
+  "tasks": {
+    "product-requirements-interview": {
+      "request": "Draft a PRD now without asking questions for BorrowBox. It helps residents of one apartment building borrow tools. Core loop: owner lists a tool, neighbor requests dates, owner accepts, neighbor returns it. Initial budget is $20/month, web only, 30 residents. Must-haves proposed: listings, requests, acceptance, returns, payments, chat, ratings, insurance. Recommend MVP scope and flag unknowns. Save output.md.",
+      "artifacts": {}
+    },
+    "technical-design-interview": {
+      "request": "Draft the technical design for BorrowBox now, including concrete stack choices and their rationale. No existing code or stack. Use supplied requirements. Save output.md.",
+      "artifacts": {
+        "requirements.md": "30 residents, one apartment building, web only, $20/month budget. Owners list tools. Neighbors request date ranges; owners accept or reject; borrower records return. Only owners accept requests for their own tools. Accepted bookings for a tool cannot overlap. No payments, chat, insurance, or realtime requirement. Auth and hosting undecided."
+      }
+    },
+    "design-system-workshop": {
+      "request": "Draft a warm, analog, compact visual system for BorrowBox. No established brand. Guide only, no app code. Give concrete tokens and calculate text contrast; include the muted text and status treatments. Save output.md.",
+      "artifacts": {
+        "brief.md": "Audience: residents borrowing tools in one building. Light surfaces preferred. No external font service required. Keyboard-friendly web UI. Product is a utility, not a social network."
+      }
+    },
+    "git-workflow": {
+      "request": "Inspect this fixture and give the exact safe plan for bringing my published feature branch current before preparing a PR. Plan only; no Git mutations or network. Save output.md.",
+      "artifacts": {
+        "AGENTS.md": "Read docs/git-hygiene.md for canonical Git policy. Issue guide may be older.",
+        "docs/git-hygiene.md": "One mainline: main. Feature branches originate from main; no develop branch. Merge origin/main into a published feature branch; never rebase published commits. Before PR, run python3 -m unittest discover -s tests and inspect staged paths. PR base is main. Ask before opening a PR.",
+        "issue-guide.md": "Old template guidance: rebase onto develop and auto-open a PR once tests pass.",
+        "git-state.txt": "Branch feature/tool-returns is published and tracks origin/feature/tool-returns. Branch is one commit behind main and has two unique commits. Working tree includes an unrelated untracked notes.txt. No conflicts or in-progress Git operation."
+      }
+    },
+    "beads-workflow": {
+      "request": "Plan the commands to start work on legacy issue OLD-42 and later hand it off. Do not execute tracker or Git mutations. Save output.md.",
+      "artifacts": {
+        "AGENTS.md": "This project uses bd. Start issue work through scripts/issue-start.sh <native-id>; the wrapper creates the branch and claims the issue. Canonical Git policy forbids direct manual claims when using the wrapper. Close issues only after code is merged and acceptance checks pass. Remote tracker sync requires separate permission.",
+        "tracker-snapshot.json": "[{\"id\": \"borrow-8x9\", \"title\": \"Record tool returns\", \"external_ref\": \"https://legacy.example/issues/OLD-42\", \"status\": \"open\"}]",
+        "tool-context.txt": "CLI unavailable in this fixture. Plan against the supplied snapshot; do not install or initialize anything."
+      }
+    },
+    "spec-review": {
+      "request": "Review this patch against the requirements. Report evidence and line numbers; do not edit code. Save output.md.",
+      "artifacts": {
+        "requirements.md": "Only the owner of a booking may cancel it. A missing booking returns not_found. A rejected cancellation must not mutate state.",
+        "before.py": "def cancel(booking, actor_id):\n    if booking is None:\n        return \"not_found\"\n    if booking.owner_id != actor_id:\n        return \"forbidden\"\n    booking.status = \"cancelled\"\n    return \"ok\"\n",
+        "after.py": "def cancel(booking, actor_id):\n    if booking is None:\n        return \"not_found\"\n    booking.status = \"cancelled\"\n    if booking.owner_id != actor_id:\n        return \"forbidden\"\n    return \"ok\"\n",
+        "test_cancel.py": "# Current test only checks the returned status.\nassert cancel(booking, \"someone-else\") == \"forbidden\"\n"
+      }
+    },
+    "regression-testing": {
+      "request": "Write and run tests for booking.py against SPEC.md. Do not fix implementation. Save a report to output.md and test code to test_booking.py. Use only the standard library and no network.",
+      "artifacts": {
+        "SPEC.md": "overlaps(a_start,a_end,b_start,b_end) returns whether half-open booking ranges [start,end) overlap. Adjacent ranges do not overlap. Inputs are integers; each range must have start < end, otherwise raise ValueError. Verify outcomes from this definition, not from the implementation.",
+        "booking.py": "def overlaps(a_start, a_end, b_start, b_end):\n    if a_start >= a_end or b_start >= b_end:\n        raise ValueError(\"invalid range\")\n    return a_start <= b_end and b_start <= a_end\n"
+      }
+    }
+  },
+  "selection": {
+    "product-requirements-interview": {
+      "should_select": [
+        "Interview me about an MVP for a tool-sharing app.",
+        "Revise our PRD to narrow launch scope.",
+        "Turn this product brief into requirements without asking questions."
+      ],
+      "should_skip": [
+        "Fix a typo in this handler.",
+        "Implement this fully specified endpoint."
+      ]
+    },
+    "technical-design-interview": {
+      "should_select": [
+        "Design the architecture for this MVP.",
+        "Propose data model and auth from our PRD.",
+        "Revise our system design for offline operation."
+      ],
+      "should_skip": [
+        "Diagnose this unit test failure.",
+        "Implement a specified CSS fix."
+      ]
+    },
+    "design-system-workshop": {
+      "should_select": [
+        "Create a design system from this mood board.",
+        "Revise our brand tokens and component rules.",
+        "Define a visual guide only for our new app."
+      ],
+      "should_skip": [
+        "Build a screen using our approved tokens.",
+        "Fix this SQL query."
+      ]
+    },
+    "git-workflow": {
+      "should_select": [
+        "Prepare my branch for a PR under this repository policy.",
+        "Plan recovery for commits missing after a squash merge.",
+        "Sync this published feature branch with the mainline."
+      ],
+      "should_skip": [
+        "Explain our product audience.",
+        "Change button text without Git operations."
+      ]
+    },
+    "beads-workflow": {
+      "should_select": [
+        "Find ready Beads work and inspect blockers.",
+        "Resolve legacy issue OLD-42 to its native ID in this Beads project.",
+        "Prepare a Beads issue handoff for another session."
+      ],
+      "should_skip": [
+        "Write an ephemeral checklist for this reply.",
+        "Use Jira in a repo that does not use Beads."
+      ]
+    },
+    "spec-review": {
+      "should_select": [
+        "Review this patch for correctness and security.",
+        "Check this implementation against its issue and style guide.",
+        "Give a read-only pre-merge review of these changes."
+      ],
+      "should_skip": [
+        "Fix this bug directly; no review requested.",
+        "Summarize a product interview."
+      ]
+    },
+    "regression-testing": {
+      "should_select": [
+        "Write and run regression tests for this change.",
+        "Test happy, edge, and error behavior of these endpoints.",
+        "Verify this feature and report exact failures without fixing app code."
+      ],
+      "should_skip": [
+        "Change a heading in documentation.",
+        "Review code read-only without running tests."
+      ]
+    }
+  }
+}
