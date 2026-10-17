@@ -17,4 +17,4 @@ Reviewer estimate: about 20 sessions across at least four projects. The repeated
 
 Pattern evidence supplies the owner-led decision sequence and blocking unresolved-findings policy. Public dismissal/schema docs supply run-local versus stable identity, expiry, source-type distinctions, and reporting mechanics; the public project config corroborates explicit gate/dismissal and docs-only inversion controls. Provider settings, thresholds, actor identities, project paths, and any credentials from examples are not copied. The current public review-tool repository passed the license/visibility check; no local-only source was needed.
 
-The package retains the author’s [MIT notice](LICENSE). Pattern counts are reviewer estimates, not an independently verified transcript audit.
+The package retains both the library author’s and the review-tool source’s [MIT notices](LICENSE). Pattern counts are reviewer estimates, not an independently verified transcript audit.
