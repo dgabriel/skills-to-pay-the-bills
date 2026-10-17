@@ -74,5 +74,19 @@
         "message": "missing selection exclusion"
       }
     ]
+  },
+  "docs-audit": {
+    "required_provenance_headings": [
+      {
+        "text": "## Pattern evidence",
+        "message": "missing pattern evidence"
+      }
+    ],
+    "required_description_text": [
+      {
+        "text": "not ",
+        "message": "missing selection exclusion"
+      }
+    ]
   }
 }

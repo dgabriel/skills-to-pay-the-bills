@@ -2,7 +2,7 @@
 
 ## Current status
 
-As of 2026-10-17, the library contains **12 skill packages**. Skills are independently selectable; project policy and explicit owner decisions override defaults. Current checks cover structure, portable references, recorded evidence, and executable fixtures, not universal behavioral effectiveness.
+As of 2026-10-17, the library contains **13 skill packages**. Skills are independently selectable; project policy and explicit owner decisions override defaults. Current checks cover structure, portable references, recorded evidence, and executable fixtures, not universal behavioral effectiveness.
 
 **Latest executed checks:** `python3 scripts/check_library.py`, `python3 scripts/replay_evaluations.py`, and `python3 scripts/replay_history_evaluations.py` pass. Replay scores saved decisions, checks recorded fingerprints/artifacts, and executes the earlier booking-test, contrast, and review-defect fixtures. Expected assertion failures demonstrate known fixture defects; they are not application passes. These replay commands do not generate agent responses or fresh routing decisions.
 
@@ -20,7 +20,11 @@ The sections below retain the original results and pass-specific statements. “
 
 Added `diagnose-first`. Its scope and safety/authority boundaries were reviewed against the approved request.
 
+Added `docs-audit`. Its scope and safety/authority boundaries were reviewed against the approved request.
+
 These packages use supplied reviewer paraphrases and owner decisions, with no public source extraction or transcript access. Entry/package validators and static scope review ran; routing cases will be authored only after all three descriptions are frozen. No new behavioral run is claimed.
+
+### Checker configuration follow-up
 
 ### Checker configuration follow-up
 
