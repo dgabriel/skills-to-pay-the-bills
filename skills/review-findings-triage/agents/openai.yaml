@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Findings Triage"
+  short_description: "Resolve review findings with an auditable disposition"
+  default_prompt: "Use $review-findings-triage for this task: Use review-findings-triage to explain every finding and propose actions before changing anything."
