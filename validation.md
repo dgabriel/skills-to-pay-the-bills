@@ -24,6 +24,8 @@ Added `docs-audit`. Its scope and safety/authority boundaries were reviewed agai
 
 Added `agent-handoff-prompt`. Its scope and safety/authority boundaries were reviewed against the approved request.
 
+The new-project starter prompt also gained an owner-authorized bootstrap stage pointing to existing Git, Beads, regression, review, triage, and local-test workflows. This was a static prompt edit; no tracker, CI service, runtime, or repository was initialized.
+
 These packages use supplied reviewer paraphrases and owner decisions, with no public source extraction or transcript access. Entry/package validators and static scope review ran; routing cases will be authored only after all three descriptions are frozen. No new behavioral run is claimed.
 
 ### Checker configuration follow-up

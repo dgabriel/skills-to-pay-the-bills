@@ -50,6 +50,28 @@ project instructions for selecting them, not a copy of the library's maintenance
 AGENTS.md. Do not change personal/global configuration or adopt Beads or another
 tracker without my choice.
 
+Project bootstrap, after we accept the plan and I authorize setup:
+Inspect what already exists and propose only missing repository preparation.
+Confirm the tracker, agent host, review policy, and local runtime with me before
+initializing anything. If no tracker is chosen, keep tracker adoption pending;
+when I choose Beads, use beads-workflow for its project-specific setup and
+commands rather than inventing a second task store. Use git-workflow to discover
+or document the branch/release policy and prepare a concise Git hygiene guide.
+Adapt project agent instructions and role definitions to this repository's
+actual commands, stack, authority boundaries, and handoffs; do not copy another
+project's agent identities or require a multi-agent pipeline.
+
+When I authorize CI setup, use regression-testing and spec-review to define
+meaningful checks and the review acceptance process. Preserve existing gates;
+do not install a review service, add a paid dependency, or introduce a new LLM
+release gate without my explicit choice. Use review-findings-triage for actual
+review findings, not as proof that CI ran. Use local-test-handoff to document and
+verify the chosen local startup/test flow when setup and runtime execution are
+authorized. Preserve dev data and record actual readiness and device-access
+limits. End bootstrap with files changed, tools/configuration added, checks
+actually run, and setup still pending. Keep details in those existing skills
+and project guidance rather than creating a competing bootstrap procedure.
+
 Propose the first small vertical slice and its acceptance checks. For later
 implementation, use the project's Git policy, meaningful regression tests,
 spec review, and a durable session handoff. Use review-findings-triage only when
