@@ -1,4 +1,4 @@
-# Provenance: Testing
+# Provenance: Regression Testing
 
 ## Sources
 
@@ -24,3 +24,7 @@ The bundled [MIT notice](LICENSE) retains copyright (c) 2026 Dawn Gabriel. No pr
 | Below/on/above threshold cases | Cosmic JEV tester, **Stack → Tests**, pinned above | Boundary routing and wraparound tests. This behavior existed in the previous library and is not counted as a new opinion. |
 
 The Cosmic JEV file is an author-owned public source with no separate repository license found during discovery. Its procedure is adapted under the owner’s explicit extraction request; the source file is not copied. The library package retains its author’s MIT notice. No claim is made that every source repository declares MIT.
+
+## Maintenance notes
+
+The endpoint contract checklist and missing-external-oracle stop condition were added when this workflow was renamed. They adapt the template tester’s Backend tests checklist and the astronomy tester’s reference requirement, respectively. The below/on/above triplet and rejected-mutation state assertion already existed in the earlier library procedure; the rename pass made them visible in the entry point rather than introducing new opinions. Runtime instructions describe the rules without revision-history framing.

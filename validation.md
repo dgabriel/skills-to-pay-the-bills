@@ -13,7 +13,7 @@ Executed 2026-10-17. Seven skills have structural checks, selection evaluations,
 
 The historical v1→v2 improvement was partly due to two fixture edits, not solely a better description. Both old and revised versions remain in [results](evaluations/results/). The raw pre-rename JSON digests are in [history.json](evaluations/history.json). Names/paths in historical artifacts were normalized as explained in the rename notes; historical request arrays were checked against the raw outside-checkout copies and remain identical.
 
-Before fresh cases were written, final entry hashes/descriptions were saved in [final-descriptions.json](evaluations/final-descriptions.json). The fresh author did not see previous cases/results or skill bodies. Another evaluator received only descriptions and request IDs/text, with labels hidden, and evaluated the existing and fresh sets. [Fresh authored cases](evaluations/fresh-cases.json) and all actual routing outputs/answers are retained. No fresh prompt, expected label, description, or response was edited after scoring. Replay verifies frozen entry hashes and unchanged existing requests.
+Before fresh cases were written, final entry hashes/descriptions were saved in [final-descriptions.json](evaluations/final-descriptions.json). The fresh author did not see previous cases/results or skill bodies. Another evaluator received only descriptions and request IDs/text, with labels hidden, and evaluated the existing and fresh sets. [Fresh authored cases](evaluations/fresh-cases.json) and all actual routing outputs/answers are retained. No fresh prompt, expected label, description, or response was edited after scoring. Replay verifies the preserved evaluation fingerprints, documented editorial changes, and unchanged existing requests.
 
 Scoring checks selection/omission of the intended target; another skill may legitimately match a target-negative request. These are model selection exercises, not native host discovery tests. Evaluator settings were inherited without model/reasoning overrides.
 
@@ -48,10 +48,14 @@ The historical paired run remains under [baseline](evaluations/results/baseline/
 
 The [official Codex skill URL](https://learn.chatgpt.com/docs/build-skills) was opened successfully and returned **Build skills** content on 2026-10-17; it is retained because it was verified. Claude Code install/invoke documentation was checked in the prior pass. No native host install/discovery session was executed.
 
-New opinionated rules are mapped to immutable source files/sections in [spec-review provenance](skills/spec-review/PROVENANCE.md) and [regression-testing provenance](skills/regression-testing/PROVENANCE.md). A source does not prescribe a report-wide numerical style quota or mandatory verbatim quotations, so neither is claimed as sourced. The spec review cap is zero **unsupported cosmetic nits**, explicitly identified as a scope adaptation. Beads command/wrapper rules are mapped in [its provenance](skills/beads-workflow/PROVENANCE.md).
+New opinionated rules are mapped to immutable source files/sections in [spec-review provenance](skills/spec-review/PROVENANCE.md) and [regression-testing provenance](skills/regression-testing/PROVENANCE.md). A source does not prescribe a report-wide numerical style quota or mandatory verbatim quotations, so neither is claimed as sourced. The spec review rule is **no unsupported cosmetic findings**, explicitly identified as a scope adaptation. Beads command/wrapper rules are mapped in [its provenance](skills/beads-workflow/PROVENANCE.md).
 
 ## Limits and replay
 
 No native Claude Code/Codex discovery, real Beads mutation, real Git recovery, live stakeholder interview, UI integration/accessibility session, or repeated statistical trial ran. Source repositories and remote history were untouched. The five local commits await the owner's reviewer gate; no push or PR is authorized here.
 
 Run the two scripts above to replay deterministic evidence without calling a model. See [evaluation instructions](evaluations/README.md) for regenerating agent runs and keeping author/evaluator roles separate.
+
+## Editorial follow-up
+
+Stale display titles were corrected, change-history/rationale text moved from runtime instructions into provenance, and the cosmetic-findings rule was named directly. Descriptions, selection requests, expected answers, and behavioral rules were not changed or re-evaluated. The evaluation-time entry hashes remain in final-descriptions.json; [editorial update fingerprints](evaluations/editorial-updates.json) document the two current entry-point changes. Replay verifies both the unchanged descriptions and the explicit old/current fingerprints rather than replacing the original freeze. The heading checker was observed failing on the four stale headings before they were corrected, then passing afterward.

@@ -3,7 +3,7 @@ name: beads-workflow
 description: Use Beads (bd) for durable tasks, blockers, legacy issue lookup, claiming, completion, and session handoff in a repository that already uses Beads. Not for ephemeral checklists or adopting a new tracker.
 ---
 
-# Issue Workflow
+# Beads Workflow
 
 **Inputs:** Existing Beads project, task or legacy identifier, repo workflow, and current task state.
 **Output:** Resolved native IDs, accurate task state or a command plan, and durable handoff notes.

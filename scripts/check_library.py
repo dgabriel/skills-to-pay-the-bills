@@ -67,6 +67,14 @@ def check(root=ROOT):
                 if obsolete:
                     errors.append(f'{path.relative_to(root)}: obsolete skill identifier')
         if path.suffix == '.md':
+            if path != rename_notes and old_names:
+                titles = '|'.join(re.escape(name.replace('-', ' ').title()) for name in old_names)
+                legacy_heading = re.compile(
+                    rf'^#{{1,6}}[ \t]+(?:Provenance:[ \t]+)?(?:{titles})[ \t]*#*[ \t]*$',
+                    re.MULTILINE)
+                for match in legacy_heading.finditer(text):
+                    line = text.count('\n', 0, match.start()) + 1
+                    errors.append(f'{path.relative_to(root)}:{line}: obsolete skill heading')
             for target in re.findall(r'\]\(([^)]+)\)', text):
                 if '://' in target or target.startswith('#'):
                     continue

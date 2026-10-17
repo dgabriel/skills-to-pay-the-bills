@@ -18,10 +18,10 @@ Do not weaken assertions to make a suite green. If assigned testing only, leave 
 
 Record exact command, exit code, test count when emitted, and what behavior was covered. For failure, include file/line, test name, assertion/error text, expected result, and actual result. Distinguish assertion failures from collection/environment failures. Do not fabricate assertion counts. State which broader checks were not run and why. A test file that was authored but never executed is not a passing test.
 
-## Opinionated defaults added in this revision
+## Endpoint and oracle checks
 
-**Endpoint contract checklist:** for each changed API operation test request validation, response shape, status codes, and error handling, not merely a happy-path response. Mark a category inapplicable with a concrete reason rather than silently skipping it. This makes the template tester’s Backend tests checklist an explicit per-operation default; use the target runner, with pytest/API client as the FastAPI starting point.
+**Endpoint contract checklist:** for each changed API operation test request validation, response shape, status codes, and error handling, not merely a happy-path response. Mark a category inapplicable with a concrete reason rather than silently skipping it. Use the target runner, with pytest/API client as the FastAPI starting point.
 
-**Missing external oracle is a stop condition:** when scientific/domain expected values come from an external reference, cite source name, URL, retrieval date, and relevant tolerance beside the expectation. If the source cannot be accessed and no trusted fixture/reference was supplied, stop those value assertions and report missing evidence. Other spec-defined tests can still run. Do not generate a plausible expected number or call the implementation to create it. This adapts the astronomy tester’s requirement to externally defined domain values; ordinary assertions derived directly from a supplied specification need no external citation.
+**Missing external oracle is a stop condition:** when scientific/domain expected values come from an external reference, cite source name, URL, retrieval date, and relevant tolerance beside the expectation. If the source cannot be accessed and no trusted fixture/reference was supplied, stop those value assertions and report missing evidence. Other spec-defined tests can still run. Do not generate a plausible expected number or call the implementation to create it. Ordinary assertions derived directly from a supplied specification need no external citation.
 
-**Source-backed threshold practice:** the same tester exercises exact routing thresholds and wraparound boundaries. The below/on/above triplet and rejected-mutation state assertion were already in the previous library procedure; they are now visible in the entry point and are not claimed as newly added opinions. [Rule provenance](../PROVENANCE.md).
+[Rule provenance](../PROVENANCE.md).

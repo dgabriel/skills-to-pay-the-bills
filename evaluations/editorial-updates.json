@@ -1,0 +1,15 @@
+{
+  "note": "Editorial follow-up only; original evaluation freeze and scores are preserved. Descriptions and behavioral rules are unchanged.",
+  "updates": {
+    "beads-workflow": {
+      "evaluated_sha256": "bdc56978d948a4ae177375431eac62480fbd21e98b06045600a2fa2231acde67",
+      "current_sha256": "ed6b575a8eed7066ca8df67fd418f85a3b4d8909ee0262b8f41485ac65aa7726",
+      "reason": "Correct stale display title."
+    },
+    "spec-review": {
+      "evaluated_sha256": "328e0560cc2d9c83102fba6859629b60c0727dba07790114de51026fe6edf418",
+      "current_sha256": "4b8344aadc06cd7ff6e35e2c06d355f476a51ce12d99cc53cde8fc7779214869",
+      "reason": "Remove change-history sentence and rename cosmetic rule; preserve behavior and description."
+    }
+  }
+}

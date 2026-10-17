@@ -1,4 +1,4 @@
-# Provenance: Issue Workflow
+# Provenance: Beads Workflow
 
 ## Sources
 

@@ -55,15 +55,27 @@ def main():
     for version in ['v1', 'v2', 'current-existing', 'fresh']:
         score_routing(results, version)
     freeze = json.loads((ROOT / 'evaluations/final-descriptions.json').read_text())
-    for name, expected in freeze['entry_sha256'].items():
+    editorial_path = ROOT / 'evaluations/editorial-updates.json'
+    editorial = json.loads(editorial_path.read_text())['updates'] if editorial_path.is_file() else {}
+    assert set(editorial) <= set(freeze['entry_sha256']), 'Unknown editorial entry'
+    descriptions = {row['name']: row['description'] for row in freeze['skills']}
+    for name, evaluated in freeze['entry_sha256'].items():
         entry = ROOT / 'skills' / name / 'SKILL.md'
-        assert hashlib.sha256(entry.read_bytes()).hexdigest() == expected, 'Entry changed after case authorship'
+        description = next(line.removeprefix('description: ') for line in entry.read_text().splitlines()
+                           if line.startswith('description: '))
+        assert description == descriptions[name], 'Description changed after case authorship'
+        expected = evaluated
+        if name in editorial:
+            assert editorial[name]['evaluated_sha256'] == evaluated, 'Original freeze mismatch'
+            expected = editorial[name]['current_sha256']
+        assert hashlib.sha256(entry.read_bytes()).hexdigest() == expected, 'Unrecorded entry change'
     for row in json.loads((ROOT / 'evaluations/fresh-cases.json').read_text()):
         assert isinstance(row['expected'], bool)
     current = json.loads((results / 'routing-input-current-existing.json').read_text())
     previous = json.loads((results / 'routing-input-v2.json').read_text())
     assert current['requests'] == previous['requests'], 'Existing 35 requests changed'
-    print('Integrity: final entries frozen; existing 35 requests unchanged')
+    print('Integrity: original freeze preserved; editorial fingerprints and unchanged descriptions verified')
+    print('Integrity: existing 35 requests unchanged')
     fixtures = cases['tasks']['regression-testing']['artifacts']
     with tempfile.TemporaryDirectory(prefix='skill-replay-') as location:
         temp = Path(location)

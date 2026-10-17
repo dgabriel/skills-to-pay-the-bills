@@ -13,7 +13,7 @@ Honor the user’s task scope and target-project policy; preserve unrelated work
 
 1. Read the actual diff and relevant surrounding code, issue, design, and test context. Establish what changed before forming a verdict.
 2. Trace expected behavior through authorization, state changes, error handling, and test assertions. Compare requirements to effects, not merely return values.
-3. Enforce documented design rules even when behavior works: flag off-token colors/fonts and capped-signal violations. Default cap: zero low-severity cosmetic findings unsupported by a project rule; see the procedure for this scope adaptation.
-4. Default to diagnosis only: report the violated rule, trigger, effect, and exact location without repair suggestions or patches. Include corrections only when explicitly requested; this restores the source reviewer’s separation of diagnosis from implementation.
+3. Enforce documented design rules even when behavior works: flag off-token colors/fonts and capped-signal violations. No unsupported cosmetic findings: omit low-severity cosmetic preferences without a project rule.
+4. Default to diagnosis only: report the violated rule, trigger, effect, and exact location without repair suggestions or patches. Include corrections only when explicitly requested.
 
 Finish with the artifact or report, checks actually run, open decisions, and the next handoff. Resolve output paths in the target project. See [provenance](PROVENANCE.md) for source revisions and adaptations.
