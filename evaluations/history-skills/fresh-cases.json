@@ -1,0 +1,114 @@
+[
+  {
+    "id": "review-positive-1",
+    "target": "review-findings-triage",
+    "expected": true,
+    "prompt": "The automated reviewer left six findings on this pull request. Work through each one, fix the valid defects, explain any dismissal that needs my approval, and check that the review gate passes afterward.",
+    "rationale": "Requests disposition of existing automated findings, fixes, approved dismissals, and gate verification."
+  },
+  {
+    "id": "review-positive-2",
+    "target": "review-findings-triage",
+    "expected": true,
+    "prompt": "An adversarial review has already flagged two issues on this PR. One appears to be a defect in the review tool itself. Investigate both, address genuine problems, document the tool bug if confirmed, and verify the gate status.",
+    "rationale": "Existing adversarial findings require classification including an upstream tool bug and verification."
+  },
+  {
+    "id": "review-negative-1",
+    "target": "review-findings-triage",
+    "expected": false,
+    "prompt": "Read this patch against the attached acceptance criteria and documented component rules. Report deviations with supporting evidence, and leave the files untouched. There are no existing reviewer findings to process.",
+    "rationale": "A raw read-only acceptance review belongs to patch/specification review rather than findings triage."
+  },
+  {
+    "id": "review-negative-2",
+    "target": "review-findings-triage",
+    "expected": false,
+    "prompt": "Explain what a required pull-request review gate is and why a team might use one. I only want a conceptual explanation; do not inspect or change a repository.",
+    "rationale": "General explanation has no existing findings to triage or gate to verify."
+  },
+  {
+    "id": "session-positive-1",
+    "target": "session-start-and-close",
+    "expected": true,
+    "prompt": "I am returning to this repository after an interruption. Inspect the durable task records and current Git state, then give me a concise account of where work stands and the next unfinished step before making changes.",
+    "rationale": "Explicit repository resumption and status orientation after an interruption."
+  },
+  {
+    "id": "session-positive-2",
+    "target": "session-start-and-close",
+    "expected": true,
+    "prompt": "We are stopping work for today. Record the unfinished tasks and blockers in the tracker this repository already uses, and leave a durable handoff explaining the Git state and how to resume.",
+    "rationale": "Explicit session closure with durable task and Git handoff using the existing tracker."
+  },
+  {
+    "id": "session-negative-1",
+    "target": "session-start-and-close",
+    "expected": false,
+    "prompt": "Implement the already specified password visibility toggle on the sign-in form. The acceptance criteria and component design are attached; begin coding the feature.",
+    "rationale": "Feature implementation is explicitly outside session orientation or closure."
+  },
+  {
+    "id": "session-negative-2",
+    "target": "session-start-and-close",
+    "expected": false,
+    "prompt": "Help me plan a weekend of household chores. Group cleaning, laundry, and grocery shopping into a sensible order and estimate the time for each.",
+    "rationale": "Generic planning without repository session context is excluded."
+  },
+  {
+    "id": "handoff-positive-1",
+    "target": "local-test-handoff",
+    "expected": true,
+    "prompt": "The web checkout feature is finished on the current feature branch. Prepare it so I can test from my phone and tablet on the same Wi-Fi, check local network reachability, and give me a device testing checklist.",
+    "rationale": "Completed web feature requires owner testing on local devices with LAN access and a checklist."
+  },
+  {
+    "id": "handoff-positive-2",
+    "target": "local-test-handoff",
+    "expected": true,
+    "prompt": "Get the completed web dashboard running from this feature branch for my laptop and phone to try locally. Confirm that another device on my home network can reach it and leave clear steps for checking the new behavior.",
+    "rationale": "Requests branch-local web feature preparation and local-device owner testing."
+  },
+  {
+    "id": "handoff-negative-1",
+    "target": "local-test-handoff",
+    "expected": false,
+    "prompt": "Deploy the completed web dashboard to our staging environment and verify the hosted staging URL. Local device testing is already complete.",
+    "rationale": "Staging deployment is explicitly outside local testing handoff."
+  },
+  {
+    "id": "handoff-negative-2",
+    "target": "local-test-handoff",
+    "expected": false,
+    "prompt": "Write and execute regression tests proving that the checkout endpoint rejects an expired coupon. Only change test code; I do not need a running app or device instructions.",
+    "rationale": "A test-code-only regression task is explicitly excluded."
+  },
+  {
+    "id": "prose-positive-1",
+    "target": "prose-edit",
+    "expected": true,
+    "prompt": "Tighten this README introduction while keeping its friendly voice: 'We made this little tool because we kept finding ourselves doing the same thing over and over again, and we thought perhaps other people might find it useful too.'",
+    "rationale": "Supplies existing README prose and requests a shorter revision preserving voice."
+  },
+  {
+    "id": "prose-positive-2",
+    "target": "prose-edit",
+    "expected": true,
+    "prompt": "Make this talk opening clearer and less wordy without losing my dry humor: 'Today I am going to talk about a process that we all agreed was simple, right up until the moment when any of us actually had to use it.'",
+    "rationale": "Requests editing of supplied talk prose while preserving authorial style."
+  },
+  {
+    "id": "prose-negative-1",
+    "target": "prose-edit",
+    "expected": false,
+    "prompt": "Write an original welcome speech for a neighborhood gardening club. I have no draft or source text; invent the structure and wording from scratch.",
+    "rationale": "New writing without existing source prose is explicitly excluded."
+  },
+  {
+    "id": "prose-negative-2",
+    "target": "prose-edit",
+    "expected": false,
+    "prompt": "Change the form validation code so an empty display name produces an inline error. Keep every user-facing string and all documentation exactly as they are.",
+    "rationale": "Requests a code behavior change with no prose editing."
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "handoff-positive-1",
+    "selected": [
+      "local-test-handoff"
+    ],
+    "reason": "Completed web feature on its feature branch needs LAN reachability and local phone/tablet testing instructions."
+  },
+  {
+    "id": "session-positive-2",
+    "selected": [
+      "session-start-and-close"
+    ],
+    "reason": "Closing repository work requires durable task, blocker, Git-state, and resume handoff; the tracker is not identified as Beads."
+  },
+  {
+    "id": "session-positive-1",
+    "selected": [
+      "session-start-and-close"
+    ],
+    "reason": "Resuming interrupted repository work requires orientation from durable task records and Git state before edits."
+  },
+  {
+    "id": "session-negative-2",
+    "selected": [],
+    "reason": "Household chore planning does not match any repository or artifact workflow described."
+  },
+  {
+    "id": "review-positive-1",
+    "selected": [
+      "review-findings-triage"
+    ],
+    "reason": "Existing automated PR findings need disposition, fixes, approval-aware dismissals, and review-gate verification."
+  },
+  {
+    "id": "review-negative-1",
+    "selected": [
+      "spec-review"
+    ],
+    "reason": "Read-only patch acceptance review against criteria and component rules directly matches spec review; no findings exist to triage."
+  },
+  {
+    "id": "handoff-negative-1",
+    "selected": [],
+    "reason": "Hosted staging deployment is explicitly outside local-test-handoff and no other description covers deployment."
+  },
+  {
+    "id": "session-negative-1",
+    "selected": [],
+    "reason": "Implementing an already specified UI feature is outside the interview, orientation, and read-only review workflows."
+  },
+  {
+    "id": "handoff-positive-2",
+    "selected": [
+      "local-test-handoff"
+    ],
+    "reason": "Completed web dashboard needs execution on its current feature branch, LAN access confirmation, and local device checks."
+  },
+  {
+    "id": "review-positive-2",
+    "selected": [
+      "review-findings-triage"
+    ],
+    "reason": "Existing adversarial PR findings need investigation, real-defect fixes, possible upstream tool-bug documentation, and gate verification."
+  },
+  {
+    "id": "review-negative-2",
+    "selected": [],
+    "reason": "A conceptual review-gate explanation requires no repository inspection or finding triage."
+  },
+  {
+    "id": "prose-positive-1",
+    "selected": [
+      "prose-edit"
+    ],
+    "reason": "Existing README prose needs tightening while preserving its friendly author voice."
+  },
+  {
+    "id": "prose-positive-2",
+    "selected": [
+      "prose-edit"
+    ],
+    "reason": "Existing talk prose needs clarity and concision while retaining dry humor."
+  },
+  {
+    "id": "handoff-negative-2",
+    "selected": [
+      "regression-testing"
+    ],
+    "reason": "Explicitly requests writing and executing regression tests for an endpoint rejection, with test-code-only scope."
+  },
+  {
+    "id": "prose-negative-2",
+    "selected": [],
+    "reason": "Routine validation-code implementation with unchanged prose does not match prose editing or another described workflow."
+  },
+  {
+    "id": "prose-negative-1",
+    "selected": [],
+    "reason": "Original speech creation without source text is explicitly outside prose-edit."
+  }
+]

@@ -109,6 +109,9 @@ def main():
         run = subprocess.run([sys.executable, verify.name], cwd=review_work, capture_output=True, text=True)
         assert run.returncode == 1 and 'AssertionError' in run.stderr, run.stdout + run.stderr
         print('Current review reproduction: expected unauthorized-state assertion failure, exit 1')
+    if (ROOT / 'evaluations/history-skills/manifest.json').is_file():
+        history = runpy.run_path(str(ROOT / 'scripts/replay_history_evaluations.py'))
+        history['replay'](ROOT)
     print('PASS: evidence replay complete; intentional fixture failures are expected')
     return 0
 

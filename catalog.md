@@ -11,6 +11,10 @@ Use this catalog to select a workflow; read the selected skill's `SKILL.md` befo
 | [beads-workflow](skills/beads-workflow/SKILL.md) | Durable task/blocker/legacy-ID/handoff work in Beads | Existing bd project, issue, repo policy | Native IDs, accurate state and next steps | Ephemeral lists or another tracker |
 | [spec-review](skills/spec-review/SKILL.md) | Read-only patch/spec review | Diff, requirements, project rules, tests | Evidence-ranked findings and verdict | Implementation-only request |
 | [regression-testing](skills/regression-testing/SKILL.md) | Regression tests and behavior verification | Spec, implementation, tooling, prerequisites | Executed tests, exact results, failure handoff | Prose edits or read-only-review-only request |
+| [review-findings-triage](skills/review-findings-triage/SKILL.md) | Existing automated/adversarial findings need dispositions | Current artifact, project gate policy, evidence and owner decisions | Full table, tracked fix/dismiss/tool-bug state, report/gate evidence | Raw patch review, conceptual explanation, gate bypass or automatic merge |
+| [session-start-and-close](skills/session-start-and-close/SKILL.md) | Orient, resume, explain session state, or close with durable handoff | Checkout, project instructions, Git/PR/tracker state | Brief state/next action or durable next-developer handoff | Feature implementation, generic planning, new tracker adoption |
+| [local-test-handoff](skills/local-test-handoff/SKILL.md) | Completed web feature needs owner testing locally | Feature revision, project runtime, dev account and devices | Verified local URL/revision, preserved dev data, pass/fail checklist | Staging/production deployment, native distribution, test-code-only task |
+| [prose-edit](skills/prose-edit/SKILL.md) | Tighten existing prose in the author’s voice | Source text, facts, audience and requested tone | Edited text; commits only when requested | Code changes, new factual research, original writing without source text |
 
 ## Compose only when useful
 
@@ -21,6 +25,14 @@ Carry forward artifact paths, draft/accepted status, user constraints, decisions
 ## Implementation handoffs
 
 Use beads-workflow for shared Beads state when the target already uses it; it does not adopt a tracker. Use git-workflow for repository operations. Pass requirements and changed files to regression-testing, then spec-review with the test results. These are task workflows, not a requirement to spawn agents. Keep tracker completion aligned with the target's actual gate (which may include merge).
+
+## Session, triage, device, and editing handoffs
+
+Start/resume orientation reads current project policy and tracker/Git state without silently claiming work or changing branches. Close records durable follow-ups and actual validation, with commits and sync governed by current authority. No tracker adoption or personal configuration is implied.
+
+spec-review diagnoses a patch; review-findings-triage handles findings already produced by a tool. Give triage the artifact/revision and owner decisions, then keep proposed, applied, and verified dispositions distinct. A tool bug draft alone does not resolve a finding. Regenerate the report after authorized changes, and do not merge past unresolved findings.
+
+local-test-handoff preserves the feature branch and dev data, verifies readiness and actual device access when possible, and gives the owner a short checklist. Ports, service names, account setup, and networking remain project overlays. prose-edit uses the author-stated editing rules and works separately from these development workflows.
 
 ## Opinionated verification defaults
 

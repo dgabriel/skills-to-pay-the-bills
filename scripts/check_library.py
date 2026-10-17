@@ -28,6 +28,19 @@ def check(root=ROOT):
         required_files = ['PROVENANCE.md', 'LICENSE', 'agents/openai.yaml']
         if portable:
             required_files += ['references/procedure.md', 'references/execution-contract.md']
+        pattern_skills = {'review-findings-triage', 'session-start-and-close', 'local-test-handoff', 'prose-edit'}
+        if skill.name in pattern_skills:
+            provenance = skill / 'PROVENANCE.md'
+            if not provenance.is_file() or '## Pattern evidence' not in provenance.read_text():
+                errors.append(f'{skill.name}: missing pattern evidence')
+            description = next((line.removeprefix('description: ') for line in text.splitlines()
+                                if line.startswith('description: ')), '')
+            if 'not ' not in description.lower():
+                errors.append(f'{skill.name}: missing selection exclusion')
+        if skill.name == 'prose-edit':
+            for resource in skill.rglob('*'):
+                if resource.is_file() and chr(0x2014) in resource.read_text():
+                    errors.append(f'{skill.name}: em dash in package')
         for required in required_files:
             if not (skill / required).is_file():
                 errors.append(f'{skill.name}: missing {required}')

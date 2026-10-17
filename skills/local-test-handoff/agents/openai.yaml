@@ -1,0 +1,4 @@
+interface:
+  display_name: "Local Test Handoff"
+  short_description: "Prepare branch-local testing on the owner\u2019s devices"
+  default_prompt: "Use $local-test-handoff for this task: Use local-test-handoff to make this feature testable from a phone before merge."

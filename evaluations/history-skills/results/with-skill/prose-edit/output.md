@@ -1,0 +1,1 @@
+Meet BorrowBox, a tool-sharing platform for neighbors to share what they already own. List a tool, request dates, and record its return so everyone can keep track. The pilot starts Monday for one building and 30 residents. There are no payments, and all accounts are invite-only. We’d love for you to try it.

@@ -1,0 +1,114 @@
+{
+  "skills": [
+    {
+      "name": "beads-workflow",
+      "description": "Use Beads (bd) for durable tasks, blockers, legacy issue lookup, claiming, completion, and session handoff in a repository that already uses Beads. Not for ephemeral checklists or adopting a new tracker."
+    },
+    {
+      "name": "design-system-workshop",
+      "description": "Create or deliberately revise a visual system from mood and product context, with semantic tokens and component rules; integrate agreed tokens when requested. Not routine screen work within an established system."
+    },
+    {
+      "name": "git-workflow",
+      "description": "Discover and apply a repository\u2019s Git policy when starting or syncing branches, preparing commits or PRs, resolving conflicts, or recovering missing work. Not for ordinary file edits without Git operations."
+    },
+    {
+      "name": "local-test-handoff",
+      "description": "Prepare a completed web feature on its current feature branch for owner testing on local devices, including LAN reachability and a device checklist. Not staging/production deployment, native app distribution, or a test-code-only task."
+    },
+    {
+      "name": "product-requirements-interview",
+      "description": "Define or revise a PRD, users, core journey, MVP scope, and success signals through an interview or immediate drafting from a supplied brief. Not for implementing an already specified feature."
+    },
+    {
+      "name": "prose-edit",
+      "description": "Edit or tighten existing prose in the author\u2019s voice for READMEs, sites, talks, or descriptions, with a shorter and clearer default. Not code changes, new fact research, or writing a new piece without source text."
+    },
+    {
+      "name": "regression-testing",
+      "description": "Write and execute regression tests for a changed behavior, bug, endpoint, or threshold, using specification-derived expectations and reproducible failures. Not prose edits, general testing theory, or a read-only review without test execution."
+    },
+    {
+      "name": "review-findings-triage",
+      "description": "Triage existing automated or adversarial PR findings into fix, approved dismissal, or upstream tool bug, then verify the review gate. Use Flaught by default; not raw patch review, disabling a gate, or automatic merging."
+    },
+    {
+      "name": "session-start-and-close",
+      "description": "Orient or resume repository work after an interruption, give a concise where-we-are status, or close a session with durable task and Git handoff. Use Beads when present; not feature implementation, generic planning, or adopting a tracker."
+    },
+    {
+      "name": "spec-review",
+      "description": "Review a patch against its issue/specification and documented design rules, reporting evidence-ranked deviations without fixes by default. Use for read-only acceptance reviews, not implementation or free-form visual critique."
+    },
+    {
+      "name": "technical-design-interview",
+      "description": "Derive or revise system architecture and a technical design from a PRD or concrete requirements, proposing data, access, API, and operational decisions. Not routine debugging or implementing a settled design."
+    }
+  ],
+  "requests": [
+    {
+      "id": "handoff-positive-1",
+      "prompt": "The web checkout feature is finished on the current feature branch. Prepare it so I can test from my phone and tablet on the same Wi-Fi, check local network reachability, and give me a device testing checklist."
+    },
+    {
+      "id": "session-positive-2",
+      "prompt": "We are stopping work for today. Record the unfinished tasks and blockers in the tracker this repository already uses, and leave a durable handoff explaining the Git state and how to resume."
+    },
+    {
+      "id": "session-positive-1",
+      "prompt": "I am returning to this repository after an interruption. Inspect the durable task records and current Git state, then give me a concise account of where work stands and the next unfinished step before making changes."
+    },
+    {
+      "id": "session-negative-2",
+      "prompt": "Help me plan a weekend of household chores. Group cleaning, laundry, and grocery shopping into a sensible order and estimate the time for each."
+    },
+    {
+      "id": "review-positive-1",
+      "prompt": "The automated reviewer left six findings on this pull request. Work through each one, fix the valid defects, explain any dismissal that needs my approval, and check that the review gate passes afterward."
+    },
+    {
+      "id": "review-negative-1",
+      "prompt": "Read this patch against the attached acceptance criteria and documented component rules. Report deviations with supporting evidence, and leave the files untouched. There are no existing reviewer findings to process."
+    },
+    {
+      "id": "handoff-negative-1",
+      "prompt": "Deploy the completed web dashboard to our staging environment and verify the hosted staging URL. Local device testing is already complete."
+    },
+    {
+      "id": "session-negative-1",
+      "prompt": "Implement the already specified password visibility toggle on the sign-in form. The acceptance criteria and component design are attached; begin coding the feature."
+    },
+    {
+      "id": "handoff-positive-2",
+      "prompt": "Get the completed web dashboard running from this feature branch for my laptop and phone to try locally. Confirm that another device on my home network can reach it and leave clear steps for checking the new behavior."
+    },
+    {
+      "id": "review-positive-2",
+      "prompt": "An adversarial review has already flagged two issues on this PR. One appears to be a defect in the review tool itself. Investigate both, address genuine problems, document the tool bug if confirmed, and verify the gate status."
+    },
+    {
+      "id": "review-negative-2",
+      "prompt": "Explain what a required pull-request review gate is and why a team might use one. I only want a conceptual explanation; do not inspect or change a repository."
+    },
+    {
+      "id": "prose-positive-1",
+      "prompt": "Tighten this README introduction while keeping its friendly voice: 'We made this little tool because we kept finding ourselves doing the same thing over and over again, and we thought perhaps other people might find it useful too.'"
+    },
+    {
+      "id": "prose-positive-2",
+      "prompt": "Make this talk opening clearer and less wordy without losing my dry humor: 'Today I am going to talk about a process that we all agreed was simple, right up until the moment when any of us actually had to use it.'"
+    },
+    {
+      "id": "handoff-negative-2",
+      "prompt": "Write and execute regression tests proving that the checkout endpoint rejects an expired coupon. Only change test code; I do not need a running app or device instructions."
+    },
+    {
+      "id": "prose-negative-2",
+      "prompt": "Change the form validation code so an empty display name produces an inline error. Keep every user-facing string and all documentation exactly as they are."
+    },
+    {
+      "id": "prose-negative-1",
+      "prompt": "Write an original welcome speech for a neighborhood gardening club. I have no draft or source text; invent the structure and wording from scratch."
+    }
+  ]
+}

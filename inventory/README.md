@@ -70,7 +70,7 @@ Repeated host copies are recorded separately so they remain visible rather than 
 
 ## Extraction progress
 
-The source decisions above have been reviewed. See [the extraction ledger](extractions.md) for completed merges and deferred sources. Four repeated workflows now join the three revised pilots; their final identifiers are git-workflow, beads-workflow, spec-review, and regression-testing. Each package has a concise entry point, detailed procedure, overridable defaults, source-specific provenance, and a packaged reference to the shared execution contract. Evaluation evidence is linked from the root validation report.
+The source decisions above have been reviewed. See [the extraction ledger](extractions.md) for completed merges and deferred sources. The initial four repeated workflows joined three revised pilots. Four additional history-derived packages now bring the library to eleven; their eligible sources and reviewer-paraphrase basis are recorded in the extraction ledger. Each package has a concise entry point, detailed procedure, overridable defaults, source-specific provenance, and a packaged reference to the shared execution contract. Evaluation evidence is linked from the root validation report.
 
 ## Inventory handling
 

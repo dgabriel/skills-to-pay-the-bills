@@ -1,0 +1,61 @@
+{
+  "note": "Frozen after all four procedures and descriptions were written, before fresh case authorship.",
+  "skills": [
+    {
+      "name": "beads-workflow",
+      "description": "Use Beads (bd) for durable tasks, blockers, legacy issue lookup, claiming, completion, and session handoff in a repository that already uses Beads. Not for ephemeral checklists or adopting a new tracker."
+    },
+    {
+      "name": "design-system-workshop",
+      "description": "Create or deliberately revise a visual system from mood and product context, with semantic tokens and component rules; integrate agreed tokens when requested. Not routine screen work within an established system."
+    },
+    {
+      "name": "git-workflow",
+      "description": "Discover and apply a repository\u2019s Git policy when starting or syncing branches, preparing commits or PRs, resolving conflicts, or recovering missing work. Not for ordinary file edits without Git operations."
+    },
+    {
+      "name": "local-test-handoff",
+      "description": "Prepare a completed web feature on its current feature branch for owner testing on local devices, including LAN reachability and a device checklist. Not staging/production deployment, native app distribution, or a test-code-only task."
+    },
+    {
+      "name": "product-requirements-interview",
+      "description": "Define or revise a PRD, users, core journey, MVP scope, and success signals through an interview or immediate drafting from a supplied brief. Not for implementing an already specified feature."
+    },
+    {
+      "name": "prose-edit",
+      "description": "Edit or tighten existing prose in the author\u2019s voice for READMEs, sites, talks, or descriptions, with a shorter and clearer default. Not code changes, new fact research, or writing a new piece without source text."
+    },
+    {
+      "name": "regression-testing",
+      "description": "Write and execute regression tests for a changed behavior, bug, endpoint, or threshold, using specification-derived expectations and reproducible failures. Not prose edits, general testing theory, or a read-only review without test execution."
+    },
+    {
+      "name": "review-findings-triage",
+      "description": "Triage existing automated or adversarial PR findings into fix, approved dismissal, or upstream tool bug, then verify the review gate. Use Flaught by default; not raw patch review, disabling a gate, or automatic merging."
+    },
+    {
+      "name": "session-start-and-close",
+      "description": "Orient or resume repository work after an interruption, give a concise where-we-are status, or close a session with durable task and Git handoff. Use Beads when present; not feature implementation, generic planning, or adopting a tracker."
+    },
+    {
+      "name": "spec-review",
+      "description": "Review a patch against its issue/specification and documented design rules, reporting evidence-ranked deviations without fixes by default. Use for read-only acceptance reviews, not implementation or free-form visual critique."
+    },
+    {
+      "name": "technical-design-interview",
+      "description": "Derive or revise system architecture and a technical design from a PRD or concrete requirements, proposing data, access, API, and operational decisions. Not routine debugging or implementing a settled design."
+    }
+  ],
+  "targets": [
+    "review-findings-triage",
+    "session-start-and-close",
+    "local-test-handoff",
+    "prose-edit"
+  ],
+  "entry_sha256": {
+    "review-findings-triage": "39c4b2e339b21b545d87ffa3111518ec673cd4f23ad549af7b23d48a767235f2",
+    "session-start-and-close": "d4b32026cd8dd6c5f3a3bfa96d691ed7d6122709b1d93a4d4176b4a21b1e9f87",
+    "local-test-handoff": "05e7d77dc44a6beaa0bbe3f349db2c88b7f3f2e8fdc2a3a2383573bd8c431811",
+    "prose-edit": "98e4c28b959315f6d5b55f61bdab16f9cb1b3aa2a9fd963f158736b17ca87796"
+  }
+}

@@ -17,8 +17,12 @@ Opinionated, reusable workflows for planning, implementing, and checking softwar
 | [Beads workflow](skills/beads-workflow/SKILL.md) | Durable Beads work, blockers, legacy IDs, handoffs | Accurate native issue state or command plan |
 | [Spec review](skills/spec-review/SKILL.md) | Read-only review against requirements and project rules | Findings with evidence, severity, and location |
 | [Regression testing](skills/regression-testing/SKILL.md) | Behavior-focused regression tests and verification | Executed tests and reproducible failure reports |
+| [Review findings triage](skills/review-findings-triage/SKILL.md) | Resolving existing automated/adversarial findings | Owner decision table, tracked dispositions, verified gate/report or explicit blockers |
+| [Session start and close](skills/session-start-and-close/SKILL.md) | Orientation, interrupted-work recovery, and durable handoffs | Brief state/next-step report and tracker-backed follow-ups |
+| [Local test handoff](skills/local-test-handoff/SKILL.md) | Making feature-branch web work testable on local devices | Verified running revision, device URL, dev access, pass/fail checklist |
+| [Prose edit](skills/prose-edit/SKILL.md) | Tightening existing copy in the author’s voice | Edited text with facts preserved |
 
-The library now includes seven skills; [rename notes](RENAMES.md) record identifier changes. The [source review](inventory/README.md) and [extraction ledger](inventory/extractions.md) explain which repeated procedures were extracted and what stays project-specific. Discovery material is not an instruction set to load into an agent.
+The library now includes eleven skills; [rename notes](RENAMES.md) record identifier changes. The [source review](inventory/README.md) and [extraction ledger](inventory/extractions.md) explain which repeated procedures were extracted and what stays project-specific. Discovery material is not an instruction set to load into an agent.
 
 ## Get It Together: use the whole workflow
 
@@ -35,7 +39,7 @@ as context for the next. Ask focused questions about unresolved decisions.
 Save drafts in my project's docs directory. Do not implement the app yet.
 ```
 
-For implementation work, use beads-workflow when the project uses Beads, git-workflow for branch/policy preparation, then regression-testing and spec-review for verification. There is no mandatory multi-agent pipeline. Handoffs carry artifact/native issue IDs, decisions, checks, and unresolved work.
+For implementation work, use session-start-and-close to orient or resume when needed, beads-workflow when the project uses Beads, git-workflow for branch/policy preparation, then regression-testing and spec-review for verification. Use review-findings-triage for findings already produced by a review tool, and local-test-handoff for the owner’s pre-merge device checks. Close with a durable handoff. prose-edit is independent of that development flow. There is no mandatory multi-agent pipeline. Handoffs carry artifact/native issue IDs, decisions, checks, and unresolved work.
 
 Defaults are deliberate: greenfield architecture starts with FastAPI/Postgres and React/TypeScript; product scope starts small; visual design starts with a restrained palette/type pair and capped emphasis. Existing project choices and explicit overrides win. Say “keep Django” or “use our existing brand” and the skills adapt. Details live in each skill’s `references/procedure.md`.
 
@@ -99,10 +103,30 @@ Start at [catalog.md](catalog.md) for task routing and handoffs. Load only the s
 
 ## Check Your Head: quality and sources
 
-These workflows were adapted from repeated instructions in the public template and MysteryMixClub repositories. Each skill includes exact source provenance and the MIT notice so that it stays attributable when copied individually. Project-specific branches, deployment assumptions, and automatic cleanup actions have been removed.
+The original workflows were adapted from repeated public project instructions. The four history-derived workflows use reviewer-supplied paraphrases and author-stated rules, with eligible public sources checked for visibility and license before use. No session transcripts were searched or read. Each skill includes exact source provenance and the MIT notice so that it stays attributable when copied individually. Project-specific branches, deployment assumptions, and automatic cleanup actions have been removed.
 
-Selection now includes the unchanged 35-case rerun and 28 fresh cases authored after descriptions were frozen. Paired runs distinguish changed defaults/reporting from unchanged defect conclusions. The spec review default is diagnosis without unsolicited fixes; regression testing requires API contract coverage and trusted external oracles where applicable. See [validation.md](validation.md) for coverage and limitations. To propose a change, include the request that exposed the problem, the expected behavior, and a focused improvement. Keep each skill useful on its own and avoid turning one project's conventions into defaults for everyone.
+Selection includes the unchanged 35-case rerun and earlier 28 fresh cases, plus a separate 16-case fresh evaluation for the four history-derived workflows. Cases were authored after their descriptions were frozen. Paired runs distinguish changed defaults/reporting from unchanged defect conclusions. The spec review default is diagnosis without unsolicited fixes; regression testing requires API contract coverage and trusted external oracles where applicable. See [validation.md](validation.md) for coverage and limitations. To propose a change, include the request that exposed the problem, the expected behavior, and a focused improvement. Keep each skill useful on its own and avoid turning one project's conventions into defaults for everyone.
 
 Licensed under [MIT](LICENSE). Now put those skills to work.
 
 Maintainers: edit the execution boundary once in `shared/execution-contract.md`, then run `python3 scripts/sync_contract.py`. Generated copies keep standalone installs self-contained; `python3 scripts/check_library.py` checks drift, links, metadata, and privacy hygiene. See [evaluation cases](evaluations/cases.json) and [validation results](validation.md).
+
+The four new skills can be requested directly, using your host’s invocation syntax:
+
+```text
+Use $review-findings-triage to explain every current review finding and propose actions first.
+Use $session-start-and-close to reconstruct interrupted work and show the next ready task.
+Use $local-test-handoff to prepare this feature branch for phone testing before merge.
+Use $prose-edit to tighten this existing launch note and make it friendlier.
+```
+
+The source and pattern boundaries are in each package’s provenance. The paired triage/prose runs showed no clear overall quality improvement; the [validation report](validation.md) distinguishes consistent procedure/reporting from improved results.
+
+Maintenance helpers:
+
+| Script | What it does |
+| --- | --- |
+| `scripts/check_library.py` | Checks package structure, metadata, links, contract copies, stale names, pattern provenance, and the prose package’s no-em-dash rule. |
+| `scripts/replay_evaluations.py` | Runs deterministic checks against saved evidence and small executable fixtures, including the history helper below. It does not rerun agents. |
+| `scripts/replay_history_evaluations.py` | Checks the four new frozen entries, fresh routing records, paired output integrity, and fixture facts. It does not run review tools, dashboards, or device tests. |
+| `scripts/sync_contract.py` | Updates packaged contract copies from the shared source; `--check` detects drift without writing. |
