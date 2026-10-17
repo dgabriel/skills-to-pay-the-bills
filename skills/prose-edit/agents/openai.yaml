@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prose Edit"
+  short_description: "Tighten existing prose in the author\u2019s voice"
+  default_prompt: "Use $prose-edit for this task: Use prose-edit to make this paragraph tighter and warmer without changing its meaning."
