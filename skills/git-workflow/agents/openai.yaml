@@ -1,0 +1,4 @@
+interface:
+  display_name: "Git Workflow"
+  short_description: "Apply the target repository\u2019s Git policy safely"
+  default_prompt: "Use $git-workflow to bring my published feature branch current and prepare a PR plan."

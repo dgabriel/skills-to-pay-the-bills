@@ -1,0 +1,4 @@
+interface:
+  display_name: "Beads Workflow"
+  short_description: "Track durable Beads work and session handoffs"
+  default_prompt: "Use $beads-workflow to find ready work and prepare a handoff for this Beads project."
