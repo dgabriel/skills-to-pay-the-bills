@@ -4,7 +4,7 @@ Collection of skills for Agentic dev I've built over time. Also a great beat fro
 
 [Listen to “Skills to Pay the Bills”](https://youtu.be/cJgCfP98TVQ?si=sL_yQVprLwIkaywQ).
 
-Reusable workflows for turning an idea into requirements, architecture, and a visual system. Built for humans to understand and coding agents to execute. Each skill works independently; together they form a lightweight product-planning workflow.
+Opinionated, reusable workflows for planning, implementing, and checking software. Built for humans to understand and coding agents to execute. Each skill works independently; combine only the stages your task needs.
 
 ## So What’cha Want? Pick a skill
 
@@ -13,8 +13,12 @@ Reusable workflows for turning an idea into requirements, architecture, and a vi
 | [Product requirements interview](skills/product-requirements-interview/SKILL.md) | Clarifying users, the core journey, and MVP scope | `docs/prd/prd.md` |
 | [Technical design interview](skills/technical-design-interview/SKILL.md) | Turning requirements into a practical architecture | `docs/technical/technical-design.md` |
 | [Design system workshop](skills/design-system-workshop/SKILL.md) | Defining visual tokens and component rules | `docs/design/style-guide.md`, plus UI integration when requested |
+| [Git workflow](skills/git-workflow/SKILL.md) | Branch setup/sync, commit/PR preparation, conflicts, recovery | Policy-grounded Git plan or authorized operation |
+| [Beads workflow](skills/beads-workflow/SKILL.md) | Durable Beads work, blockers, legacy IDs, handoffs | Accurate native issue state or command plan |
+| [Spec review](skills/spec-review/SKILL.md) | Read-only review against requirements and project rules | Findings with evidence, severity, and location |
+| [Regression testing](skills/regression-testing/SKILL.md) | Behavior-focused regression tests and verification | Executed tests and reproducible failure reports |
 
-These are the first three skills. Git workflows, adversarial review, and other candidates remain in the [discovery backlog](inventory/README.md). The inventory is research material, not an instruction set to load into an agent.
+The library now includes seven skills; [rename notes](RENAMES.md) record identifier changes. The [source review](inventory/README.md) and [extraction ledger](inventory/extractions.md) explain which repeated procedures were extracted and what stays project-specific. Discovery material is not an instruction set to load into an agent.
 
 ## Get It Together: use the whole workflow
 
@@ -31,7 +35,9 @@ as context for the next. Ask focused questions about unresolved decisions.
 Save drafts in my project's docs directory. Do not implement the app yet.
 ```
 
-The agent should read the selected `SKILL.md` before using it, preserve decisions between stages, and distinguish a draft from something you have accepted. Running all three does not authorize a build, release, or repository publication.
+For implementation work, use beads-workflow when the project uses Beads, git-workflow for branch/policy preparation, then regression-testing and spec-review for verification. There is no mandatory multi-agent pipeline. Handoffs carry artifact/native issue IDs, decisions, checks, and unresolved work.
+
+Defaults are deliberate: greenfield architecture starts with FastAPI/Postgres and React/TypeScript; product scope starts small; visual design starts with a restrained palette/type pair and capped emphasis. Existing project choices and explicit overrides win. Say “keep Django” or “use our existing brand” and the skills adapt. Details live in each skill’s `references/procedure.md`.
 
 ## Just a Test: try one without installing
 
@@ -43,31 +49,40 @@ and use it to interview me about a neighborhood tool-sharing app.
 Write the PRD in my project at /path/to/my-app/docs/prd/prd.md.
 ```
 
-No special slash command, account integration, or other skill is required. If the agent cannot read local files, provide the chosen `SKILL.md` as task context. You can also use it yourself as an interview checklist.
-
-Once a host has installed and exposed a skill, an explicit prompt can use its name:
-
-```text
-Use $product-requirements-interview to define my MVP.
-Use $technical-design-interview with docs/prd/prd.md; keep our existing stack.
-Use $design-system-workshop to create a guide; leave the UI code unchanged.
-```
-
-Run those as separate requests when you want one stage at a time. The `$skill-name` syntax depends on the host; the direct-file approach above is the portable fallback. Merely cloning this repository does not install or activate skills.
+No special command, account integration, or other skill is required. If local file access is unavailable, paste the chosen `SKILL.md` **and its linked execution contract and procedure** as task context. You can also follow the procedure yourself as a checklist.
 
 ## Intergalactic portability
 
-Copy the complete folder for each selected skill into your agent's configured skill directory, retaining its `SKILL.md`, metadata, provenance, and license. For a host that discovers project skills under `.agents/skills`, the destination would look like:
+Copy the **complete selected folder** from `skills/`, including `references/`, `PROVENANCE.md`, and `LICENSE`. The Markdown workflow is shared; invocation and discovery are host-specific.
 
-```text
-my-app/.agents/skills/product-requirements-interview/SKILL.md
-my-app/.agents/skills/technical-design-interview/SKILL.md
-my-app/.agents/skills/design-system-workshop/SKILL.md
+| Host | Project install | Personal install | Invoke after discovery |
+| --- | --- | --- | --- |
+| Codex | `.agents/skills/<name>/` | `~/.agents/skills/<name>/` | `Use $git-workflow to prepare this branch.` |
+| Claude Code | `.claude/skills/<name>/` | `~/.claude/skills/<name>/` | `/git-workflow prepare this branch` |
+
+For example, from this library checkout, copy one skill to **one** host location in your target project:
+
+```sh
+# Codex project installation
+mkdir -p /path/to/my-app/.agents/skills
+cp -R skills/git-workflow /path/to/my-app/.agents/skills/
+
+# Claude Code project installation
+mkdir -p /path/to/my-app/.claude/skills
+cp -R skills/git-workflow /path/to/my-app/.claude/skills/
 ```
 
-Use your host's documented discovery location; there is no universal installation directory. Reload skill discovery if your host requires it. Avoid installing duplicate copies of a skill at different scopes. To update a copied skill, replace it deliberately from this repo after checking any local customizations.
+These examples assume no existing destination skill. Check before copying; updates should deliberately replace a copy after reviewing local changes. For personal installation, use the personal root in the table. Avoid duplicate scopes with the same skill name. If the new skill is absent, refresh discovery or restart the host. Codex CLI/IDE also provides `/skills` and a `$` picker; Claude Code exposes `/name`. See [official Codex skill documentation](https://learn.chatgpt.com/docs/build-skills) and [Claude Code skill documentation](https://code.claude.com/docs/en/skills) (checked 2026-10-17).
 
-Every skill includes an example prompt, input expectations, output location, workflow, and completion checks. `agents/openai.yaml` supplies optional display metadata for compatible hosts; the Markdown workflow remains usable without it. No runtime packages or external services are required by these skills. File editing, contrast calculations, and UI previews depend on tools available in the host.
+```text
+# Codex
+Use $technical-design-interview with docs/prd/prd.md; keep our existing stack.
+
+# Claude Code
+/technical-design-interview use docs/prd/prd.md; keep our existing stack.
+```
+
+Cloning this repo alone does not install skills. `agents/openai.yaml` is optional Codex UI metadata, not a requirement for the workflow; Claude Code uses the same `SKILL.md` and references. Both hosts can select relevant skills automatically from descriptions. The direct-file/copy-paste method above remains the fallback. No package installation is needed for the skill text; tools such as `bd`, Git, a test runner, and UI previews depend on the chosen workflow and target environment.
 
 ## For bots: read selectively
 
@@ -77,14 +92,17 @@ Start at [catalog.md](catalog.md) for task routing and handoffs. Load only the s
 - Read existing requirements, design decisions, and project instructions before interviewing the user.
 - Treat examples and default paths as adaptable; preserve the user's chosen scope, stack, and format.
 - Ask about unresolved decisions, preserve partial drafts, and make assumptions explicit.
-- Report the artifacts produced and what remains unverified. A skill invocation does not grant permission to commit, push, deploy, or publish.
+- Read the [shared execution contract](shared/execution-contract.md). Its generated reference copy travels inside each independently installed skill.
+- Report artifacts, checks actually run, and what remains unverified.
 
 [AGENTS.md](AGENTS.md) governs maintaining this library. It is not a policy file to copy into consuming projects.
 
 ## Check Your Head: quality and sources
 
-These workflows were adapted from the public `dgabriel/claude-code-project-template` repository. Each skill includes exact source provenance and the MIT notice so that it stays attributable when copied individually. Project-specific branches, deployment assumptions, and automatic cleanup actions have been removed.
+These workflows were adapted from repeated instructions in the public template and MysteryMixClub repositories. Each skill includes exact source provenance and the MIT notice so that it stays attributable when copied individually. Project-specific branches, deployment assumptions, and automatic cleanup actions have been removed.
 
-The first release has structural validation and scenario-based review; real-world effectiveness will improve through use. See [validation.md](validation.md) for coverage and limitations. To propose a change, include the request that exposed the problem, the expected behavior, and a focused improvement. Keep each skill useful on its own and avoid turning one project's conventions into defaults for everyone.
+Selection now includes the unchanged 35-case rerun and 28 fresh cases authored after descriptions were frozen. Paired runs distinguish changed defaults/reporting from unchanged defect conclusions. The spec review default is diagnosis without unsolicited fixes; regression testing requires API contract coverage and trusted external oracles where applicable. See [validation.md](validation.md) for coverage and limitations. To propose a change, include the request that exposed the problem, the expected behavior, and a focused improvement. Keep each skill useful on its own and avoid turning one project's conventions into defaults for everyone.
 
 Licensed under [MIT](LICENSE). Now put those skills to work.
+
+Maintainers: edit the execution boundary once in `shared/execution-contract.md`, then run `python3 scripts/sync_contract.py`. Generated copies keep standalone installs self-contained; `python3 scripts/check_library.py` checks drift, links, metadata, and privacy hygiene. See [evaluation cases](evaluations/cases.json) and [validation results](validation.md).

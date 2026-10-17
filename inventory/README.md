@@ -62,15 +62,15 @@ These describe source decisions. The extraction ledger can separately use **conv
 ## Repetition and recommended next skills
 
 1. **git-workflow** — compare all three Git hygiene documents plus the existing Git router. Discover the target repository’s policy; preserve its mainline or staging model.
-2. **beads / issue-workflow** — consolidate the three byte-identical public Beads entry points. Split the richer project issue procedure into reusable tracking and project overlays. Do not import outdated branch instructions from issue guidance over canonical Git policy.
-3. **code-review** — merge repeated reviewer procedures; preserve concrete evidence, spec compliance, and domain-specific checklists as references.
-4. **testing** — merge repeated tester procedures, including independent expected values and exact failure reports; discover actual commands and shared-resource constraints.
+2. **beads-workflow** — consolidate the three byte-identical public Beads entry points. Split the richer project issue procedure into reusable tracking and project overlays. Do not import outdated branch instructions from issue guidance over canonical Git policy.
+3. **spec-review** — merge repeated reviewer procedures; preserve concrete evidence, spec compliance, and domain-specific checklists as references.
+4. **regression-testing** — merge repeated tester procedures, including independent expected values and exact failure reports; discover actual commands and shared-resource constraints.
 
 Repeated host copies are recorded separately so they remain visible rather than inflated into distinct capabilities. Matching procedures across different projects are stronger evidence than a duplicated host installation alone.
 
-## Existing pilot and corrections still pending
+## Extraction progress
 
-The three current pilot skills derive from the public template repository’s interview documents, which are outside this narrowed candidate table. The design workshop did not incorporate the project design skill; its appearance in the previous candidate proposal was not provenance. Per-skill provenance, concise entry points with detailed references, explicit overridable defaults, dual-host usage, and behavioral evaluations remain scheduled after review of this table.
+The source decisions above have been reviewed. See [the extraction ledger](extractions.md) for completed merges and deferred sources. Four repeated workflows now join the three revised pilots; their final identifiers are git-workflow, beads-workflow, spec-review, and regression-testing. Each package has a concise entry point, detailed procedure, overridable defaults, source-specific provenance, and a packaged reference to the shared execution contract. Evaluation evidence is linked from the root validation report.
 
 ## Inventory handling
 
