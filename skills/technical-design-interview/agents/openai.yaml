@@ -1,0 +1,4 @@
+interface:
+  display_name: "Technical Design Interview"
+  short_description: "Derive a practical architecture from requirements"
+  default_prompt: "Use $technical-design-interview to derive a technical design from my product requirements."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design System Workshop"
+  short_description: "Define reusable visual tokens and component rules"
+  default_prompt: "Use $design-system-workshop to turn my visual direction into a reusable style guide."

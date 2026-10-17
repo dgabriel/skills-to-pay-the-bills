@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Requirements Interview"
+  short_description: "Shape a focused MVP through a guided interview"
+  default_prompt: "Use $product-requirements-interview to define the users, core journey, and MVP requirements for my product."

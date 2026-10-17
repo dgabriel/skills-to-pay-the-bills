@@ -1,0 +1,4 @@
+# Local discovery artifacts are never distributable sources.
+/inventory/*private*
+/inventory/*local*
+/inventory/markdown-inventory.json
