@@ -1,0 +1,4 @@
+interface:
+  display_name: "Technical Design Interview"
+  short_description: "Design a practical FastAPI and Postgres MVP"
+  default_prompt: "Use $technical-design-interview to propose the smallest architecture that serves this PRD."

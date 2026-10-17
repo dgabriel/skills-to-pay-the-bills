@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design System Workshop"
+  short_description: "Turn visual direction into enforceable tokens"
+  default_prompt: "Use $design-system-workshop to define a warm visual system; produce a guide before changing UI code."

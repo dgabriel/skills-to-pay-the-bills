@@ -1,0 +1,221 @@
+[
+  {
+    "id": "route-10",
+    "selected": [],
+    "reason": "A specified CSS implementation is ordinary screen work, not visual-system definition or an explicit testing task."
+  },
+  {
+    "id": "route-13",
+    "selected": [
+      "design-system-workshop"
+    ],
+    "reason": "A visual guide for a new app defines its visual system."
+  },
+  {
+    "id": "route-06",
+    "selected": [
+      "technical-design-interview"
+    ],
+    "reason": "Designing MVP architecture directly matches technical design."
+  },
+  {
+    "id": "route-21",
+    "selected": [
+      "beads-workflow"
+    ],
+    "reason": "Ready work and blockers in Beads match durable issue operations."
+  },
+  {
+    "id": "route-32",
+    "selected": [
+      "regression-testing"
+    ],
+    "reason": "Testing endpoint happy, edge, and error behavior matches behavior-focused verification."
+  },
+  {
+    "id": "route-23",
+    "selected": [
+      "beads-workflow"
+    ],
+    "reason": "A Beads session handoff is an explicit trigger."
+  },
+  {
+    "id": "route-30",
+    "selected": [],
+    "reason": "Summarizing an interview does not request defining or revising requirements."
+  },
+  {
+    "id": "route-17",
+    "selected": [
+      "git-workflow"
+    ],
+    "reason": "Recovering missing commits is an explicit Git workflow trigger."
+  },
+  {
+    "id": "route-27",
+    "selected": [
+      "spec-review"
+    ],
+    "reason": "Checking an implementation against its issue and style guide matches read-only review."
+  },
+  {
+    "id": "route-25",
+    "selected": [],
+    "reason": "The issue skill excludes repositories without Beads and does not cover Jira."
+  },
+  {
+    "id": "route-15",
+    "selected": [],
+    "reason": "Routine SQL debugging or fixing is outside the documented triggers."
+  },
+  {
+    "id": "route-11",
+    "selected": [
+      "design-system-workshop"
+    ],
+    "reason": "Creating a design system from mood context is an explicit trigger."
+  },
+  {
+    "id": "route-12",
+    "selected": [
+      "design-system-workshop"
+    ],
+    "reason": "Deliberately revising tokens and component rules matches the visual-system scope."
+  },
+  {
+    "id": "route-28",
+    "selected": [
+      "spec-review"
+    ],
+    "reason": "A read-only pre-merge review directly matches patch review."
+  },
+  {
+    "id": "route-09",
+    "selected": [],
+    "reason": "Diagnosing an existing unit test failure is routine debugging, not a request to write or run feature regression tests."
+  },
+  {
+    "id": "route-20",
+    "selected": [],
+    "reason": "Ordinary text editing without Git operations is explicitly outside Git workflow."
+  },
+  {
+    "id": "route-31",
+    "selected": [
+      "regression-testing"
+    ],
+    "reason": "Writing and running regression tests is an explicit trigger."
+  },
+  {
+    "id": "route-07",
+    "selected": [
+      "technical-design-interview"
+    ],
+    "reason": "Data model and authentication decisions from a PRD match technical design."
+  },
+  {
+    "id": "route-26",
+    "selected": [
+      "spec-review"
+    ],
+    "reason": "Correctness and security review of a patch directly matches."
+  },
+  {
+    "id": "route-01",
+    "selected": [
+      "product-requirements-interview"
+    ],
+    "reason": "Interviewing about MVP scope directly matches product requirements discovery."
+  },
+  {
+    "id": "route-34",
+    "selected": [],
+    "reason": "A routine documentation heading edit matches none of the skills."
+  },
+  {
+    "id": "route-14",
+    "selected": [],
+    "reason": "Routine screen implementation within an established visual system is explicitly excluded."
+  },
+  {
+    "id": "route-19",
+    "selected": [],
+    "reason": "Explaining an audience does not request a requirements interview or requirements revision."
+  },
+  {
+    "id": "route-03",
+    "selected": [
+      "product-requirements-interview"
+    ],
+    "reason": "Immediate requirements drafting from a supplied product brief is explicitly supported."
+  },
+  {
+    "id": "route-33",
+    "selected": [
+      "regression-testing"
+    ],
+    "reason": "Feature verification and reproducible failure reporting match testing without requiring code fixes."
+  },
+  {
+    "id": "route-29",
+    "selected": [],
+    "reason": "Direct bug fixing is outside read-only code review and does not explicitly request regression testing."
+  },
+  {
+    "id": "route-22",
+    "selected": [
+      "beads-workflow"
+    ],
+    "reason": "Legacy issue lookup in an existing Beads project is an explicit trigger."
+  },
+  {
+    "id": "route-04",
+    "selected": [],
+    "reason": "A handler typo fix is ordinary editing without a matching specialized workflow."
+  },
+  {
+    "id": "route-24",
+    "selected": [],
+    "reason": "Ephemeral checklists are explicitly excluded from the Beads workflow."
+  },
+  {
+    "id": "route-05",
+    "selected": [],
+    "reason": "Implementing an already specified endpoint is excluded from requirements and technical design workflows."
+  },
+  {
+    "id": "route-35",
+    "selected": [
+      "spec-review"
+    ],
+    "reason": "Read-only code review matches; running tests is not required and testing excludes review-only requests."
+  },
+  {
+    "id": "route-16",
+    "selected": [
+      "git-workflow"
+    ],
+    "reason": "Preparing a branch for a PR under repository policy directly matches."
+  },
+  {
+    "id": "route-18",
+    "selected": [
+      "git-workflow"
+    ],
+    "reason": "Syncing a published branch with mainline is an explicit Git operation."
+  },
+  {
+    "id": "route-02",
+    "selected": [
+      "product-requirements-interview"
+    ],
+    "reason": "Revising a PRD and narrowing launch scope directly matches."
+  },
+  {
+    "id": "route-08",
+    "selected": [
+      "technical-design-interview"
+    ],
+    "reason": "Revising system architecture for offline requirements matches technical design."
+  }
+]

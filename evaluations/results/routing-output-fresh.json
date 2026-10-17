@@ -1,0 +1,176 @@
+[
+  {
+    "id": "product-requirements-interview-fresh-positive-2",
+    "selected": [
+      "product-requirements-interview"
+    ],
+    "reason": "Drafting users, journey, release scope, and success signals from a brief directly matches."
+  },
+  {
+    "id": "regression-testing-fresh-negative-2",
+    "selected": [],
+    "reason": "Conceptual testing education without test execution is explicitly outside the testing workflow."
+  },
+  {
+    "id": "spec-review-fresh-positive-1",
+    "selected": [
+      "spec-review"
+    ],
+    "reason": "The patch is reviewed against an issue and documented formatting rules with evidence and no edits."
+  },
+  {
+    "id": "technical-design-interview-fresh-negative-2",
+    "selected": [],
+    "reason": "Routine configuration debugging needs no architecture design."
+  },
+  {
+    "id": "spec-review-fresh-positive-2",
+    "selected": [
+      "spec-review"
+    ],
+    "reason": "Acceptance and access-control checks against an approved specification directly match."
+  },
+  {
+    "id": "technical-design-interview-fresh-negative-1",
+    "selected": [],
+    "reason": "Implementing settled architecture is explicitly outside technical design discovery."
+  },
+  {
+    "id": "git-workflow-fresh-negative-2",
+    "selected": [],
+    "reason": "Explaining data structures involves no Git or other described workflow."
+  },
+  {
+    "id": "spec-review-fresh-negative-1",
+    "selected": [],
+    "reason": "The request is implementation, not a read-only acceptance review."
+  },
+  {
+    "id": "git-workflow-fresh-negative-1",
+    "selected": [],
+    "reason": "An ordinary typo edit explicitly forbids Git operations."
+  },
+  {
+    "id": "technical-design-interview-fresh-positive-2",
+    "selected": [
+      "technical-design-interview"
+    ],
+    "reason": "Revising storage, authorization, APIs, queues, and failure handling from a PRD directly matches technical design."
+  },
+  {
+    "id": "regression-testing-fresh-positive-2",
+    "selected": [
+      "regression-testing"
+    ],
+    "reason": "The request explicitly requires writing and executing a contract-based regression test."
+  },
+  {
+    "id": "design-system-workshop-fresh-positive-1",
+    "selected": [
+      "design-system-workshop"
+    ],
+    "reason": "Creating an initial visual language, tokens, and component rules from mood directly matches."
+  },
+  {
+    "id": "beads-workflow-fresh-positive-1",
+    "selected": [
+      "beads-workflow"
+    ],
+    "reason": "Existing bd issue lookup, blockers, and claiming directly match."
+  },
+  {
+    "id": "beads-workflow-fresh-positive-2",
+    "selected": [
+      "beads-workflow"
+    ],
+    "reason": "Recording blockers, completing tasks, and durable handoff in bd directly match."
+  },
+  {
+    "id": "design-system-workshop-fresh-negative-2",
+    "selected": [
+      "spec-review"
+    ],
+    "reason": "The task is an evidence-based read-only patch review against documented component rules."
+  },
+  {
+    "id": "design-system-workshop-fresh-negative-1",
+    "selected": [],
+    "reason": "Routine screen implementation with unchanged approved tokens is outside visual-system work."
+  },
+  {
+    "id": "product-requirements-interview-fresh-positive-1",
+    "selected": [
+      "product-requirements-interview"
+    ],
+    "reason": "Interviewing to define users, MVP, journey, and success signals and produce a PRD directly matches."
+  },
+  {
+    "id": "technical-design-interview-fresh-positive-1",
+    "selected": [
+      "technical-design-interview"
+    ],
+    "reason": "An architecture interview from approved requirements directly matches."
+  },
+  {
+    "id": "beads-workflow-fresh-negative-1",
+    "selected": [],
+    "reason": "A temporary chat checklist is explicitly outside Beads."
+  },
+  {
+    "id": "spec-review-fresh-negative-2",
+    "selected": [],
+    "reason": "Free-form screenshot aesthetic impressions without a specification are explicitly excluded."
+  },
+  {
+    "id": "git-workflow-fresh-positive-2",
+    "selected": [
+      "git-workflow"
+    ],
+    "reason": "Discovering sync policy and resolving branch conflicts directly match."
+  },
+  {
+    "id": "product-requirements-interview-fresh-negative-1",
+    "selected": [],
+    "reason": "Implementing final product decisions does not request requirements discovery."
+  },
+  {
+    "id": "design-system-workshop-fresh-positive-2",
+    "selected": [
+      "design-system-workshop"
+    ],
+    "reason": "A deliberate visual-system revision and agreed token integration directly match."
+  },
+  {
+    "id": "regression-testing-fresh-negative-1",
+    "selected": [
+      "spec-review"
+    ],
+    "reason": "An evidence-based acceptance review with no edits or test execution fits spec-review."
+  },
+  {
+    "id": "product-requirements-interview-fresh-negative-2",
+    "selected": [
+      "technical-design-interview"
+    ],
+    "reason": "Deriving data, access, API, and deployment architecture from an approved PRD is technical design."
+  },
+  {
+    "id": "regression-testing-fresh-positive-1",
+    "selected": [
+      "regression-testing"
+    ],
+    "reason": "Writing and running boundary regression tests against a stated rule directly matches."
+  },
+  {
+    "id": "beads-workflow-fresh-negative-2",
+    "selected": [],
+    "reason": "Selecting a new tracker is explicitly outside the existing-Beads workflow."
+  },
+  {
+    "id": "git-workflow-fresh-positive-1",
+    "selected": [
+      "git-workflow"
+    ],
+    "reason": "Discovering contribution rules and creating a branch from the correct base directly match."
+  }
+]

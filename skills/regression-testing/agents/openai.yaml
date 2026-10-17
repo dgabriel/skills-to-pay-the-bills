@@ -1,0 +1,4 @@
+interface:
+  display_name: "Regression Testing"
+  short_description: "Exercise changed behavior with explicit test oracles"
+  default_prompt: "Use $regression-testing to verify this booking change and report failures without fixing app code."

@@ -1,0 +1,7 @@
+before: unauthorized result='forbidden', status='confirmed'
+after: unauthorized result='forbidden', status='cancelled'
+Traceback (most recent call last):
+  File "verify_review.py", line 14, in <module>
+    assert booking.status == "confirmed", "Rejected cancellation mutated booking status"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Rejected cancellation mutated booking status

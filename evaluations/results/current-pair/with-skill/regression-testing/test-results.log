@@ -1,0 +1,26 @@
+test_disjoint_and_overlapping_ranges (test_booking.OverlapTests.test_disjoint_and_overlapping_ranges) ... ok
+test_half_open_boundary_below_on_above (test_booking.OverlapTests.test_half_open_boundary_below_on_above) ... 
+  test_half_open_boundary_below_on_above (test_booking.OverlapTests.test_half_open_boundary_below_on_above) (args=(0, 3, 3, 6)) ... FAIL
+  test_half_open_boundary_below_on_above (test_booking.OverlapTests.test_half_open_boundary_below_on_above) (args=(3, 6, 0, 3)) ... FAIL
+test_invalid_ranges_raise_value_error (test_booking.OverlapTests.test_invalid_ranges_raise_value_error) ... ok
+
+======================================================================
+FAIL: test_half_open_boundary_below_on_above (test_booking.OverlapTests.test_half_open_boundary_below_on_above) (args=(0, 3, 3, 6))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_booking.py", line 28, in test_half_open_boundary_below_on_above
+    self.assertIs(overlaps(*args), expected)
+AssertionError: True is not False
+
+======================================================================
+FAIL: test_half_open_boundary_below_on_above (test_booking.OverlapTests.test_half_open_boundary_below_on_above) (args=(3, 6, 0, 3))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_booking.py", line 28, in test_half_open_boundary_below_on_above
+    self.assertIs(overlaps(*args), expected)
+AssertionError: True is not False
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=2)

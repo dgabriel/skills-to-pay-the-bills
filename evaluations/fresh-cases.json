@@ -1,0 +1,198 @@
+[
+  {
+    "id": "beads-workflow-fresh-positive-1",
+    "target": "beads-workflow",
+    "expected": true,
+    "prompt": "This repository already tracks work with bd. Find the unresolved issue about CSV exports, check whether it is blocked, and claim it for this session before we begin.",
+    "rationale": "Existing Beads repository needs durable issue lookup, blocker inspection, and claiming."
+  },
+  {
+    "id": "beads-workflow-fresh-positive-2",
+    "target": "beads-workflow",
+    "expected": true,
+    "prompt": "We use bd for this project. Record that the authentication migration is waiting on the security review, close the completed schema task, and leave a durable handoff for whoever takes over tomorrow.",
+    "rationale": "Explicit existing tracker context and durable blocker, completion, and handoff operations."
+  },
+  {
+    "id": "beads-workflow-fresh-negative-1",
+    "target": "beads-workflow",
+    "expected": false,
+    "prompt": "Give me a short checklist in this chat for proofreading a two-page announcement this afternoon. We do not need to save or track these tasks anywhere.",
+    "rationale": "Ephemeral checklist without durable repository tracking."
+  },
+  {
+    "id": "beads-workflow-fresh-negative-2",
+    "target": "beads-workflow",
+    "expected": false,
+    "prompt": "Our new repository has no issue tracker. Compare three tracking options and recommend one before we adopt anything.",
+    "rationale": "Tracker selection and adoption rather than work in an existing Beads repository."
+  },
+  {
+    "id": "design-system-workshop-fresh-positive-1",
+    "target": "design-system-workshop",
+    "expected": true,
+    "prompt": "Our community gardening app needs its first visual language. Help us turn a calm, earthy mood into a color and type system, semantic tokens, and consistent rules for buttons, forms, and cards.",
+    "rationale": "New visual system grounded in product context and mood with tokens and component rules."
+  },
+  {
+    "id": "design-system-workshop-fresh-positive-2",
+    "target": "design-system-workshop",
+    "expected": true,
+    "prompt": "We are deliberately replacing our finance dashboard\u2019s playful visual identity with a quieter professional direction. Propose revised semantic colors, typography, spacing, and component rules, then integrate the token values once we agree on them.",
+    "rationale": "Intentional revision of a visual system with explicit agreed-token integration."
+  },
+  {
+    "id": "design-system-workshop-fresh-negative-1",
+    "target": "design-system-workshop",
+    "expected": false,
+    "prompt": "Add a password reset screen using our existing component library and unchanged typography, spacing, and color tokens. The approved mockup specifies every state.",
+    "rationale": "Routine screen implementation within an established visual system."
+  },
+  {
+    "id": "design-system-workshop-fresh-negative-2",
+    "target": "design-system-workshop",
+    "expected": false,
+    "prompt": "Read this patch against the approved accessibility and component usage rules. Report any violations with file and line evidence, and leave the files untouched.",
+    "rationale": "Read-only conformance review rather than visual system creation or revision."
+  },
+  {
+    "id": "git-workflow-fresh-positive-1",
+    "target": "git-workflow",
+    "expected": true,
+    "prompt": "I need to start work on the invoice export in this repository. Inspect its contribution rules and branch conventions, then create the appropriate branch from the correct base.",
+    "rationale": "Git branch setup requires discovering repository policy."
+  },
+  {
+    "id": "git-workflow-fresh-positive-2",
+    "target": "git-workflow",
+    "expected": true,
+    "prompt": "My feature branch conflicts with the current integration branch. Determine how this repository expects branches to be synced, resolve the conflicts accordingly, and prepare the resulting changes for review.",
+    "rationale": "Repository-policy-driven synchronization, conflict resolution, and review preparation."
+  },
+  {
+    "id": "git-workflow-fresh-negative-1",
+    "target": "git-workflow",
+    "expected": false,
+    "prompt": "Fix the typo in the welcome message in this file. Leave the change in my working tree; do not run any Git operations.",
+    "rationale": "Ordinary file edit with explicit exclusion of Git operations."
+  },
+  {
+    "id": "git-workflow-fresh-negative-2",
+    "target": "git-workflow",
+    "expected": false,
+    "prompt": "Explain the difference between a hash map and a binary search tree with a small example.",
+    "rationale": "General programming explanation unrelated to repository Git work."
+  },
+  {
+    "id": "product-requirements-interview-fresh-positive-1",
+    "target": "product-requirements-interview",
+    "expected": true,
+    "prompt": "I have an idea for a neighborhood tool-lending service but have not settled who it serves or what belongs in the first release. Interview me to define the users, main journey, MVP boundaries, and measures of success, then turn that into a PRD.",
+    "rationale": "Product discovery interview with explicit requirements deliverable and scope decisions."
+  },
+  {
+    "id": "product-requirements-interview-fresh-positive-2",
+    "target": "product-requirements-interview",
+    "expected": true,
+    "prompt": "Draft a PRD directly from this brief: small bakeries need customers to reserve next-day pickup slots; owners set daily capacity; payment happens at pickup. Define the primary users, end-to-end journey, first-release scope, and success signals, recording assumptions.",
+    "rationale": "Immediate requirements drafting from a supplied product brief."
+  },
+  {
+    "id": "product-requirements-interview-fresh-negative-1",
+    "target": "product-requirements-interview",
+    "expected": false,
+    "prompt": "Implement the approved pickup-slot selector exactly as specified in the attached acceptance criteria and mockup. All product decisions are final.",
+    "rationale": "Implementation of an already specified feature."
+  },
+  {
+    "id": "product-requirements-interview-fresh-negative-2",
+    "target": "product-requirements-interview",
+    "expected": false,
+    "prompt": "The approved PRD calls for a multi-tenant appointment service. Work out the tenant data model, access controls, API boundaries, and deployment architecture in a technical design.",
+    "rationale": "System architecture derived from settled product requirements."
+  },
+  {
+    "id": "regression-testing-fresh-positive-1",
+    "target": "regression-testing",
+    "expected": true,
+    "prompt": "The discount calculation was fixed so a subtotal of exactly $100 qualifies for free shipping. Add and run tests for values below, at, and above the threshold, using that rule as the expected behavior and showing the old failure if reproducible.",
+    "rationale": "Changed threshold needs specification-derived executable regression coverage."
+  },
+  {
+    "id": "regression-testing-fresh-positive-2",
+    "target": "regression-testing",
+    "expected": true,
+    "prompt": "Our PATCH /profiles endpoint used to erase the display name when only the timezone was supplied. The contract says omitted fields stay unchanged. Write and execute a regression test that reproduces the bug and verifies the correction.",
+    "rationale": "Concrete endpoint bug with explicit expected behavior and required test execution."
+  },
+  {
+    "id": "regression-testing-fresh-negative-1",
+    "target": "regression-testing",
+    "expected": false,
+    "prompt": "Review the checkout patch against the attached issue and list acceptance gaps with evidence. Do not edit anything or execute tests.",
+    "rationale": "Read-only acceptance review explicitly excludes test execution."
+  },
+  {
+    "id": "regression-testing-fresh-negative-2",
+    "target": "regression-testing",
+    "expected": false,
+    "prompt": "Explain unit, integration, and end-to-end testing to a new engineer. Use conceptual examples only; there is no repository to modify or run.",
+    "rationale": "General testing theory without executable regression work."
+  },
+  {
+    "id": "spec-review-fresh-positive-1",
+    "target": "spec-review",
+    "expected": true,
+    "prompt": "Review this pull request against the attached invoice-export issue and the repository\u2019s documented CSV formatting rules. Report deviations with file and line evidence ranked by severity. Do not change files.",
+    "rationale": "Read-only patch acceptance review tied to issue and documented rules."
+  },
+  {
+    "id": "spec-review-fresh-positive-2",
+    "target": "spec-review",
+    "expected": true,
+    "prompt": "The attached patch claims to satisfy the approved account-deletion specification. Check each acceptance criterion and the documented access-control rules against the code, identify the strongest evidence for any gaps, and provide findings only.",
+    "rationale": "Specification-driven review with evidence-ranked findings and no fixes."
+  },
+  {
+    "id": "spec-review-fresh-negative-1",
+    "target": "spec-review",
+    "expected": false,
+    "prompt": "The search endpoint violates the attached pagination contract. Implement the missing cursor handling and update the code until it meets that contract.",
+    "rationale": "Implementation request rather than read-only review."
+  },
+  {
+    "id": "spec-review-fresh-negative-2",
+    "target": "spec-review",
+    "expected": false,
+    "prompt": "Look at this screenshot and tell me whether the hero feels elegant or cluttered. There is no design specification; I want your aesthetic impressions.",
+    "rationale": "Free-form visual critique without a patch or acceptance specification."
+  },
+  {
+    "id": "technical-design-interview-fresh-positive-1",
+    "target": "technical-design-interview",
+    "expected": true,
+    "prompt": "We have approved requirements for a document approval service: multiple organizations, reviewer roles, audit history, and email reminders. Interview me about unresolved constraints and produce an architecture covering data, permissions, APIs, and operational choices.",
+    "rationale": "Architecture derivation from concrete requirements with technical decision discovery."
+  },
+  {
+    "id": "technical-design-interview-fresh-positive-2",
+    "target": "technical-design-interview",
+    "expected": true,
+    "prompt": "Revise our technical design for a booking platform so it supports regional data residency and asynchronous confirmation. Start from the attached PRD and propose changes to storage boundaries, authorization, API contracts, queues, and failure handling.",
+    "rationale": "Technical design revision driven by requirements and architectural decisions."
+  },
+  {
+    "id": "technical-design-interview-fresh-negative-1",
+    "target": "technical-design-interview",
+    "expected": false,
+    "prompt": "Implement the already approved booking architecture exactly as written: use the specified schema, endpoints, queue, and retry rules. Do not reopen design decisions.",
+    "rationale": "Implementation of a settled technical design."
+  },
+  {
+    "id": "technical-design-interview-fresh-negative-2",
+    "target": "technical-design-interview",
+    "expected": false,
+    "prompt": "Our service crashes on startup with this missing environment variable error. Find the configuration mistake and fix it; no architecture change is needed.",
+    "rationale": "Routine debugging rather than deriving or revising system architecture."
+  }
+]
