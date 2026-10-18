@@ -143,4 +143,6 @@ Maintenance helpers:
 | `scripts/replay_history_evaluations.py` | Compatibility forwarding stub for old commands; runs the same full replay entry point. |
 | `scripts/sync_contract.py` | Updates packaged contract copies from the shared source; `--check` detects drift without writing. |
 
+The `history-derived` checker group applies to the seven paraphrase-provenance skills because their Pattern evidence sections and description exclusions need enforcement. The seven source-extracted skills instead carry source-mapped rules and extraction/license records in their provenance; their absence from this group is deliberate.
+
 Current routing regression: the [canonical suite](evaluations/routing-regression/README.md) scores 91/93 retained target cases against all fourteen descriptions, separate from historical fresh-case scores. Re-score the complete set with a fresh evaluator whenever a description changes.

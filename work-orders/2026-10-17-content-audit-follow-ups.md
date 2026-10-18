@@ -1,4 +1,4 @@
-Status: open
+Status: done (commit "docs: record checker group rationale")
 
 # Content-audit follow-ups: routing misses and documentation gaps
 
@@ -10,7 +10,7 @@ Shared rules for every part: follow AGENTS.md and the existing package format. D
 
 ## Part A: resolve the spec-review description gate
 
-Status: done (commit "feat: broaden spec-review description gate and rerun canonical routing")
+Status: done (1b251ce)
 
 The canonical suite's two spec-review misses ("Give a read-only pre-merge review of these changes." and "Review this patch for correctness and security.", both expected positives now routing to nothing) trace to the description's gate "against its issue/specification." Unspecced patch review never reaches the skill, even though `skills/spec-review/references/procedure.md` fully supports it (read the diff, apply documented project rules) and the two v1-era positives were never revised when the boundary sharpened. The description gate, not the evaluator, causes the misses.
 
@@ -24,7 +24,7 @@ Owner decision: **BROADEN**, explicitly approved in the current task on 2026-10-
 
 ## Part B: document the accepted Beads tripwires
 
-Status: done (commit "docs: record accepted routing tripwires")
+Status: done (ef5aee3)
 
 The two Beads misses ("Prepare an issue handoff for another session." now selecting agent-handoff-prompt, and "Resolve legacy issue OLD-42 to its native tracker ID." selecting nothing) come from v1-era minimal-context prompts; their v2 revisions, which establish Beads context explicitly, route correctly. The library already treats those revisions as the live versions. The owner accepts the originals as permanent tripwires: bare requests without tracker context need not route to beads-workflow.
 
@@ -34,7 +34,7 @@ The two Beads misses ("Prepare an issue handoff for another session." now select
 
 ## Part C: record the checker-group rationale
 
-Status: open
+Status: done (commit "docs: record checker group rationale")
 
 The `history-derived` rule group in [scripts/skill_checks.json](../scripts/skill_checks.json) covers exactly the seven paraphrase-based skills (`## Pattern evidence` provenance) and not the seven public-source skills (`## Sources` provenance with extraction/license records). This is deliberate but recorded nowhere; a maintainer could reasonably read it as an oversight.
 
