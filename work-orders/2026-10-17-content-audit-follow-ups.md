@@ -16,6 +16,8 @@ The canonical suite's two spec-review misses ("Give a read-only pre-merge review
 
 **Owner decision required before this part starts; record it here.**
 
+Owner decision: **BROADEN**, explicitly approved in the current task on 2026-10-18.
+
 - If the decision is **broaden**: revise the spec-review description to cover patch review without a supplied spec (for example, "against its issue/specification or documented project rules"), keeping the existing exclusions. Keep the entry point within the enforced metadata format and 28-line limit. Then follow the canonical re-run policy in [evaluations/routing-regression/README.md](../evaluations/routing-regression/README.md): preserve the current snapshot, freeze the updated description set and entry hashes, run a fresh evaluator (separate roles per [evaluations/README.md](../evaluations/README.md)) over the full canonical suite, record the new output and process note, and update the manifest, canonical README, and validation.md current-status text. A description change without a fresh full-suite run leaves replay failing by design. Report the new score; do not edit the stale cases or their labels.
 - If the decision is **accept**: leave the description untouched and record in [evaluations/routing-regression/README.md](../evaluations/routing-regression/README.md) that the two spec-review positives are stale labels retained as tripwires, alongside Part B's note. No re-run needed.
 - Either way, keep [catalog.md](../catalog.md) and the root README table consistent with the outcome.

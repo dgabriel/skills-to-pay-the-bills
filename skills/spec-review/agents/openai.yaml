@@ -1,4 +1,4 @@
 interface:
   display_name: "Spec Review"
-  short_description: "Check spec acceptance without unsolicited fixes"
+  short_description: "Review patches against specs or project rules"
   default_prompt: "Use $spec-review to check this patch against its issue without editing it."

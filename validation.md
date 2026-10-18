@@ -2,11 +2,11 @@
 
 ## Current status
 
-As of 2026-10-17, the library contains **14 skill packages**. Skills are independently selectable; project policy and explicit owner decisions override defaults. Current checks cover structure, portable references, recorded evidence, and executable fixtures, not universal behavioral effectiveness.
+As of 2026-10-18, the library contains **14 skill packages**. Skills are independently selectable; project policy and explicit owner decisions override defaults. Current checks cover structure, portable references, recorded evidence, and executable fixtures, not universal behavioral effectiveness.
 
 **Latest executed checks:** `python3 scripts/check_library.py` and `python3 scripts/replay_evaluations.py` pass. Replay scores saved decisions, checks recorded fingerprints/artifacts, and executes the earlier booking-test, contrast, and review-defect fixtures. Expected assertion failures demonstrate known fixture defects; they are not application passes. These replay commands do not generate agent responses or fresh routing decisions. The old history command forwards to the same full replay; it has no separate verification logic.
 
-**Current-description routing regression:** the consolidated retained-case suite scores **89/93 target decisions** against all fourteen current descriptions. A separate fresh evaluator saw only descriptions and opaque requests after the description set was frozen. Its four missed positives are retained. This is a rerun of 161 retained occurrences mapped to 93 distinct cases, not fresh case authorship. Historical fresh sets stay separate: **12/12**, **16/16**, and **28/28**; older historical/reused sets remain **32/35**, revised **35/35**, and unchanged rerun **35/35**. See [canonical evidence](evaluations/routing-regression/README.md) for mappings, role separation, and limits.
+**Current-description routing regression:** after the owner-approved spec-review description broadening, one fresh evaluator scored **91/93 target decisions** against the frozen fourteen descriptions and all 93 unchanged cases. The two missed positives are “Prepare an issue handoff for another session.” (target beads-workflow; selected session-start-and-close) and “Verify this feature and report exact failures without fixing app code.” (target regression-testing; selected spec-review). Both broad spec-review positives now pass; the legacy-ID Beads case also passes. The new regression-testing miss is reported, not relabeled. The previous **89/93** canonical snapshot remains preserved separately. This reruns 161 source occurrences mapped to 93 distinct target cases, not fresh case authorship or a behavioral comparison. Historical fresh scores remain **12/12**, **16/16**, **28/28**; older sets remain **32/35**, revised **35/35**, and unchanged rerun **35/35**. See [canonical evidence](evaluations/routing-regression/README.md) for the process note, preserved snapshot, and limits.
 
 **Retained paired evidence, reviewed statically:** triage and prose were actual text-generation runs on fictional inputs. Both conditions reached the same triage dispositions and preserved the prose facts; no quality gain was demonstrated. Assisted triage made identity/state accounting more explicit; prose was 51 baseline words versus 53 assisted words. No live review, dismissal, dashboard, network, or device workflow ran in those pairs.
 
@@ -15,6 +15,10 @@ As of 2026-10-17, the library contains **14 skill packages**. Skills are indepen
 ## History (newest first)
 
 The sections below retain the original results and pass-specific statements. “Current” inside an unchanged historical paragraph refers to that pass, not today's checkout.
+
+### Spec-review description broadening (2026-10-18)
+
+Owner decision BROADEN changed only spec-review's description line to permit patch review against documented project rules without a supplied spec, preserving exclusions. Before re-freezing, replay failed on current-description drift as intended. The complete 89/93 snapshot was preserved in place; updated descriptions and entry hashes were frozen before a separate fresh evaluator saw only opaque requests and descriptions. The run scored 91/93, including both formerly missed broad spec-review positives. Remaining misses are the bare Beads handoff and feature-verification regression-testing positives stated in Current status. No prompts or labels changed. No repeated trial, new paired task, or quality-gain claim was made. After recording the new output/manifest, replay passes. Historical result sections below remain unchanged.
 
 ### Follow-up candidate skills (2026-10-17)
 
