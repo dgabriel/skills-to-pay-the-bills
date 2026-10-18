@@ -12,7 +12,7 @@ Shared rules for every part: follow AGENTS.md and the existing package format. D
 
 ## Part A: close out the follow-ups order
 
-Status: open
+Status: done (commit "docs: close out follow-ups work order")
 
 The `validation.md` restructure (`docs: put current validation status first`) shipped without a gatekeeper review, and Parts B and C of [2026-10-17-follow-ups.md](2026-10-17-follow-ups.md) carry no status lines; the order itself is still `open`. There was also a process trap: the Part C review told the builder to leave status lines alone, so no agent was ever authorized to mark Part C done.
 
