@@ -52,7 +52,7 @@ Status: open
 
 ## Part D: shared rule group in `scripts/skill_checks.json`
 
-Status: open
+Status: done (commit "refactor: share common skill check rules")
 
 Seven skills repeat the same two rules; both earlier gatekeeper reviews deferred a shared group until more skills needed it. They do now.
 
