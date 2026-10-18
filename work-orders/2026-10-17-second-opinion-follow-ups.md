@@ -1,4 +1,4 @@
-Status: open
+Status: done (commit "docs: note commit-subject fallback in work-order guidance")
 
 # Second-opinion follow-ups: routing consolidation, replay merge, process hygiene
 
@@ -12,7 +12,7 @@ Shared rules for every part: follow AGENTS.md and the existing package format. D
 
 ## Part A: close out the follow-ups order
 
-Status: open
+Status: done (1aeb837)
 
 The `validation.md` restructure (`docs: put current validation status first`) shipped without a gatekeeper review, and Parts B and C of [2026-10-17-follow-ups.md](2026-10-17-follow-ups.md) carry no status lines; the order itself is still `open`. There was also a process trap: the Part C review told the builder to leave status lines alone, so no agent was ever authorized to mark Part C done.
 
@@ -25,7 +25,7 @@ The `validation.md` restructure (`docs: put current validation status first`) sh
 
 ## Part B: one canonical routing regression suite
 
-Status: open
+Status: done (6dc758c)
 
 The real coverage gap: replay scores frozen outputs against frozen descriptions. A new or edited description that cannibalizes another skill's routing is never detected, because the 35-case, 28-case, 16-case, and 12-case sets are never re-run against the current fourteen descriptions. The follow-up negatives cover one direction of one boundary only, and incidentally.
 
@@ -41,7 +41,7 @@ Propose the layout before building; one acceptable shape:
 
 ## Part C: merge the replay scripts
 
-Status: open
+Status: done (7db5982)
 
 `replay_evaluations.py` already executes `replay_history_evaluations.py` via runpy, and the "history" script is now the general replay under a history-specific name. Keep one entry point.
 
@@ -52,7 +52,7 @@ Status: open
 
 ## Part D: shared rule group in `scripts/skill_checks.json`
 
-Status: done (commit "refactor: share common skill check rules")
+Status: done (787a9e5)
 
 Seven skills repeat the same two rules; both earlier gatekeeper reviews deferred a shared group until more skills needed it. They do now.
 
@@ -63,7 +63,7 @@ Seven skills repeat the same two rules; both earlier gatekeeper reviews deferred
 
 ## Part E: independent verification review in agent-handoff-prompt
 
-Status: open
+Status: done (27ad46d)
 
 The library has no first-class "re-execute the evidence before endorsing a verdict" posture — what the gatekeeper did on this repo: isolated-archive reruns, scratch negative tests, privacy greps. Per the library overlap rule, this belongs as a section in an existing skill, not a new skill.
 
@@ -74,7 +74,7 @@ The library has no first-class "re-execute the evidence before endorsing a verdi
 
 ## Part F: commit-subject fallback guidance
 
-Status: open
+Status: done (commit "docs: note commit-subject fallback in work-order guidance")
 
 Add two lines to [work-orders/README.md](README.md): when a review mandates an exact commit subject, name the fallback for the case where that subject already exists (a distinct follow-up subject, recorded in the review), since amending is forbidden.
 

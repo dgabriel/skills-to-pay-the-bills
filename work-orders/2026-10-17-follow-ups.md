@@ -1,4 +1,4 @@
-Status: open
+Status: done (commit "test: add routing evidence for diagnose-first, docs-audit, agent-handoff-prompt")
 
 # Follow-ups: checker config, validation layout, candidate skills
 
@@ -18,6 +18,8 @@ Status: done (commit "fix: reject unknown skill names in check config")
 
 ## Part B: current status first in `validation.md`
 
+Status: done (commit "docs: put current validation status first"); owner accepted as-is without a separate review pass, 2026-10-17
+
 `validation.md` has turned into an append-only log. Restructure it: a short "Current status" section at the top (packages, latest checks and what actually ran, latest routing scores, open limits), then history below, newest first.
 
 - Don't change or lose any historical result. Moving and relabeling are fine.
@@ -25,6 +27,8 @@ Status: done (commit "fix: reject unknown skill names in check config")
 - Commit: `docs: put current validation status first`
 
 ## Part C: candidate skills from session history
+
+Status: done (commit "test: add routing evidence for diagnose-first, docs-audit, agent-handoff-prompt")
 
 The reviewer's analysis of the owner's session history found four more repeated workflows. The evidence below is the reviewer's paraphrase. Don't search for, quote, or read session transcripts or local agent session directories. Use the same evidence and provenance rules as `2026-10-17-history-skills.md`. That includes the "Pattern evidence" section labeled "author session history, paraphrased by reviewer, 2026-10-17".
 

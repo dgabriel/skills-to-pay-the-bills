@@ -2,6 +2,12 @@
 
 [cases.json](cases.json) contains seven raw task fixtures plus three selection-positive and two selection-negative requests per skill. [results](results/) retains actual outputs, routing decisions, generated test code/logs, and the assisted design calculator. Inputs use a fictional tool-sharing product; no personal source inventory is included.
 
+## Current routing regression
+
+The [canonical suite](routing-regression/README.md) re-runs all retained case variants against the current fourteen descriptions: **89/93 target decisions**, separate from every historical score. Its 161 source occurrences map to 93 unique request/target/label cases. Four missed positives remain unchanged. This is new evaluation of retained cases, not new case authorship or statistical proof.
+
+Freeze the complete current description set before authoring/consolidating cases. Keep author/consolidator and fresh evaluator roles separate: the evaluator receives only descriptions and opaque request IDs/text, never labels, skill bodies, prior results, or work orders. Whenever any description changes, use a fresh evaluator on the **full** canonical set, retain the prior snapshot, and record the new output and process note. Replay verifies the current snapshot and scores saved decisions; it does not rerun models. Historical folders, including invalid evidence, remain unchanged.
+
 ## How the evaluations work
 
 We ask three separate questions: **Does the agent select the right skill? Does using it improve the work? Can we verify the saved evidence later?** A routing score answers only the first question.
@@ -84,6 +90,8 @@ The completed paired run used one evaluator session for seven baseline tasks and
 These criteria were used for manual comparison of actual outputs; they are not a claim that a separate blinded judge assigned numerical quality scores.
 
 ## Deterministic replay
+
+Use `scripts/replay_evaluations.py` as the single entry point for every retained evidence set. The older history command is a forwarding stub, with no separate checks. Historical evidence and its original command references remain intact.
 
 From the library root:
 
