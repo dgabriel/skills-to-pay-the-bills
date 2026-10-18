@@ -139,6 +139,6 @@ Maintenance helpers:
 | Script | What it does |
 | --- | --- |
 | `scripts/check_library.py` | Checks package structure, metadata, links, contract copies, stale names, pattern provenance, and the prose package’s no-em-dash rule. |
-| `scripts/replay_evaluations.py` | Runs deterministic checks against saved evidence and small executable fixtures, including the history helper below. It does not rerun agents. |
-| `scripts/replay_history_evaluations.py` | Checks frozen history/follow-up entries, saved routing records, paired output integrity, and fixture facts. It does not run review tools, dashboards, or device tests. |
+| `scripts/replay_evaluations.py` | Single replay entry point for all saved routing/paired evidence and executable fixtures. It does not rerun agents. |
+| `scripts/replay_history_evaluations.py` | Compatibility forwarding stub for old commands; runs the same full replay entry point. |
 | `scripts/sync_contract.py` | Updates packaged contract copies from the shared source; `--check` detects drift without writing. |
