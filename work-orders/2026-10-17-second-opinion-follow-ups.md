@@ -41,7 +41,7 @@ Propose the layout before building; one acceptable shape:
 
 ## Part C: merge the replay scripts
 
-Status: open
+Status: done (commit "refactor: merge replay scripts into one entry point")
 
 `replay_evaluations.py` already executes `replay_history_evaluations.py` via runpy, and the "history" script is now the general replay under a history-specific name. Keep one entry point.
 

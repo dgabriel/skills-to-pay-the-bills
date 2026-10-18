@@ -85,6 +85,8 @@ These criteria were used for manual comparison of actual outputs; they are not a
 
 ## Deterministic replay
 
+Use `scripts/replay_evaluations.py` as the single entry point for every retained evidence set. The older history command is a forwarding stub, with no separate checks. Historical evidence and its original command references remain intact.
+
 From the library root:
 
 ```sh

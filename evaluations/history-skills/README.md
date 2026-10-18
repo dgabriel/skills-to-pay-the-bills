@@ -14,4 +14,4 @@ Fresh routing scored 16/16 target decisions. Both triage outputs found the valid
 
 Provenance patterns are the work-order reviewer's paraphrases, not an independently audited transcript dataset. Public source visibility/license checks are recorded in `source-checks.json`. Required public reference URLs and unmodified MIT attribution are retained; no operational endpoint or credential is included.
 
-Run `python3 scripts/replay_evaluations.py` from the library root for the original executable fixtures and this evidence's integrity/content checks. `scripts/replay_history_evaluations.py` checks this subset directly. Neither script regenerates agents or calls a review tool. See the root validation report for limitations and per-commit verification scope.
+Run `python3 scripts/replay_evaluations.py` from the library root for the original executable fixtures and this evidence's integrity/content checks. The older `scripts/replay_history_evaluations.py` command forwards to that same full replay for compatibility. Replay does not regenerate agents or call a review tool. See the root validation report for limitations and per-commit verification scope.
