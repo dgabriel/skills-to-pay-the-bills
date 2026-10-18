@@ -22,3 +22,16 @@ Historical 32/35, revised 35/35, unchanged rerun 35/35, fresh 28/28, fresh 16/16
 ## Current description revision
 
 The owner chose to broaden spec-review to patch review against its issue/specification or documented project rules, without requiring a supplied spec. The current 91/93 result comes from one fresh evaluator after re-freezing all fourteen descriptions and entry hashes. The [complete prior 89/93 snapshot](snapshots/2026-10-18-before-spec-review-broadening/README.md) remains in place, including its manifest, descriptions, inputs, answers, output, process note, sources, and documentation. Current manifests also hash those preserved files. The current process note records the expected pre-freeze tripwire failure and the exact remaining misses.
+
+## Accepted tripwires and the prior four misses
+
+The owner accepts the two v1-era Beads originals as potential misses: a bare request without tracker context need not select beads-workflow. Their v2 context-establishing revisions are the live task variants and both pass in the current run. The original requests and positive labels remain unchanged and still count in the 93-case score; acceptance does not relabel or omit them. The table records all four misses from the prior 89/93 snapshot together.
+
+| Original retained positive | Current result after Part A | Disposition |
+| --- | --- | --- |
+| “Prepare an issue handoff for another session.” | Miss: session-start-and-close selected instead of beads-workflow | Accepted boundary tripwire; superseded by “Prepare a Beads issue handoff for another session.”, which passes |
+| “Resolve legacy issue OLD-42 to its native tracker ID.” | Pass: beads-workflow selected | Accepted as a potential boundary miss in future runs; superseded by “Resolve legacy issue OLD-42 to its native ID in this Beads project.”, which passes |
+| “Give a read-only pre-merge review of these changes.” | Pass: spec-review selected | Owner chose BROADEN; the documented project-rules path now admits patch review without a supplied spec |
+| “Review this patch for correctness and security.” | Pass: spec-review selected | Same broadening decision; retained positive now passes |
+
+The other current miss, “Verify this feature and report exact failures without fixing app code.” (regression-testing target; spec-review selected), is **not** covered by the accepted Beads disposition. It remains a reported regression signal. This note changes no case, label, description, output, or score: the current result remains 91/93.
