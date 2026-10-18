@@ -71,3 +71,14 @@ The four new packages use the work order’s reviewer paraphrases, labeled in ea
 | Author-stated work-order rules | No public source file used | convert | prose-edit | Direct voice/length/punctuation rules with original examples |
 
 The session rows above are resolved: eligible public MIT instructions were split into the session workflow; new extraction from candidates without a verified license was skipped. Earlier historical extractions under a prior work order are preserved, not claimed as new licensed-source use. Host-copy run instructions remain a duplicate skip. No source repository was edited, and no fixed address, credential, account, port, or service identity was copied.
+
+## Follow-up candidates from reviewer paraphrases
+
+No public source used for these additions. No session transcripts were accessed. Each package attributes the supplied reviewer paraphrases and explicit owner decisions in its provenance.
+
+| Supplied pattern | Disposition | Destination | Decision |
+| --- | --- | --- | --- |
+| Confirm reported problems before repair | convert | diagnose-first | New troubleshooting workflow; rollback comparison needs owner approval and isolated worktree or branch |
+| Compare documentation with behavior and missing coverage | convert | docs-audit | Factual audit; no claim of legal approval |
+| Write agent briefs and assess another agent's output | convert | agent-handoff-prompt | Independently selectable; excludes session close and direct patch-versus-spec review |
+| Prepare a new repository for agent development | merge | New-project starter prompt | Extend the prompt using existing skills, not a new bootstrap skill |

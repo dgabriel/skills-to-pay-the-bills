@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Handoff Prompt"
+  short_description: "Write agent briefs or assess another agent\u2019s output"
+  default_prompt: "Use $agent-handoff-prompt for this task: Assess this model\u2019s review, then write a work order for the next agent."

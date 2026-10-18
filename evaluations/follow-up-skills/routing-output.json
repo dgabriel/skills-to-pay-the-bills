@@ -1,0 +1,14 @@
+[
+  {"id":"rc7f6c1463a","selected":["docs-audit"],"rationale":"Audit documentation claims and missing setup coverage against repository evidence."},
+  {"id":"ra79dcd0707","selected":[],"rationale":"Final legal approval and enforceability advice are outside the supplied skills."},
+  {"id":"rcd20aac59e","selected":["agent-handoff-prompt"],"rationale":"Assess another model's critique against the request and repository with a verdict and required corrections."},
+  {"id":"r34f6d5924b","selected":["diagnose-first"],"rationale":"Reproduce a reported bug after failed fixes and compare the last working release before editing."},
+  {"id":"r25381cd4cf","selected":["docs-audit"],"rationale":"Check help, privacy, and architecture descriptions against code and retention configuration."},
+  {"id":"r2753afcf94","selected":["spec-review"],"rationale":"Read-only patch acceptance review against issue criteria with evidence of deviations."},
+  {"id":"rd1b5be6a0e","selected":[],"rationale":"Implementing an agreed fix and running relevant existing tests does not request diagnosis or writing regression tests."},
+  {"id":"rd31235d976","selected":["prose-edit"],"rationale":"Tighten supplied prose in its existing voice without factual research."},
+  {"id":"r5791e2c9cb","selected":["session-start-and-close"],"rationale":"Close the session with durable remaining-task notes and current Git state."},
+  {"id":"r873ad193ab","selected":["agent-handoff-prompt"],"rationale":"Create a self-contained assignment for another coding assistant with scope and completion checks."},
+  {"id":"rcd70b673ef","selected":["spec-review"],"rationale":"Read-only acceptance review of a diff against a specification with ranked concrete mismatches."},
+  {"id":"r7f4dcacea8","selected":["diagnose-first"],"rationale":"Investigate an environment-specific regression using the prior working revision and configuration before changes."}
+]

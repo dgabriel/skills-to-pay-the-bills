@@ -1,0 +1,4 @@
+interface:
+  display_name: "Docs Audit"
+  short_description: "Check documentation claims against actual behavior"
+  default_prompt: "Use $docs-audit for this task: Audit our help and privacy pages against the implementation and list missing docs."

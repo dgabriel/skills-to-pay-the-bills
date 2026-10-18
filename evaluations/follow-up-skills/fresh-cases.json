@@ -1,0 +1,74 @@
+[
+  {
+    "id": "fresh-diagnose-01",
+    "target": "diagnose-first",
+    "expected": true,
+    "prompt": "Customers say the export sometimes drops the final day of results. Two attempts to adjust the date filter have not resolved it. Reproduce the failure, compare with the last release where exports were correct, and tell me what the evidence supports before editing anything."
+  },
+  {
+    "id": "fresh-diagnose-02",
+    "target": "diagnose-first",
+    "expected": true,
+    "prompt": "After the dependency upgrade, signing in works in development but loops back to the login page in our preview environment. Please investigate the actual cause, checking the previous working revision and relevant configuration. Explain any uncertainty before proposing a change."
+  },
+  {
+    "id": "fresh-diagnose-03",
+    "target": "diagnose-first",
+    "expected": false,
+    "prompt": "We reproduced the duplicate receipt issue and agreed on the fix: enforce the existing idempotency key in the payment handler and return the saved result on retries. Implement that change and run the relevant tests."
+  },
+  {
+    "id": "fresh-diagnose-04",
+    "target": "diagnose-first",
+    "expected": false,
+    "prompt": "Review the attached pagination patch against the issue's acceptance criteria. Check whether empty pages and expired cursors behave as specified, cite any deviations, and leave the code untouched."
+  },
+  {
+    "id": "fresh-docs-01",
+    "target": "docs-audit",
+    "expected": true,
+    "prompt": "Before we publish the new onboarding guide, check its setup commands, environment variables, and supported authentication options against the repository. Flag stale claims and important setup steps that are missing, with evidence from code or configuration."
+  },
+  {
+    "id": "fresh-docs-02",
+    "target": "docs-audit",
+    "expected": true,
+    "prompt": "Our help center says uploaded files are deleted immediately, and the architecture diagram shows a single storage service. Check those descriptions against the current upload pipeline, retention settings, and background jobs. Identify inaccurate statements and gaps in the privacy and help pages."
+  },
+  {
+    "id": "fresh-docs-03",
+    "target": "docs-audit",
+    "expected": false,
+    "prompt": "The README facts have already been checked. Tighten the introduction below, keep its friendly voice, and remove repeated phrases. This is a wording pass; use only the supplied text."
+  },
+  {
+    "id": "fresh-docs-04",
+    "target": "docs-audit",
+    "expected": false,
+    "prompt": "Act as the final legal approver for these terms of service. Tell us whether they are enforceable in every market where we sell and whether we can launch without further counsel review."
+  },
+  {
+    "id": "fresh-handoff-01",
+    "target": "agent-handoff-prompt",
+    "expected": true,
+    "prompt": "Turn this discussion into a self-contained assignment I can paste into a new coding assistant: add CSV import with a preview, preserve existing validation rules, and avoid changing billing. Include the context it needs, boundaries, expected deliverables, and checks for completion."
+  },
+  {
+    "id": "fresh-handoff-02",
+    "target": "agent-handoff-prompt",
+    "expected": true,
+    "prompt": "Another model claims our retry design is unsafe and recommends replacing the queue. Assess its critique against my original request and the repository, separate supported concerns from assumptions, and give a verdict plus the corrections that model should make."
+  },
+  {
+    "id": "fresh-handoff-03",
+    "target": "agent-handoff-prompt",
+    "expected": false,
+    "prompt": "I'm done for today. Close out this session by recording where we stopped, checking the current Git state, and leaving durable notes on the remaining tasks so I can resume tomorrow."
+  },
+  {
+    "id": "fresh-handoff-04",
+    "target": "agent-handoff-prompt",
+    "expected": false,
+    "prompt": "Perform a read-only acceptance review of the current notification-settings diff against the attached specification. Report concrete mismatches with file and line references, ranked by impact. Do not implement fixes."
+  }
+]
