@@ -50,7 +50,7 @@
     },
     {
       "name": "spec-review",
-      "description": "Review a patch against its issue/specification and documented design rules, reporting evidence-ranked deviations without fixes by default. Use for read-only acceptance reviews, not implementation or free-form visual critique."
+      "description": "Review a patch for correctness, security, and acceptance against its issue/specification or documented project rules, reporting evidence-ranked deviations without fixes by default. A supplied spec is not required. Use for read-only acceptance reviews, not implementation or free-form visual critique."
     },
     {
       "name": "technical-design-interview",
@@ -70,7 +70,7 @@
     "regression-testing": "fc8be83b22218b81510ce3a823dad1458e8264a1a2787781e1a80fbc16088ca1",
     "review-findings-triage": "39c4b2e339b21b545d87ffa3111518ec673cd4f23ad549af7b23d48a767235f2",
     "session-start-and-close": "d4b32026cd8dd6c5f3a3bfa96d691ed7d6122709b1d93a4d4176b4a21b1e9f87",
-    "spec-review": "4b8344aadc06cd7ff6e35e2c06d355f476a51ce12d99cc53cde8fc7779214869",
+    "spec-review": "86b8c3004aa62234098327b60dac32968485005cee5e936bb094d313e4c99d0a",
     "technical-design-interview": "c21fe96b17d4087ea4ef2fe901d476e50fb765148241a8fa25a614473d361dc6"
   }
 }

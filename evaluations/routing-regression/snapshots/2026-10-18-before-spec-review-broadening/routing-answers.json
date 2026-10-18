@@ -1,0 +1,374 @@
+{
+  "r-04e20b970b7af2ad": {
+    "skill": "product-requirements-interview",
+    "expected": true
+  },
+  "r-05660660e966af0c": {
+    "skill": "git-workflow",
+    "expected": true
+  },
+  "r-060db610eafabff6": {
+    "skill": "prose-edit",
+    "expected": false
+  },
+  "r-075a5216adbfbe70": {
+    "skill": "review-findings-triage",
+    "expected": false
+  },
+  "r-0b5ba84a1b1c729f": {
+    "skill": "design-system-workshop",
+    "expected": false
+  },
+  "r-0ca49f2140662e72": {
+    "skill": "session-start-and-close",
+    "expected": true
+  },
+  "r-0d54d0bfb2c74bd2": {
+    "skill": "local-test-handoff",
+    "expected": true
+  },
+  "r-0d872a25160808ae": {
+    "skill": "diagnose-first",
+    "expected": true
+  },
+  "r-0dc22a77ff23e044": {
+    "skill": "regression-testing",
+    "expected": true
+  },
+  "r-115151f72ec81a91": {
+    "skill": "beads-workflow",
+    "expected": false
+  },
+  "r-144fe41b55e54aa8": {
+    "skill": "regression-testing",
+    "expected": false
+  },
+  "r-19aa598b65f8a132": {
+    "skill": "local-test-handoff",
+    "expected": true
+  },
+  "r-1cd22973978fafe0": {
+    "skill": "beads-workflow",
+    "expected": true
+  },
+  "r-1d927285a9e498dd": {
+    "skill": "regression-testing",
+    "expected": true
+  },
+  "r-245448577f534468": {
+    "skill": "session-start-and-close",
+    "expected": true
+  },
+  "r-2f8409ed25ddd7ef": {
+    "skill": "git-workflow",
+    "expected": true
+  },
+  "r-30c8815c53040492": {
+    "skill": "docs-audit",
+    "expected": false
+  },
+  "r-31083efba6e8bff8": {
+    "skill": "local-test-handoff",
+    "expected": false
+  },
+  "r-4a6277552c3dc556": {
+    "skill": "beads-workflow",
+    "expected": true
+  },
+  "r-4d5bd260d667db81": {
+    "skill": "regression-testing",
+    "expected": true
+  },
+  "r-4dca8ea919dcf4f8": {
+    "skill": "agent-handoff-prompt",
+    "expected": true
+  },
+  "r-4eaf37d86795c765": {
+    "skill": "diagnose-first",
+    "expected": false
+  },
+  "r-4f6bc38283874c54": {
+    "skill": "product-requirements-interview",
+    "expected": true
+  },
+  "r-4f8d6fc91ed76325": {
+    "skill": "beads-workflow",
+    "expected": false
+  },
+  "r-51bb931e177b1f3f": {
+    "skill": "git-workflow",
+    "expected": true
+  },
+  "r-53ef4aa35468dc1c": {
+    "skill": "beads-workflow",
+    "expected": true
+  },
+  "r-5746b648722f863f": {
+    "skill": "spec-review",
+    "expected": false
+  },
+  "r-58b439d8f390ff3c": {
+    "skill": "prose-edit",
+    "expected": false
+  },
+  "r-5a56d2024e4fd532": {
+    "skill": "design-system-workshop",
+    "expected": true
+  },
+  "r-5c2c0f48cab2ea0d": {
+    "skill": "product-requirements-interview",
+    "expected": false
+  },
+  "r-5f5be1593878a4e1": {
+    "skill": "technical-design-interview",
+    "expected": true
+  },
+  "r-62363f4adba5ec2f": {
+    "skill": "docs-audit",
+    "expected": false
+  },
+  "r-654a2bd68472d766": {
+    "skill": "spec-review",
+    "expected": false
+  },
+  "r-65f01b914ad65f21": {
+    "skill": "git-workflow",
+    "expected": false
+  },
+  "r-67d10bd7ed2bb089": {
+    "skill": "regression-testing",
+    "expected": true
+  },
+  "r-6b91e4d0c56db9dc": {
+    "skill": "beads-workflow",
+    "expected": true
+  },
+  "r-6ba325342c76cbfe": {
+    "skill": "product-requirements-interview",
+    "expected": true
+  },
+  "r-6f4f6d45d4c7251c": {
+    "skill": "diagnose-first",
+    "expected": false
+  },
+  "r-71022fa13d1ab3d7": {
+    "skill": "spec-review",
+    "expected": true
+  },
+  "r-717b860f6004bd18": {
+    "skill": "git-workflow",
+    "expected": true
+  },
+  "r-7bcba4affbab225d": {
+    "skill": "git-workflow",
+    "expected": true
+  },
+  "r-7f5e95e902ab6947": {
+    "skill": "technical-design-interview",
+    "expected": true
+  },
+  "r-819965388e771f40": {
+    "skill": "spec-review",
+    "expected": true
+  },
+  "r-8257262118c2737f": {
+    "skill": "local-test-handoff",
+    "expected": false
+  },
+  "r-83ddd63616394771": {
+    "skill": "regression-testing",
+    "expected": false
+  },
+  "r-8558674f15d8c943": {
+    "skill": "agent-handoff-prompt",
+    "expected": false
+  },
+  "r-8c6e37f4ca887674": {
+    "skill": "design-system-workshop",
+    "expected": true
+  },
+  "r-90403b89cbccbd94": {
+    "skill": "spec-review",
+    "expected": false
+  },
+  "r-93080eb56126afa2": {
+    "skill": "git-workflow",
+    "expected": false
+  },
+  "r-94f22aba78a0460b": {
+    "skill": "regression-testing",
+    "expected": true
+  },
+  "r-98216b49c6364312": {
+    "skill": "spec-review",
+    "expected": true
+  },
+  "r-98caf683040dac84": {
+    "skill": "spec-review",
+    "expected": true
+  },
+  "r-99bc13404852d588": {
+    "skill": "product-requirements-interview",
+    "expected": false
+  },
+  "r-9b0a5bd2ecba280b": {
+    "skill": "session-start-and-close",
+    "expected": false
+  },
+  "r-9b231af289e73732": {
+    "skill": "agent-handoff-prompt",
+    "expected": true
+  },
+  "r-9edac8d79e46db54": {
+    "skill": "technical-design-interview",
+    "expected": true
+  },
+  "r-9fa03a1be46b5917": {
+    "skill": "session-start-and-close",
+    "expected": false
+  },
+  "r-a30421711007daaa": {
+    "skill": "design-system-workshop",
+    "expected": false
+  },
+  "r-a544587f6535b833": {
+    "skill": "design-system-workshop",
+    "expected": true
+  },
+  "r-a9ce30d85f24a0c1": {
+    "skill": "beads-workflow",
+    "expected": false
+  },
+  "r-ab2fd2d780f0b82b": {
+    "skill": "product-requirements-interview",
+    "expected": true
+  },
+  "r-ab7877596c555ab1": {
+    "skill": "beads-workflow",
+    "expected": false
+  },
+  "r-ac127d1dbe36259c": {
+    "skill": "beads-workflow",
+    "expected": true
+  },
+  "r-b127f7e32520b11d": {
+    "skill": "product-requirements-interview",
+    "expected": true
+  },
+  "r-b2c2df3924cda43b": {
+    "skill": "technical-design-interview",
+    "expected": false
+  },
+  "r-b8452dd0e03977bb": {
+    "skill": "design-system-workshop",
+    "expected": true
+  },
+  "r-be84369b70bb5df3": {
+    "skill": "prose-edit",
+    "expected": true
+  },
+  "r-c0be5d54c64e7b5b": {
+    "skill": "git-workflow",
+    "expected": false
+  },
+  "r-c260053ff51515e6": {
+    "skill": "design-system-workshop",
+    "expected": false
+  },
+  "r-c2be3691a79d27fa": {
+    "skill": "docs-audit",
+    "expected": true
+  },
+  "r-c69cdc7412b9579e": {
+    "skill": "product-requirements-interview",
+    "expected": false
+  },
+  "r-c6fc243963ea3cfe": {
+    "skill": "technical-design-interview",
+    "expected": false
+  },
+  "r-c98175fd9f40b740": {
+    "skill": "spec-review",
+    "expected": true
+  },
+  "r-cf028817c44e78bf": {
+    "skill": "technical-design-interview",
+    "expected": true
+  },
+  "r-d14c2d53391da075": {
+    "skill": "spec-review",
+    "expected": false
+  },
+  "r-d38ae2600f202c9c": {
+    "skill": "docs-audit",
+    "expected": true
+  },
+  "r-d450de8975cf3903": {
+    "skill": "git-workflow",
+    "expected": false
+  },
+  "r-d49bf70b8a1c983d": {
+    "skill": "technical-design-interview",
+    "expected": true
+  },
+  "r-d5d93827b1931e6a": {
+    "skill": "review-findings-triage",
+    "expected": true
+  },
+  "r-d760048cccc36d3c": {
+    "skill": "diagnose-first",
+    "expected": true
+  },
+  "r-d96db9680cd99297": {
+    "skill": "review-findings-triage",
+    "expected": true
+  },
+  "r-dd10a6eb71165c8e": {
+    "skill": "regression-testing",
+    "expected": false
+  },
+  "r-dec370dfba228d3e": {
+    "skill": "product-requirements-interview",
+    "expected": false
+  },
+  "r-e3dca1c7ff4c95e6": {
+    "skill": "technical-design-interview",
+    "expected": false
+  },
+  "r-e4e82e304c3e8fcb": {
+    "skill": "review-findings-triage",
+    "expected": false
+  },
+  "r-e7f50989f1c27961": {
+    "skill": "beads-workflow",
+    "expected": true
+  },
+  "r-eff90e0c50afd807": {
+    "skill": "beads-workflow",
+    "expected": true
+  },
+  "r-f03fc3fbafec958e": {
+    "skill": "technical-design-interview",
+    "expected": false
+  },
+  "r-f156672a15b3f017": {
+    "skill": "design-system-workshop",
+    "expected": false
+  },
+  "r-f504ef95227fa2f8": {
+    "skill": "regression-testing",
+    "expected": false
+  },
+  "r-f6df67eac0d408b6": {
+    "skill": "design-system-workshop",
+    "expected": true
+  },
+  "r-f9244f574104846d": {
+    "skill": "prose-edit",
+    "expected": true
+  },
+  "r-fa1a07e327596da1": {
+    "skill": "agent-handoff-prompt",
+    "expected": false
+  }
+}
