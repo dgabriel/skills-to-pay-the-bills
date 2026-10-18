@@ -15,3 +15,6 @@ An order completed in its own commit uses `done (commit "<subject>")`, since a c
 Name files `<YYYY-MM-DD>-<slug>.md`. Work orders follow the repository's privacy rules: no private repository names, local paths, credentials, session identifiers, or personal details. Evidence from session history stays paraphrased, as in the skills' provenance files.
 
 A review that forbids status-line edits must name who closes the loop and when.
+
+When a review mandates an exact commit subject, it must also name a distinct follow-up subject to use if the original already exists.
+Record that fallback subject in the review; do not amend an existing commit to reuse the mandated subject.
