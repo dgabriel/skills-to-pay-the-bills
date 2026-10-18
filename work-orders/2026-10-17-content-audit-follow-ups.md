@@ -24,7 +24,7 @@ Owner decision: **BROADEN**, explicitly approved in the current task on 2026-10-
 
 ## Part B: document the accepted Beads tripwires
 
-Status: open
+Status: done (commit "docs: record accepted routing tripwires")
 
 The two Beads misses ("Prepare an issue handoff for another session." now selecting agent-handoff-prompt, and "Resolve legacy issue OLD-42 to its native tracker ID." selecting nothing) come from v1-era minimal-context prompts; their v2 revisions, which establish Beads context explicitly, route correctly. The library already treats those revisions as the live versions. The owner accepts the originals as permanent tripwires: bare requests without tracker context need not route to beads-workflow.
 
