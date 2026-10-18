@@ -63,7 +63,7 @@ Seven skills repeat the same two rules; both earlier gatekeeper reviews deferred
 
 ## Part E: independent verification review in agent-handoff-prompt
 
-Status: open
+Status: done (commit "docs: add independent verification review to agent-handoff-prompt")
 
 The library has no first-class "re-execute the evidence before endorsing a verdict" posture — what the gatekeeper did on this repo: isolated-archive reruns, scratch negative tests, privacy greps. Per the library overlap rule, this belongs as a section in an existing skill, not a new skill.
 
