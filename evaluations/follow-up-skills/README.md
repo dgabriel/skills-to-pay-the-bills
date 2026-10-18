@@ -8,7 +8,7 @@ The initial authored IDs named the target skill and followed an ordered pattern.
 
 | Retained run | Target decisions | Interpretation |
 | --- | --- | --- |
-| Initial descriptive-ID evaluator | 12/12 | Potentially cued by case IDs; retained separately, not counted as independent blind evidence |
+| Initial descriptive-ID evaluator | 12/12 | Invalid blind evidence due to target hints in IDs; retained separately, excluded from the primary score |
 | Fresh opaque-ID evaluator | 12/12 | Primary fresh selection result; six positive and six negative target decisions |
 
 The handoff positives cover writing a self-contained brief and assessing another model's critique. Its negatives cover session close and direct patch review against a spec. A target-negative case may correctly select another skill. The score measures target presence/absence, not exact agreement on the complete selected set.
@@ -20,3 +20,7 @@ All three new packages passed the skill validator and standalone copy/reference 
 No paired behavioral runs, rollback tests, live debugging, legal approval, delivery to another agent, tool initialization, CI setup, or local runtime/device testing were performed for these additions. A routing score does not show quality improvement or native host discovery. Source patterns are supplied reviewer paraphrases with explicit owner decisions, not an independently audited transcript dataset. No public source content was extracted and no transcripts were accessed.
 
 The manifest pins retained evidence hashes. `scripts/replay_history_evaluations.py` (or the main replay command) verifies frozen entry points, all supplied descriptions, request/label integrity, ID-only normalization, case balance, recorded selections, and artifact hashes. It does not call models or rerun the static package-copy experiments.
+
+## Gatekeeper clarification
+
+[Routing process record](routing-process.md) identifies the two distinct evaluator tasks and the input each received. All twelve rationales differ between the outputs after ID matching; the opaque output was generated independently, not converted from the descriptive-ID output. This records the tool-call sequence and evaluator self-report, not a filesystem-time inference or an access-control audit.

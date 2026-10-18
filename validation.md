@@ -10,7 +10,7 @@ As of 2026-10-17, the library contains **14 skill packages**. Skills are indepen
 
 **Retained paired evidence, reviewed statically:** triage and prose were actual text-generation runs on fictional inputs. Both conditions reached the same triage dispositions and preserved the prose facts; no quality gain was demonstrated. Assisted triage made identity/state accounting more explicit; prose was 51 baseline words versus 53 assisted words. No live review, dismissal, dashboard, network, or device workflow ran in those pairs.
 
-**Open limits:** The three follow-up skills have selection/structural evidence and static scope review, but no behavioral comparison.  no repeated statistical trial or blinded numerical quality grading establishes a general advantage. Native host discovery, real tracker/Git recovery, live stakeholder/UI sessions, and owner-device testing remain unverified. The later owner-approved triage override clarification has not received a new paired run. Privacy scans and static checks do not prove absence of every possible secret or name. Historical source, privacy, and execution qualifications remain below.
+**Open limits:** The three follow-up skills have selection/structural evidence and static scope review, but no behavioral comparison. No repeated statistical trial or blinded numerical quality grading establishes a general advantage. Native host discovery, real tracker/Git recovery, live stakeholder/UI sessions, and owner-device testing remain unverified. The later owner-approved triage override clarification has not received a new paired run. Privacy scans and static checks do not prove absence of every possible secret or name. Historical source, privacy, and execution qualifications remain below.
 
 ## History (newest first)
 
@@ -18,15 +18,9 @@ The sections below retain the original results and pass-specific statements. “
 
 ### Follow-up candidate skills (2026-10-17)
 
-Added `diagnose-first`. Its scope and safety/authority boundaries were reviewed against the approved request.
-
-Added `docs-audit`. Its scope and safety/authority boundaries were reviewed against the approved request.
-
-Added `agent-handoff-prompt`. Its scope and safety/authority boundaries were reviewed against the approved request.
-
 The new-project starter prompt also gained an owner-authorized bootstrap stage pointing to existing Git, Beads, regression, review, triage, and local-test workflows. This was a static prompt edit; no tracker, CI service, runtime, or repository was initialized.
 
-These packages use supplied reviewer paraphrases and owner decisions, with no public source extraction or transcript access. Entry/package validators and static scope review ran. Separate-author cases were written after all three descriptions were frozen. The fresh opaque-ID evaluator scored **12/12**, with two positives and two negatives per skill, including handoff negatives for session close and direct patch-versus-spec review. The first evaluator saw descriptive IDs; it was interrupted before any scoring, but had saved a complete **12/12** output. That potentially cued result is retained separately. Only evaluator IDs changed; authored requests, labels, descriptions, and responses were not revised to improve a score. [Retained follow-up evidence](evaluations/follow-up-skills/README.md) records the process and both results. No new behavioral run is claimed.
+Added `diagnose-first`, `docs-audit`, and `agent-handoff-prompt`; static review checked their approved scope and authority boundaries. These packages use supplied reviewer paraphrases and owner decisions, with no public source extraction or transcript access. Entry/package validators and static scope review ran. Separate-author cases were written after all three descriptions were frozen. The fresh opaque-ID evaluator scored **12/12**, with two positives and two negatives per skill, including handoff negatives for session close and direct patch-versus-spec review. The first evaluator saw descriptive IDs; it was interrupted before any scoring, but had saved a complete **12/12** output. That descriptive-ID result is excluded as invalid blind evidence and retained separately to preserve the evaluation history. The primary opaque-ID output came from a second fresh evaluator, not a conversion of the first output; all twelve rationales differ after ID matching. Only evaluator IDs changed; authored requests, labels, descriptions, and responses were not revised to improve a score. [Retained follow-up evidence](evaluations/follow-up-skills/README.md) records the process and both results. No new behavioral run is claimed.
 
 All three new skills passed the skill validator. Standalone copies resolved 12 package-local references; scratch copies with each new Pattern evidence heading removed failed as expected. All three scripts and privacy scans passed after every local Part C commit. Replay adds integrity and score checks for the retained follow-up evidence; it does not regenerate model responses or repeat the scratch experiments.
 

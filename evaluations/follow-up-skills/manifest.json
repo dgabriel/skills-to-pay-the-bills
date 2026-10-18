@@ -9,7 +9,7 @@
   "process": "Separate author after freeze; initial descriptive-ID evaluator interrupted before scoring; complete output retained separately; fresh evaluator with opaque IDs. Prompts and labels unchanged.",
   "behavioral_runs": false,
   "artifact_sha256": {
-    "README.md": "9f53492f9664dbf510b5767375787baf699b8fa6f3b8d1987a09d7bfda7e03d9",
+    "README.md": "8d778c27a8d5f85c8878ca9bed54ce08af227acd998525e3b856179b7ed96693",
     "case-id-map.json": "12f139d3e797ea87f86e44f803f2cfd49e47f5a149adb9f3d0985d26d30086c7",
     "final-descriptions.json": "b8865991e24d5a00add62c4d591980964ef831b81b546373d130f949a255d496",
     "fresh-cases.json": "4c8cd75f25102b09582fd2c4f569a12efdaf5f9aa9b091fff7752b882d1354a7",
@@ -18,6 +18,7 @@
     "routing-input.json": "11cc41ab4e1ca2332e469c4121db60f8ec6f985eef8c76bf81a2e53226116382",
     "routing-output-authored-ids.json": "f1be1ecaec6d4a79b5a1d4305ab2a5134fa7f51717dbea7a26133120b3195666",
     "routing-output.json": "907930afaa7e5977779614691e955eec5abc917eae1e11912763b0eba4b3cb3e",
+    "routing-process.md": "d4724d27859648108ed2e40faf3a048ef183631b7ac4e1124dd8dfe4d1515ea3",
     "static-checks.json": "555c4b514d2e771415d141d3f26c8b567cf70d34b7c0b81eabf6521a196014e8"
   }
 }
