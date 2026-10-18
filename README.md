@@ -15,7 +15,7 @@ Opinionated, reusable workflows for planning, implementing, and checking softwar
 | [Design system workshop](skills/design-system-workshop/SKILL.md) | Defining visual tokens and component rules | `docs/design/style-guide.md`, plus UI integration when requested |
 | [Git workflow](skills/git-workflow/SKILL.md) | Branch setup/sync, commit/PR preparation, conflicts, recovery | Policy-grounded Git plan or authorized operation |
 | [Beads workflow](skills/beads-workflow/SKILL.md) | Durable Beads work, blockers, legacy IDs, handoffs | Accurate native issue state or command plan |
-| [Spec review](skills/spec-review/SKILL.md) | Read-only review against requirements and project rules | Findings with evidence, severity, and location |
+| [Spec review](skills/spec-review/SKILL.md) | Read-only patch review against an issue/specification or documented project rules; spec optional | Findings with evidence, severity, and location |
 | [Regression testing](skills/regression-testing/SKILL.md) | Behavior-focused regression tests and verification | Executed tests and reproducible failure reports |
 | [Review findings triage](skills/review-findings-triage/SKILL.md) | Resolving existing automated/adversarial findings | Owner decision table, tracked dispositions, verified gate/report or explicit blockers |
 | [Session start and close](skills/session-start-and-close/SKILL.md) | Orientation, interrupted-work recovery, and durable handoffs | Brief state/next-step report and tracker-backed follow-ups |
@@ -143,4 +143,4 @@ Maintenance helpers:
 | `scripts/replay_history_evaluations.py` | Compatibility forwarding stub for old commands; runs the same full replay entry point. |
 | `scripts/sync_contract.py` | Updates packaged contract copies from the shared source; `--check` detects drift without writing. |
 
-Current routing regression: the [canonical suite](evaluations/routing-regression/README.md) scores 89/93 retained target cases against all fourteen descriptions, separate from historical fresh-case scores. Re-score the complete set with a fresh evaluator whenever a description changes.
+Current routing regression: the [canonical suite](evaluations/routing-regression/README.md) scores 91/93 retained target cases against all fourteen descriptions, separate from historical fresh-case scores. Re-score the complete set with a fresh evaluator whenever a description changes.

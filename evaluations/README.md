@@ -4,7 +4,7 @@
 
 ## Current routing regression
 
-The [canonical suite](routing-regression/README.md) re-runs all retained case variants against the current fourteen descriptions: **89/93 target decisions**, separate from every historical score. Its 161 source occurrences map to 93 unique request/target/label cases. Four missed positives remain unchanged. This is new evaluation of retained cases, not new case authorship or statistical proof.
+The [canonical suite](routing-regression/README.md) re-runs all retained case variants against the current fourteen descriptions: **91/93 target decisions**, separate from the preserved previous 89/93 canonical snapshot and every historical score. Its 161 source occurrences map to 93 unique request/target/label cases. Two current missed positives remain recorded with unchanged requests and labels. This is new evaluation of retained cases, not new case authorship or statistical proof.
 
 Freeze the complete current description set before authoring/consolidating cases. Keep author/consolidator and fresh evaluator roles separate: the evaluator receives only descriptions and opaque request IDs/text, never labels, skill bodies, prior results, or work orders. Whenever any description changes, use a fresh evaluator on the **full** canonical set, retain the prior snapshot, and record the new output and process note. Replay verifies the current snapshot and scores saved decisions; it does not rerun models. Historical folders, including invalid evidence, remain unchanged.
 

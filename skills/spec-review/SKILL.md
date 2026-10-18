@@ -1,6 +1,6 @@
 ---
 name: spec-review
-description: Review a patch against its issue/specification and documented design rules, reporting evidence-ranked deviations without fixes by default. Use for read-only acceptance reviews, not implementation or free-form visual critique.
+description: Review a patch for correctness, security, and acceptance against its issue/specification or documented project rules, reporting evidence-ranked deviations without fixes by default. A supplied spec is not required. Use for read-only acceptance reviews, not implementation or free-form visual critique.
 ---
 
 # Spec Review

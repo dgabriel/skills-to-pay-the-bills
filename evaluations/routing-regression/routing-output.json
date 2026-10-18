@@ -4,592 +4,600 @@
     "selected": [
       "product-requirements-interview"
     ],
-    "rationale": "Defines, revises, or consolidates product requirements and scope."
+    "rationale": "Revise PRD scope."
   },
   {
     "id": "r-05660660e966af0c",
     "selected": [
       "git-workflow"
     ],
-    "rationale": "Requests repository Git policy and branch or commit operations."
+    "rationale": "Discover policy and create branch."
   },
   {
     "id": "r-060db610eafabff6",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Original writing has no source prose."
   },
   {
     "id": "r-075a5216adbfbe70",
     "selected": [
       "spec-review"
     ],
-    "rationale": "Requests an evidence-based acceptance review against documented requirements."
+    "rationale": "Read-only patch acceptance review."
   },
   {
     "id": "r-0b5ba84a1b1c729f",
     "selected": [
       "spec-review"
     ],
-    "rationale": "Requests an evidence-based acceptance review against documented requirements."
+    "rationale": "Check patch against documented rules."
   },
   {
     "id": "r-0ca49f2140662e72",
     "selected": [
       "session-start-and-close"
     ],
-    "rationale": "Requests repository orientation or durable session closure."
+    "rationale": "Resume interrupted repository work."
   },
   {
     "id": "r-0d54d0bfb2c74bd2",
     "selected": [
       "local-test-handoff"
     ],
-    "rationale": "Prepares a completed web feature for local network device testing."
+    "rationale": "Prepare completed web feature for LAN testing."
   },
   {
     "id": "r-0d872a25160808ae",
     "selected": [
       "diagnose-first"
     ],
-    "rationale": "A reported failure requires cause investigation before a correction."
+    "rationale": "Reproduce repeated bug before edits."
   },
   {
     "id": "r-0dc22a77ff23e044",
     "selected": [
       "regression-testing"
     ],
-    "rationale": "Requests executable checks of concrete behavior and failures."
+    "rationale": "Execute boundary regression tests."
   },
   {
     "id": "r-115151f72ec81a91",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Ephemeral checklist needs no durable tracker."
   },
   {
     "id": "r-144fe41b55e54aa8",
     "selected": [
       "prose-edit"
     ],
-    "rationale": "Requests a wording edit to existing text."
+    "rationale": "Edit an existing documentation heading."
   },
   {
     "id": "r-19aa598b65f8a132",
     "selected": [
       "local-test-handoff"
     ],
-    "rationale": "Prepares a completed web feature for local network device testing."
+    "rationale": "Prepare local multi-device testing."
   },
   {
     "id": "r-1cd22973978fafe0",
     "selected": [
-      "agent-handoff-prompt"
+      "session-start-and-close"
     ],
-    "rationale": "Requests a reusable agent assignment or assessment of another agent output."
+    "rationale": "Durable issue handoff for another session."
   },
   {
     "id": "r-1d927285a9e498dd",
     "selected": [
       "regression-testing"
     ],
-    "rationale": "Requests executable checks of concrete behavior and failures."
+    "rationale": "Execute endpoint behavior tests."
   },
   {
     "id": "r-245448577f534468",
     "selected": [
       "session-start-and-close"
     ],
-    "rationale": "Requests repository orientation or durable session closure."
+    "rationale": "Close session with durable task and Git handoff."
   },
   {
     "id": "r-2f8409ed25ddd7ef",
     "selected": [
       "git-workflow"
     ],
-    "rationale": "Requests repository Git policy and branch or commit operations."
+    "rationale": "Sync published branch under repository policy."
   },
   {
     "id": "r-30c8815c53040492",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Legal approval is outside supplied skills."
   },
   {
     "id": "r-31083efba6e8bff8",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Hosted deployment is outside local handoff scope."
   },
   {
     "id": "r-4a6277552c3dc556",
     "selected": [
-      "beads-workflow"
+      "beads-workflow",
+      "session-start-and-close"
     ],
-    "rationale": "Requests durable issue operations or handoff in an existing Beads project."
+    "rationale": "Beads issue handoff for session continuity."
   },
   {
     "id": "r-4d5bd260d667db81",
     "selected": [
       "regression-testing"
     ],
-    "rationale": "Requests executable checks of concrete behavior and failures."
+    "rationale": "Reproduce and verify omitted-field regression."
   },
   {
     "id": "r-4dca8ea919dcf4f8",
     "selected": [
       "agent-handoff-prompt"
     ],
-    "rationale": "Requests a reusable agent assignment or assessment of another agent output."
+    "rationale": "Assess another model critique against request and repository."
   },
   {
     "id": "r-4eaf37d86795c765",
     "selected": [
       "spec-review"
     ],
-    "rationale": "Requests an evidence-based acceptance review against documented requirements."
+    "rationale": "Read-only acceptance review of pagination patch."
   },
   {
     "id": "r-4f6bc38283874c54",
     "selected": [
       "product-requirements-interview"
     ],
-    "rationale": "Defines, revises, or consolidates product requirements and scope."
+    "rationale": "Draft requirements directly from brief."
   },
   {
     "id": "r-4f8d6fc91ed76325",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Ephemeral proofreading checklist needs no workflow."
   },
   {
     "id": "r-51bb931e177b1f3f",
     "selected": [
       "git-workflow"
     ],
-    "rationale": "Requests repository Git policy and branch or commit operations."
+    "rationale": "Recover missing commits after merge."
   },
   {
     "id": "r-53ef4aa35468dc1c",
     "selected": [
       "beads-workflow"
     ],
-    "rationale": "Requests durable issue operations or handoff in an existing Beads project."
+    "rationale": "Find ready tasks and blockers in Beads."
   },
   {
     "id": "r-5746b648722f863f",
     "selected": [
       "product-requirements-interview"
     ],
-    "rationale": "Defines, revises, or consolidates product requirements and scope."
+    "rationale": "Synthesize product interview into requirements."
   },
   {
     "id": "r-58b439d8f390ff3c",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Specified implementation requires no listed specialty."
   },
   {
     "id": "r-5a56d2024e4fd532",
     "selected": [
       "design-system-workshop"
     ],
-    "rationale": "Creates or deliberately revises a visual system and its rules."
+    "rationale": "Create visual language and semantic tokens."
   },
   {
     "id": "r-5c2c0f48cab2ea0d",
     "selected": [
       "technical-design-interview"
     ],
-    "rationale": "Requests architecture decisions from product requirements."
+    "rationale": "Derive tenant architecture from approved PRD."
   },
   {
     "id": "r-5f5be1593878a4e1",
     "selected": [
       "technical-design-interview"
     ],
-    "rationale": "Requests architecture decisions from product requirements."
+    "rationale": "Derive data and authorization design."
   },
   {
     "id": "r-62363f4adba5ec2f",
     "selected": [
       "prose-edit"
     ],
-    "rationale": "Requests a wording edit to existing text."
+    "rationale": "Tighten supplied prose in author voice."
   },
   {
     "id": "r-654a2bd68472d766",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Free-form aesthetic impressions are outside listed scopes."
   },
   {
     "id": "r-65f01b914ad65f21",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Audience explanation alone does not define or revise requirements."
   },
   {
     "id": "r-67d10bd7ed2bb089",
     "selected": [
       "regression-testing"
     ],
-    "rationale": "Requests executable checks of concrete behavior and failures."
+    "rationale": "Write and execute regression tests."
   },
   {
     "id": "r-6b91e4d0c56db9dc",
     "selected": [
       "beads-workflow"
     ],
-    "rationale": "Requests durable issue operations or handoff in an existing Beads project."
+    "rationale": "Resolve legacy issue in Beads."
   },
   {
     "id": "r-6ba325342c76cbfe",
     "selected": [
       "product-requirements-interview"
     ],
-    "rationale": "Defines, revises, or consolidates product requirements and scope."
+    "rationale": "Draft users journey scope and success signals."
   },
   {
     "id": "r-6f4f6d45d4c7251c",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Implement an agreed fix without reopening diagnosis."
   },
   {
     "id": "r-71022fa13d1ab3d7",
-    "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "selected": [
+      "spec-review"
+    ],
+    "rationale": "Read-only pre-merge patch review."
   },
   {
     "id": "r-717b860f6004bd18",
     "selected": [
       "git-workflow"
     ],
-    "rationale": "Requests repository Git policy and branch or commit operations."
+    "rationale": "Prepare branch for PR under repository policy."
   },
   {
     "id": "r-7bcba4affbab225d",
     "selected": [
       "git-workflow"
     ],
-    "rationale": "Requests repository Git policy and branch or commit operations."
+    "rationale": "Discover sync policy and resolve conflicts."
   },
   {
     "id": "r-7f5e95e902ab6947",
     "selected": [
       "technical-design-interview"
     ],
-    "rationale": "Requests architecture decisions from product requirements."
+    "rationale": "Design architecture from MVP requirements."
   },
   {
     "id": "r-819965388e771f40",
-    "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "selected": [
+      "spec-review"
+    ],
+    "rationale": "Review patch correctness and security."
   },
   {
     "id": "r-8257262118c2737f",
     "selected": [
       "regression-testing"
     ],
-    "rationale": "Requests executable checks of concrete behavior and failures."
+    "rationale": "Execute test-only endpoint regression coverage."
   },
   {
     "id": "r-83ddd63616394771",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Conceptual testing explanation needs no execution workflow."
   },
   {
     "id": "r-8558674f15d8c943",
     "selected": [
       "session-start-and-close"
     ],
-    "rationale": "Requests repository orientation or durable session closure."
+    "rationale": "Close session with durable resume notes."
   },
   {
     "id": "r-8c6e37f4ca887674",
     "selected": [
       "design-system-workshop"
     ],
-    "rationale": "Creates or deliberately revises a visual system and its rules."
+    "rationale": "Create visual system from mood board."
   },
   {
     "id": "r-90403b89cbccbd94",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Implement settled endpoint contract."
   },
   {
     "id": "r-93080eb56126afa2",
-    "selected": [
-      "prose-edit"
-    ],
-    "rationale": "Requests a wording edit to existing text."
+    "selected": [],
+    "rationale": "Routine button text change needs no Git workflow."
   },
   {
     "id": "r-94f22aba78a0460b",
     "selected": [
-      "regression-testing"
+      "spec-review"
     ],
-    "rationale": "Requests executable checks of concrete behavior and failures."
+    "rationale": "Read-only feature verification and findings."
   },
   {
     "id": "r-98216b49c6364312",
     "selected": [
       "spec-review"
     ],
-    "rationale": "Requests an evidence-based acceptance review against documented requirements."
+    "rationale": "Acceptance and access-control review with findings only."
   },
   {
     "id": "r-98caf683040dac84",
     "selected": [
       "spec-review"
     ],
-    "rationale": "Requests an evidence-based acceptance review against documented requirements."
+    "rationale": "Review implementation against issue and style rules."
   },
   {
     "id": "r-99bc13404852d588",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Routine handler typo fix."
   },
   {
     "id": "r-9b0a5bd2ecba280b",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Implement already specified feature."
   },
   {
     "id": "r-9b231af289e73732",
     "selected": [
       "agent-handoff-prompt"
     ],
-    "rationale": "Requests a reusable agent assignment or assessment of another agent output."
+    "rationale": "Create self-contained assignment for another assistant."
   },
   {
     "id": "r-9edac8d79e46db54",
     "selected": [
       "technical-design-interview"
     ],
-    "rationale": "Requests architecture decisions from product requirements."
+    "rationale": "Revise architecture for offline requirements."
   },
   {
     "id": "r-9fa03a1be46b5917",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Household planning is outside repository workflows."
   },
   {
     "id": "r-a30421711007daaa",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Direct query edit lacks a requested investigation workflow."
   },
   {
     "id": "r-a544587f6535b833",
     "selected": [
       "design-system-workshop"
     ],
-    "rationale": "Creates or deliberately revises a visual system and its rules."
+    "rationale": "Deliberately revise visual tokens and component rules."
   },
   {
     "id": "r-a9ce30d85f24a0c1",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Tracker adoption is excluded from Beads workflow."
   },
   {
     "id": "r-ab2fd2d780f0b82b",
     "selected": [
       "product-requirements-interview"
     ],
-    "rationale": "Defines, revises, or consolidates product requirements and scope."
+    "rationale": "Interview to define users journey scope and PRD."
   },
   {
     "id": "r-ab7877596c555ab1",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Jira without Beads is outside listed tracker workflow."
   },
   {
     "id": "r-ac127d1dbe36259c",
     "selected": [
       "beads-workflow"
     ],
-    "rationale": "Requests durable issue operations or handoff in an existing Beads project."
+    "rationale": "Find blocked status and claim existing bd task."
   },
   {
     "id": "r-b127f7e32520b11d",
     "selected": [
       "product-requirements-interview"
     ],
-    "rationale": "Defines, revises, or consolidates product requirements and scope."
+    "rationale": "Interview to define MVP requirements."
   },
   {
     "id": "r-b2c2df3924cda43b",
     "selected": [
       "diagnose-first"
     ],
-    "rationale": "A reported failure requires cause investigation before a correction."
+    "rationale": "Investigate reported test failure."
   },
   {
     "id": "r-b8452dd0e03977bb",
     "selected": [
       "design-system-workshop"
     ],
-    "rationale": "Creates or deliberately revises a visual system and its rules."
+    "rationale": "Define initial visual system."
   },
   {
     "id": "r-be84369b70bb5df3",
     "selected": [
       "prose-edit"
     ],
-    "rationale": "Requests a wording edit to existing text."
+    "rationale": "Tighten supplied talk prose while preserving voice."
   },
   {
     "id": "r-c0be5d54c64e7b5b",
     "selected": [
       "prose-edit"
     ],
-    "rationale": "Requests a wording edit to existing text."
+    "rationale": "Correct existing welcome prose."
   },
   {
     "id": "r-c260053ff51515e6",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Routine screen implementation within established design system."
   },
   {
     "id": "r-c2be3691a79d27fa",
     "selected": [
       "docs-audit"
     ],
-    "rationale": "Checks documentation claims and coverage against implementation."
+    "rationale": "Verify help privacy and architecture claims against implementation."
   },
   {
     "id": "r-c69cdc7412b9579e",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Implement final product and visual specification."
   },
   {
     "id": "r-c6fc243963ea3cfe",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Implement settled CSS change."
   },
   {
     "id": "r-c98175fd9f40b740",
     "selected": [
       "spec-review"
     ],
-    "rationale": "Requests an evidence-based acceptance review against documented requirements."
+    "rationale": "Read-only issue and formatting compliance review."
   },
   {
     "id": "r-cf028817c44e78bf",
     "selected": [
       "technical-design-interview"
     ],
-    "rationale": "Requests architecture decisions from product requirements."
+    "rationale": "Revise architecture for residency and asynchronous behavior."
   },
   {
     "id": "r-d14c2d53391da075",
     "selected": [
       "diagnose-first"
     ],
-    "rationale": "A reported failure requires cause investigation before a correction."
+    "rationale": "Reported bug warrants diagnosis before fixing."
   },
   {
     "id": "r-d38ae2600f202c9c",
     "selected": [
       "docs-audit"
     ],
-    "rationale": "Checks documentation claims and coverage against implementation."
+    "rationale": "Audit setup documentation against code and configuration."
   },
   {
     "id": "r-d450de8975cf3903",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Conceptual data structure explanation."
   },
   {
     "id": "r-d49bf70b8a1c983d",
     "selected": [
       "technical-design-interview"
     ],
-    "rationale": "Requests architecture decisions from product requirements."
+    "rationale": "Interview unresolved technical constraints and derive architecture."
   },
   {
     "id": "r-d5d93827b1931e6a",
     "selected": [
       "review-findings-triage"
     ],
-    "rationale": "Processes existing reviewer findings and verifies the gate."
+    "rationale": "Triage existing adversarial findings and verify gate."
   },
   {
     "id": "r-d760048cccc36d3c",
     "selected": [
       "diagnose-first"
     ],
-    "rationale": "A reported failure requires cause investigation before a correction."
+    "rationale": "Investigate environment-specific regression against working revision."
   },
   {
     "id": "r-d96db9680cd99297",
     "selected": [
       "review-findings-triage"
     ],
-    "rationale": "Processes existing reviewer findings and verifies the gate."
+    "rationale": "Resolve existing automated findings and verify gate."
   },
   {
     "id": "r-dd10a6eb71165c8e",
-    "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "selected": [
+      "spec-review"
+    ],
+    "rationale": "Read-only code review needs no test execution."
   },
   {
     "id": "r-dec370dfba228d3e",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Implement fully specified endpoint."
   },
   {
     "id": "r-e3dca1c7ff4c95e6",
     "selected": [
       "diagnose-first"
     ],
-    "rationale": "A reported failure requires cause investigation before a correction."
+    "rationale": "Investigate startup configuration failure before fixing."
   },
   {
     "id": "r-e4e82e304c3e8fcb",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Conceptual review gate explanation needs no repository workflow."
   },
   {
     "id": "r-e7f50989f1c27961",
-    "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "selected": [
+      "beads-workflow"
+    ],
+    "rationale": "Legacy tracker ID lookup; confirm Beads context first."
   },
   {
     "id": "r-eff90e0c50afd807",
     "selected": [
-      "beads-workflow"
+      "beads-workflow",
+      "session-start-and-close"
     ],
-    "rationale": "Requests durable issue operations or handoff in an existing Beads project."
+    "rationale": "Update bd blockers and completion and leave session handoff."
   },
   {
     "id": "r-f03fc3fbafec958e",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Implement settled architecture without design revision."
   },
   {
     "id": "r-f156672a15b3f017",
     "selected": [],
-    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+    "rationale": "Routine screen work with approved visual tokens."
   },
   {
     "id": "r-f504ef95227fa2f8",
     "selected": [
       "spec-review"
     ],
-    "rationale": "Requests an evidence-based acceptance review against documented requirements."
+    "rationale": "Read-only acceptance review without tests."
   },
   {
     "id": "r-f6df67eac0d408b6",
     "selected": [
       "design-system-workshop"
     ],
-    "rationale": "Creates or deliberately revises a visual system and its rules."
+    "rationale": "Deliberately revise visual identity and integrate agreed tokens."
   },
   {
     "id": "r-f9244f574104846d",
     "selected": [
       "prose-edit"
     ],
-    "rationale": "Requests a wording edit to existing text."
+    "rationale": "Tighten supplied README prose."
   },
   {
     "id": "r-fa1a07e327596da1",
     "selected": [
       "spec-review"
     ],
-    "rationale": "Requests an evidence-based acceptance review against documented requirements."
+    "rationale": "Read-only acceptance review with ranked evidence."
   }
 ]
