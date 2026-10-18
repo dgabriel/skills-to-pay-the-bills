@@ -16,7 +16,21 @@ def check(root=ROOT):
     old_names = re.findall(r'renamed from `([^`]+)`', rename_notes.read_text()) if rename_notes.is_file() else []
     canonical = (root / 'shared/execution-contract.md').read_bytes()
     # Per-skill rules are data; generic package checks remain below.
-    skill_rules = json.loads((root / 'scripts/skill_checks.json').read_text())
+    config = json.loads((root / 'scripts/skill_checks.json').read_text())
+    groups = config['groups']
+    skill_rules = config['skills']
+    supported = {'required_provenance_headings', 'required_description_text', 'forbidden_characters'}
+    for key in sorted(set(config) - {'groups', 'skills'}):
+        errors.append(f'scripts/skill_checks.json: unknown config key {key}')
+    for group, rules in groups.items():
+        for key in sorted(set(rules) - supported):
+            errors.append(f'scripts/skill_checks.json: unknown rule {key} in group {group}')
+    for name, rules in skill_rules.items():
+        for key in sorted(set(rules) - supported - {'groups'}):
+            errors.append(f'scripts/skill_checks.json: unknown rule {key} for {name}')
+        for group in rules.get('groups', []):
+            if group not in groups:
+                errors.append(f'scripts/skill_checks.json: unknown group {group} for {name}')
     skills = sorted((root / 'skills').glob('*/SKILL.md'))
     skill_names = {entry.parent.name for entry in skills}
     for name in sorted(set(skill_rules) - skill_names):
@@ -33,7 +47,12 @@ def check(root=ROOT):
         required_files = ['PROVENANCE.md', 'LICENSE', 'agents/openai.yaml']
         if portable:
             required_files += ['references/procedure.md', 'references/execution-contract.md']
-        rules = skill_rules.get(skill.name, {})
+        local_rules = skill_rules.get(skill.name, {})
+        rules = {}
+        # Group and local rules compose; local extras cannot silently drop a shared check.
+        for source in [groups[group] for group in local_rules.get('groups', []) if group in groups] + [local_rules]:
+            for key in supported:
+                rules.setdefault(key, []).extend(source.get(key, []))
         provenance = skill / 'PROVENANCE.md'
         provenance_text = provenance.read_text() if provenance.is_file() else ''
         for rule in rules.get('required_provenance_headings', []):
