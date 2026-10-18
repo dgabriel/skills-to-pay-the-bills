@@ -25,7 +25,7 @@ The `validation.md` restructure (`docs: put current validation status first`) sh
 
 ## Part B: one canonical routing regression suite
 
-Status: open
+Status: done (commit "test: consolidate routing evidence into one regression suite")
 
 The real coverage gap: replay scores frozen outputs against frozen descriptions. A new or edited description that cannibalizes another skill's routing is never detected, because the 35-case, 28-case, 16-case, and 12-case sets are never re-run against the current fourteen descriptions. The follow-up negatives cover one direction of one boundary only, and incidentally.
 

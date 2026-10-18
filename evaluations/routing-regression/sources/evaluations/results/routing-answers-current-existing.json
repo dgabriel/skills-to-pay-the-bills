@@ -1,0 +1,142 @@
+{
+  "route-01": {
+    "skill": "product-requirements-interview",
+    "expected": true
+  },
+  "route-02": {
+    "skill": "product-requirements-interview",
+    "expected": true
+  },
+  "route-03": {
+    "skill": "product-requirements-interview",
+    "expected": true
+  },
+  "route-04": {
+    "skill": "product-requirements-interview",
+    "expected": false
+  },
+  "route-05": {
+    "skill": "product-requirements-interview",
+    "expected": false
+  },
+  "route-06": {
+    "skill": "technical-design-interview",
+    "expected": true
+  },
+  "route-07": {
+    "skill": "technical-design-interview",
+    "expected": true
+  },
+  "route-08": {
+    "skill": "technical-design-interview",
+    "expected": true
+  },
+  "route-09": {
+    "skill": "technical-design-interview",
+    "expected": false
+  },
+  "route-10": {
+    "skill": "technical-design-interview",
+    "expected": false
+  },
+  "route-11": {
+    "skill": "design-system-workshop",
+    "expected": true
+  },
+  "route-12": {
+    "skill": "design-system-workshop",
+    "expected": true
+  },
+  "route-13": {
+    "skill": "design-system-workshop",
+    "expected": true
+  },
+  "route-14": {
+    "skill": "design-system-workshop",
+    "expected": false
+  },
+  "route-15": {
+    "skill": "design-system-workshop",
+    "expected": false
+  },
+  "route-16": {
+    "skill": "git-workflow",
+    "expected": true
+  },
+  "route-17": {
+    "skill": "git-workflow",
+    "expected": true
+  },
+  "route-18": {
+    "skill": "git-workflow",
+    "expected": true
+  },
+  "route-19": {
+    "skill": "git-workflow",
+    "expected": false
+  },
+  "route-20": {
+    "skill": "git-workflow",
+    "expected": false
+  },
+  "route-21": {
+    "skill": "beads-workflow",
+    "expected": true
+  },
+  "route-22": {
+    "skill": "beads-workflow",
+    "expected": true
+  },
+  "route-23": {
+    "skill": "beads-workflow",
+    "expected": true
+  },
+  "route-24": {
+    "skill": "beads-workflow",
+    "expected": false
+  },
+  "route-25": {
+    "skill": "beads-workflow",
+    "expected": false
+  },
+  "route-26": {
+    "skill": "spec-review",
+    "expected": true
+  },
+  "route-27": {
+    "skill": "spec-review",
+    "expected": true
+  },
+  "route-28": {
+    "skill": "spec-review",
+    "expected": true
+  },
+  "route-29": {
+    "skill": "spec-review",
+    "expected": false
+  },
+  "route-30": {
+    "skill": "spec-review",
+    "expected": false
+  },
+  "route-31": {
+    "skill": "regression-testing",
+    "expected": true
+  },
+  "route-32": {
+    "skill": "regression-testing",
+    "expected": true
+  },
+  "route-33": {
+    "skill": "regression-testing",
+    "expected": true
+  },
+  "route-34": {
+    "skill": "regression-testing",
+    "expected": false
+  },
+  "route-35": {
+    "skill": "regression-testing",
+    "expected": false
+  }
+}

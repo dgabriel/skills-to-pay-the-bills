@@ -1,0 +1,114 @@
+{
+  "product-requirements-interview-fresh-positive-2": {
+    "skill": "product-requirements-interview",
+    "expected": true
+  },
+  "regression-testing-fresh-negative-2": {
+    "skill": "regression-testing",
+    "expected": false
+  },
+  "spec-review-fresh-positive-1": {
+    "skill": "spec-review",
+    "expected": true
+  },
+  "technical-design-interview-fresh-negative-2": {
+    "skill": "technical-design-interview",
+    "expected": false
+  },
+  "spec-review-fresh-positive-2": {
+    "skill": "spec-review",
+    "expected": true
+  },
+  "technical-design-interview-fresh-negative-1": {
+    "skill": "technical-design-interview",
+    "expected": false
+  },
+  "git-workflow-fresh-negative-2": {
+    "skill": "git-workflow",
+    "expected": false
+  },
+  "spec-review-fresh-negative-1": {
+    "skill": "spec-review",
+    "expected": false
+  },
+  "git-workflow-fresh-negative-1": {
+    "skill": "git-workflow",
+    "expected": false
+  },
+  "technical-design-interview-fresh-positive-2": {
+    "skill": "technical-design-interview",
+    "expected": true
+  },
+  "regression-testing-fresh-positive-2": {
+    "skill": "regression-testing",
+    "expected": true
+  },
+  "design-system-workshop-fresh-positive-1": {
+    "skill": "design-system-workshop",
+    "expected": true
+  },
+  "beads-workflow-fresh-positive-1": {
+    "skill": "beads-workflow",
+    "expected": true
+  },
+  "beads-workflow-fresh-positive-2": {
+    "skill": "beads-workflow",
+    "expected": true
+  },
+  "design-system-workshop-fresh-negative-2": {
+    "skill": "design-system-workshop",
+    "expected": false
+  },
+  "design-system-workshop-fresh-negative-1": {
+    "skill": "design-system-workshop",
+    "expected": false
+  },
+  "product-requirements-interview-fresh-positive-1": {
+    "skill": "product-requirements-interview",
+    "expected": true
+  },
+  "technical-design-interview-fresh-positive-1": {
+    "skill": "technical-design-interview",
+    "expected": true
+  },
+  "beads-workflow-fresh-negative-1": {
+    "skill": "beads-workflow",
+    "expected": false
+  },
+  "spec-review-fresh-negative-2": {
+    "skill": "spec-review",
+    "expected": false
+  },
+  "git-workflow-fresh-positive-2": {
+    "skill": "git-workflow",
+    "expected": true
+  },
+  "product-requirements-interview-fresh-negative-1": {
+    "skill": "product-requirements-interview",
+    "expected": false
+  },
+  "design-system-workshop-fresh-positive-2": {
+    "skill": "design-system-workshop",
+    "expected": true
+  },
+  "regression-testing-fresh-negative-1": {
+    "skill": "regression-testing",
+    "expected": false
+  },
+  "product-requirements-interview-fresh-negative-2": {
+    "skill": "product-requirements-interview",
+    "expected": false
+  },
+  "regression-testing-fresh-positive-1": {
+    "skill": "regression-testing",
+    "expected": true
+  },
+  "beads-workflow-fresh-negative-2": {
+    "skill": "beads-workflow",
+    "expected": false
+  },
+  "git-workflow-fresh-positive-1": {
+    "skill": "git-workflow",
+    "expected": true
+  }
+}

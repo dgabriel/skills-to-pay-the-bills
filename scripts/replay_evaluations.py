@@ -15,6 +15,76 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def replay_canonical(root):
+    folder = root / 'evaluations/routing-regression'
+    if not folder.is_dir():
+        return False
+    manifest = json.loads((folder / 'manifest.json').read_text())
+    for relative, expected in manifest['artifact_sha256'].items():
+        assert hashlib.sha256((folder / relative).read_bytes()).hexdigest() == expected, 'Canonical artifact changed: ' + relative
+    freeze_path = folder / 'descriptions.json'
+    assert hashlib.sha256(freeze_path.read_bytes()).hexdigest() == manifest['descriptions_sha256'], 'Canonical description snapshot changed'
+    freeze = json.loads(freeze_path.read_text())
+    descriptions = {row['name']: row['description'] for row in freeze['skills']}
+    entries = {p.parent.name: p for p in (root / 'skills').glob('*/SKILL.md')}
+    assert len(descriptions) == len(freeze['skills'])
+    assert set(entries) == set(descriptions) == set(freeze['entry_sha256']), 'Canonical skill set changed; regenerate with a fresh evaluator'
+    for name, entry in entries.items():
+        text = entry.read_text()
+        description = next(line.removeprefix('description: ') for line in text.splitlines()
+                           if line.startswith('description: '))
+        assert description == descriptions[name], 'Current description changed; rerun the full canonical suite'
+        assert hashlib.sha256(entry.read_bytes()).hexdigest() == freeze['entry_sha256'][name], 'Current entry changed after canonical freeze'
+    inputs = json.loads((folder / 'routing-input.json').read_text())
+    cases = json.loads((folder / 'cases.json').read_text())
+    answers = json.loads((folder / 'routing-answers.json').read_text())
+    output = json.loads((folder / 'routing-output.json').read_text())
+    source_map = json.loads((folder / 'source-map.json').read_text())
+    assert inputs['skills'] == freeze['skills']
+    assert inputs['requests'] == [{'id': row['id'], 'prompt': row['prompt']} for row in cases]
+    ids = {row['id'] for row in cases}
+    assert len(ids) == len(cases) == len(output) == len(answers) == manifest['cases']
+    assert ids == set(answers) == {row['id'] for row in output}
+    assert len({row['id'] for row in output}) == len(output)
+    assert all(len(set(row['selected'])) == len(row['selected']) and
+               set(row['selected']) <= set(descriptions) for row in output)
+    source_data = {}
+    for source, copy in source_map['source_files'].items():
+        snapshot = folder / copy
+        assert snapshot.read_bytes() == (root / source).read_bytes(), 'Historical source differs from canonical copy'
+        source_data[source] = json.loads(snapshot.read_text())
+    seen = set()
+    unique_cases = set()
+    for row in cases:
+        assert isinstance(row['expected'], bool) and row['target'] in descriptions
+        assert answers[row['id']] == {'skill': row['target'], 'expected': row['expected']}
+        identity = (row['prompt'], row['target'], row['expected'])
+        assert identity not in unique_cases, 'Duplicate canonical target case'
+        unique_cases.add(identity)
+        digest = hashlib.sha256(json.dumps(identity, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()[:16]
+        assert row['id'] == 'r-' + digest, 'Unstable canonical ID'
+        assert row['sources'], 'Canonical case has no retained source'
+        for source in row['sources']:
+            original = {r['id']: r['prompt'] for r in source_data[source['input']]['requests']}
+            assert original[source['id']] == row['prompt'], 'Retained request text changed'
+            assert source_data[source['answers']][source['id']] == answers[row['id']], 'Retained target label changed'
+            key = (source['input'], source['answers'], source['id'])
+            assert key not in seen, 'Repeated source occurrence'
+            seen.add(key)
+    expected_sources = {(source['input'], source['answers'], request['id'])
+                        for source in manifest['source_sets']
+                        for request in source_data[source['input']]['requests']}
+    assert seen == expected_sources, 'Retained routing source omitted'
+    assert len(seen) == source_map['retained_occurrences'] == manifest['retained_occurrences']
+    correct = sum((answers[row['id']]['skill'] in row['selected']) == answers[row['id']]['expected']
+                  for row in output)
+    assert correct == manifest['correct'], 'Canonical recorded score changed'
+    print(f'Canonical current-description routing: {correct}/{len(output)} target decisions ({len(descriptions)} skills)')
+    print(f'Canonical integrity: {len(seen)} retained occurrences, {len(cases)} unique cases; unchanged labels and requests')
+    print('Canonical scope: one retained-case evaluator run, not fresh case authorship, quality grading, or native discovery')
+    return True
+
+
 def score_routing(results, version):
     inputs = json.loads((results / f'routing-input-{version}.json').read_text())
     answers = json.loads((results / f'routing-answers-{version}.json').read_text())
@@ -57,12 +127,14 @@ def replay_followup(root):
     descriptions = {row['name']: row['description'] for row in freeze['skills']}
     for name, expected in freeze['entry_sha256'].items():
         entry = root / 'skills' / name / 'SKILL.md'
-        assert hashlib.sha256(entry.read_bytes()).hexdigest() == expected, 'Follow-up entry changed after freeze'
+        if not (root / 'evaluations/routing-regression').is_dir():
+            assert hashlib.sha256(entry.read_bytes()).hexdigest() == expected, 'Follow-up entry changed after freeze'
     for name, expected in descriptions.items():
         text = (root / 'skills' / name / 'SKILL.md').read_text()
         actual = next(line.removeprefix('description: ') for line in text.splitlines()
                       if line.startswith('description: '))
-        assert actual == expected, 'Follow-up evaluator description changed'
+        if not (root / 'evaluations/routing-regression').is_dir():
+            assert actual == expected, 'Follow-up evaluator description changed'
     authored = json.loads((folder / 'fresh-cases.json').read_text())
     mapping = json.loads((folder / 'case-id-map.json').read_text())
     inputs = json.loads((folder / 'routing-input.json').read_text())
@@ -111,10 +183,12 @@ def replay_history(root):
     descriptions = {row['name']: row['description'] for row in freeze['skills']}
     for name, expected in freeze['entry_sha256'].items():
         entry = root / 'skills' / name / 'SKILL.md'
-        assert hashlib.sha256(entry.read_bytes()).hexdigest() == expected, 'Entry changed after freeze'
+        if not (root / 'evaluations/routing-regression').is_dir():
+            assert hashlib.sha256(entry.read_bytes()).hexdigest() == expected, 'Entry changed after freeze'
         actual = next(line.removeprefix('description: ') for line in entry.read_text().splitlines()
                       if line.startswith('description: '))
-        assert actual == descriptions[name]
+        if not (root / 'evaluations/routing-regression').is_dir():
+            assert actual == descriptions[name]
     inputs = json.loads((folder / 'routing-input.json').read_text())
     answers = json.loads((folder / 'routing-answers.json').read_text())
     output = json.loads((folder / 'routing-output.json').read_text())
@@ -158,6 +232,7 @@ def replay_history(root):
 
 
 def main():
+    canonical_current = replay_canonical(ROOT)
     cases = json.loads((ROOT / 'evaluations/cases.json').read_text())
     results = ROOT / 'evaluations/results'
     for version in ['v1', 'v2', 'current-existing', 'fresh']:
@@ -171,18 +246,21 @@ def main():
         entry = ROOT / 'skills' / name / 'SKILL.md'
         description = next(line.removeprefix('description: ') for line in entry.read_text().splitlines()
                            if line.startswith('description: '))
-        assert description == descriptions[name], 'Description changed after case authorship'
+        if not canonical_current:
+            assert description == descriptions[name], 'Description changed after case authorship'
         expected = evaluated
         if name in editorial:
             assert editorial[name]['evaluated_sha256'] == evaluated, 'Original freeze mismatch'
             expected = editorial[name]['current_sha256']
-        assert hashlib.sha256(entry.read_bytes()).hexdigest() == expected, 'Unrecorded entry change'
+        if not canonical_current:
+            assert hashlib.sha256(entry.read_bytes()).hexdigest() == expected, 'Unrecorded entry change'
     for row in json.loads((ROOT / 'evaluations/fresh-cases.json').read_text()):
         assert isinstance(row['expected'], bool)
     current = json.loads((results / 'routing-input-current-existing.json').read_text())
     previous = json.loads((results / 'routing-input-v2.json').read_text())
     assert current['requests'] == previous['requests'], 'Existing 35 requests changed'
-    print('Integrity: original freeze preserved; editorial fingerprints and unchanged descriptions verified')
+    print('Integrity: historical freezes/editorial records retained; current entries checked against canonical snapshot'
+          if canonical_current else 'Integrity: original freeze preserved; editorial fingerprints and unchanged descriptions verified')
     print('Integrity: existing 35 requests unchanged')
     fixtures = cases['tasks']['regression-testing']['artifacts']
     with tempfile.TemporaryDirectory(prefix='skill-replay-') as location:

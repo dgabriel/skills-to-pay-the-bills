@@ -1,0 +1,19 @@
+{
+  "source_files": {
+    "evaluations/results/routing-input-v1.json": "sources/evaluations/results/routing-input-v1.json",
+    "evaluations/results/routing-answers-v1.json": "sources/evaluations/results/routing-answers-v1.json",
+    "evaluations/results/routing-input-v2.json": "sources/evaluations/results/routing-input-v2.json",
+    "evaluations/results/routing-answers-v2.json": "sources/evaluations/results/routing-answers-v2.json",
+    "evaluations/results/routing-input-current-existing.json": "sources/evaluations/results/routing-input-current-existing.json",
+    "evaluations/results/routing-answers-current-existing.json": "sources/evaluations/results/routing-answers-current-existing.json",
+    "evaluations/results/routing-input-fresh.json": "sources/evaluations/results/routing-input-fresh.json",
+    "evaluations/results/routing-answers-fresh.json": "sources/evaluations/results/routing-answers-fresh.json",
+    "evaluations/history-skills/routing-input.json": "sources/evaluations/history-skills/routing-input.json",
+    "evaluations/history-skills/routing-answers.json": "sources/evaluations/history-skills/routing-answers.json",
+    "evaluations/follow-up-skills/routing-input.json": "sources/evaluations/follow-up-skills/routing-input.json",
+    "evaluations/follow-up-skills/routing-answers.json": "sources/evaluations/follow-up-skills/routing-answers.json"
+  },
+  "retained_occurrences": 161,
+  "unique_target_cases": 93,
+  "identity": "Exact request text, target skill, and expected boolean; reused occurrences retain every source mapping."
+}
