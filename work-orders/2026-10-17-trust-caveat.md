@@ -10,7 +10,7 @@ Shared rules: follow AGENTS.md. Don't push, open a PR, or touch remote history u
 
 ## Part A: README caveat for humans and agents
 
-Status: open
+Status: done (commit "docs: add trust-before-install caveat to README")
 
 Add two blocks to [README.md](../README.md), immediately after the "Intergalactic portability" section's install examples (after the second invocation code block, before the next heading):
 
