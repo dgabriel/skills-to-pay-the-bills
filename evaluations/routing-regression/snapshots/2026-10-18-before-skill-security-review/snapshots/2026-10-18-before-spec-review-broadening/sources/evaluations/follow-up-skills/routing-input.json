@@ -1,0 +1,110 @@
+{
+  "skills": [
+    {
+      "name": "agent-handoff-prompt",
+      "description": "Write a self-contained copy-pastable brief or work order for another agent/developer, or assess another agent’s output or critique against the request and repository with a verdict and required fixes. Not session close/orientation or direct patch review against a spec."
+    },
+    {
+      "name": "beads-workflow",
+      "description": "Use Beads (bd) for durable tasks, blockers, legacy issue lookup, claiming, completion, and session handoff in a repository that already uses Beads. Not for ephemeral checklists or adopting a new tracker."
+    },
+    {
+      "name": "design-system-workshop",
+      "description": "Create or deliberately revise a visual system from mood and product context, with semantic tokens and component rules; integrate agreed tokens when requested. Not routine screen work within an established system."
+    },
+    {
+      "name": "diagnose-first",
+      "description": "Investigate a reported bug or repeated failed fix before changing code; reproduce it, compare the last working state, and explain evidence and uncertainty. Not patch review against a spec, session orientation, or implementing an already agreed fix."
+    },
+    {
+      "name": "docs-audit",
+      "description": "Audit project documentation for factual accuracy and missing coverage against code and configuration, including help, privacy, terms, about, and architecture diagrams when requested. Not prose-only polishing, patch review against a spec, or legal approval."
+    },
+    {
+      "name": "git-workflow",
+      "description": "Discover and apply a repository’s Git policy when starting or syncing branches, preparing commits or PRs, resolving conflicts, or recovering missing work. Not for ordinary file edits without Git operations."
+    },
+    {
+      "name": "local-test-handoff",
+      "description": "Prepare a completed web feature on its current feature branch for owner testing on local devices, including LAN reachability and a device checklist. Not staging/production deployment, native app distribution, or a test-code-only task."
+    },
+    {
+      "name": "product-requirements-interview",
+      "description": "Define or revise a PRD, users, core journey, MVP scope, and success signals through an interview or immediate drafting from a supplied brief. Not for implementing an already specified feature."
+    },
+    {
+      "name": "prose-edit",
+      "description": "Edit or tighten existing prose in the author’s voice for READMEs, sites, talks, or descriptions, with a shorter and clearer default. Not code changes, new fact research, or writing a new piece without source text."
+    },
+    {
+      "name": "regression-testing",
+      "description": "Write and execute regression tests for a changed behavior, bug, endpoint, or threshold, using specification-derived expectations and reproducible failures. Not prose edits, general testing theory, or a read-only review without test execution."
+    },
+    {
+      "name": "review-findings-triage",
+      "description": "Triage existing automated or adversarial PR findings into fix, approved dismissal, or upstream tool bug, then verify the review gate. Use Flaught by default; not raw patch review, disabling a gate, or automatic merging."
+    },
+    {
+      "name": "session-start-and-close",
+      "description": "Orient or resume repository work after an interruption, give a concise where-we-are status, or close a session with durable task and Git handoff. Use Beads when present; not feature implementation, generic planning, or adopting a tracker."
+    },
+    {
+      "name": "spec-review",
+      "description": "Review a patch against its issue/specification and documented design rules, reporting evidence-ranked deviations without fixes by default. Use for read-only acceptance reviews, not implementation or free-form visual critique."
+    },
+    {
+      "name": "technical-design-interview",
+      "description": "Derive or revise system architecture and a technical design from a PRD or concrete requirements, proposing data, access, API, and operational decisions. Not routine debugging or implementing a settled design."
+    }
+  ],
+  "requests": [
+    {
+      "id": "rc7f6c1463a",
+      "prompt": "Before we publish the new onboarding guide, check its setup commands, environment variables, and supported authentication options against the repository. Flag stale claims and important setup steps that are missing, with evidence from code or configuration."
+    },
+    {
+      "id": "ra79dcd0707",
+      "prompt": "Act as the final legal approver for these terms of service. Tell us whether they are enforceable in every market where we sell and whether we can launch without further counsel review."
+    },
+    {
+      "id": "rcd20aac59e",
+      "prompt": "Another model claims our retry design is unsafe and recommends replacing the queue. Assess its critique against my original request and the repository, separate supported concerns from assumptions, and give a verdict plus the corrections that model should make."
+    },
+    {
+      "id": "r34f6d5924b",
+      "prompt": "Customers say the export sometimes drops the final day of results. Two attempts to adjust the date filter have not resolved it. Reproduce the failure, compare with the last release where exports were correct, and tell me what the evidence supports before editing anything."
+    },
+    {
+      "id": "r25381cd4cf",
+      "prompt": "Our help center says uploaded files are deleted immediately, and the architecture diagram shows a single storage service. Check those descriptions against the current upload pipeline, retention settings, and background jobs. Identify inaccurate statements and gaps in the privacy and help pages."
+    },
+    {
+      "id": "r2753afcf94",
+      "prompt": "Review the attached pagination patch against the issue's acceptance criteria. Check whether empty pages and expired cursors behave as specified, cite any deviations, and leave the code untouched."
+    },
+    {
+      "id": "rd1b5be6a0e",
+      "prompt": "We reproduced the duplicate receipt issue and agreed on the fix: enforce the existing idempotency key in the payment handler and return the saved result on retries. Implement that change and run the relevant tests."
+    },
+    {
+      "id": "rd31235d976",
+      "prompt": "The README facts have already been checked. Tighten the introduction below, keep its friendly voice, and remove repeated phrases. This is a wording pass; use only the supplied text."
+    },
+    {
+      "id": "r5791e2c9cb",
+      "prompt": "I'm done for today. Close out this session by recording where we stopped, checking the current Git state, and leaving durable notes on the remaining tasks so I can resume tomorrow."
+    },
+    {
+      "id": "r873ad193ab",
+      "prompt": "Turn this discussion into a self-contained assignment I can paste into a new coding assistant: add CSV import with a preview, preserve existing validation rules, and avoid changing billing. Include the context it needs, boundaries, expected deliverables, and checks for completion."
+    },
+    {
+      "id": "rcd70b673ef",
+      "prompt": "Perform a read-only acceptance review of the current notification-settings diff against the attached specification. Report concrete mismatches with file and line references, ranked by impact. Do not implement fixes."
+    },
+    {
+      "id": "r7f4dcacea8",
+      "prompt": "After the dependency upgrade, signing in works in development but loops back to the login page in our preview environment. Please investigate the actual cause, checking the previous working revision and relevant configuration. Explain any uncertainty before proposing a change."
+    }
+  ]
+}

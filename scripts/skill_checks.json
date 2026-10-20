@@ -56,6 +56,24 @@
       "groups": [
         "history-derived"
       ]
+    },
+    "skill-security-review": {
+      "required_provenance_headings": [
+        {
+          "text": "## Origin and scope",
+          "message": "missing original-skill provenance"
+        },
+        {
+          "text": "## Primary reference context",
+          "message": "missing security reference context"
+        }
+      ],
+      "required_description_text": [
+        {
+          "text": "not ",
+          "message": "missing selection exclusion"
+        }
+      ]
     }
   }
 }

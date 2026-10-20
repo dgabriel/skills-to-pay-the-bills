@@ -1,0 +1,595 @@
+[
+  {
+    "id": "r-04e20b970b7af2ad",
+    "selected": [
+      "product-requirements-interview"
+    ],
+    "rationale": "Defines, revises, or consolidates product requirements and scope."
+  },
+  {
+    "id": "r-05660660e966af0c",
+    "selected": [
+      "git-workflow"
+    ],
+    "rationale": "Requests repository Git policy and branch or commit operations."
+  },
+  {
+    "id": "r-060db610eafabff6",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-075a5216adbfbe70",
+    "selected": [
+      "spec-review"
+    ],
+    "rationale": "Requests an evidence-based acceptance review against documented requirements."
+  },
+  {
+    "id": "r-0b5ba84a1b1c729f",
+    "selected": [
+      "spec-review"
+    ],
+    "rationale": "Requests an evidence-based acceptance review against documented requirements."
+  },
+  {
+    "id": "r-0ca49f2140662e72",
+    "selected": [
+      "session-start-and-close"
+    ],
+    "rationale": "Requests repository orientation or durable session closure."
+  },
+  {
+    "id": "r-0d54d0bfb2c74bd2",
+    "selected": [
+      "local-test-handoff"
+    ],
+    "rationale": "Prepares a completed web feature for local network device testing."
+  },
+  {
+    "id": "r-0d872a25160808ae",
+    "selected": [
+      "diagnose-first"
+    ],
+    "rationale": "A reported failure requires cause investigation before a correction."
+  },
+  {
+    "id": "r-0dc22a77ff23e044",
+    "selected": [
+      "regression-testing"
+    ],
+    "rationale": "Requests executable checks of concrete behavior and failures."
+  },
+  {
+    "id": "r-115151f72ec81a91",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-144fe41b55e54aa8",
+    "selected": [
+      "prose-edit"
+    ],
+    "rationale": "Requests a wording edit to existing text."
+  },
+  {
+    "id": "r-19aa598b65f8a132",
+    "selected": [
+      "local-test-handoff"
+    ],
+    "rationale": "Prepares a completed web feature for local network device testing."
+  },
+  {
+    "id": "r-1cd22973978fafe0",
+    "selected": [
+      "agent-handoff-prompt"
+    ],
+    "rationale": "Requests a reusable agent assignment or assessment of another agent output."
+  },
+  {
+    "id": "r-1d927285a9e498dd",
+    "selected": [
+      "regression-testing"
+    ],
+    "rationale": "Requests executable checks of concrete behavior and failures."
+  },
+  {
+    "id": "r-245448577f534468",
+    "selected": [
+      "session-start-and-close"
+    ],
+    "rationale": "Requests repository orientation or durable session closure."
+  },
+  {
+    "id": "r-2f8409ed25ddd7ef",
+    "selected": [
+      "git-workflow"
+    ],
+    "rationale": "Requests repository Git policy and branch or commit operations."
+  },
+  {
+    "id": "r-30c8815c53040492",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-31083efba6e8bff8",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-4a6277552c3dc556",
+    "selected": [
+      "beads-workflow"
+    ],
+    "rationale": "Requests durable issue operations or handoff in an existing Beads project."
+  },
+  {
+    "id": "r-4d5bd260d667db81",
+    "selected": [
+      "regression-testing"
+    ],
+    "rationale": "Requests executable checks of concrete behavior and failures."
+  },
+  {
+    "id": "r-4dca8ea919dcf4f8",
+    "selected": [
+      "agent-handoff-prompt"
+    ],
+    "rationale": "Requests a reusable agent assignment or assessment of another agent output."
+  },
+  {
+    "id": "r-4eaf37d86795c765",
+    "selected": [
+      "spec-review"
+    ],
+    "rationale": "Requests an evidence-based acceptance review against documented requirements."
+  },
+  {
+    "id": "r-4f6bc38283874c54",
+    "selected": [
+      "product-requirements-interview"
+    ],
+    "rationale": "Defines, revises, or consolidates product requirements and scope."
+  },
+  {
+    "id": "r-4f8d6fc91ed76325",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-51bb931e177b1f3f",
+    "selected": [
+      "git-workflow"
+    ],
+    "rationale": "Requests repository Git policy and branch or commit operations."
+  },
+  {
+    "id": "r-53ef4aa35468dc1c",
+    "selected": [
+      "beads-workflow"
+    ],
+    "rationale": "Requests durable issue operations or handoff in an existing Beads project."
+  },
+  {
+    "id": "r-5746b648722f863f",
+    "selected": [
+      "product-requirements-interview"
+    ],
+    "rationale": "Defines, revises, or consolidates product requirements and scope."
+  },
+  {
+    "id": "r-58b439d8f390ff3c",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-5a56d2024e4fd532",
+    "selected": [
+      "design-system-workshop"
+    ],
+    "rationale": "Creates or deliberately revises a visual system and its rules."
+  },
+  {
+    "id": "r-5c2c0f48cab2ea0d",
+    "selected": [
+      "technical-design-interview"
+    ],
+    "rationale": "Requests architecture decisions from product requirements."
+  },
+  {
+    "id": "r-5f5be1593878a4e1",
+    "selected": [
+      "technical-design-interview"
+    ],
+    "rationale": "Requests architecture decisions from product requirements."
+  },
+  {
+    "id": "r-62363f4adba5ec2f",
+    "selected": [
+      "prose-edit"
+    ],
+    "rationale": "Requests a wording edit to existing text."
+  },
+  {
+    "id": "r-654a2bd68472d766",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-65f01b914ad65f21",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-67d10bd7ed2bb089",
+    "selected": [
+      "regression-testing"
+    ],
+    "rationale": "Requests executable checks of concrete behavior and failures."
+  },
+  {
+    "id": "r-6b91e4d0c56db9dc",
+    "selected": [
+      "beads-workflow"
+    ],
+    "rationale": "Requests durable issue operations or handoff in an existing Beads project."
+  },
+  {
+    "id": "r-6ba325342c76cbfe",
+    "selected": [
+      "product-requirements-interview"
+    ],
+    "rationale": "Defines, revises, or consolidates product requirements and scope."
+  },
+  {
+    "id": "r-6f4f6d45d4c7251c",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-71022fa13d1ab3d7",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-717b860f6004bd18",
+    "selected": [
+      "git-workflow"
+    ],
+    "rationale": "Requests repository Git policy and branch or commit operations."
+  },
+  {
+    "id": "r-7bcba4affbab225d",
+    "selected": [
+      "git-workflow"
+    ],
+    "rationale": "Requests repository Git policy and branch or commit operations."
+  },
+  {
+    "id": "r-7f5e95e902ab6947",
+    "selected": [
+      "technical-design-interview"
+    ],
+    "rationale": "Requests architecture decisions from product requirements."
+  },
+  {
+    "id": "r-819965388e771f40",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-8257262118c2737f",
+    "selected": [
+      "regression-testing"
+    ],
+    "rationale": "Requests executable checks of concrete behavior and failures."
+  },
+  {
+    "id": "r-83ddd63616394771",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-8558674f15d8c943",
+    "selected": [
+      "session-start-and-close"
+    ],
+    "rationale": "Requests repository orientation or durable session closure."
+  },
+  {
+    "id": "r-8c6e37f4ca887674",
+    "selected": [
+      "design-system-workshop"
+    ],
+    "rationale": "Creates or deliberately revises a visual system and its rules."
+  },
+  {
+    "id": "r-90403b89cbccbd94",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-93080eb56126afa2",
+    "selected": [
+      "prose-edit"
+    ],
+    "rationale": "Requests a wording edit to existing text."
+  },
+  {
+    "id": "r-94f22aba78a0460b",
+    "selected": [
+      "regression-testing"
+    ],
+    "rationale": "Requests executable checks of concrete behavior and failures."
+  },
+  {
+    "id": "r-98216b49c6364312",
+    "selected": [
+      "spec-review"
+    ],
+    "rationale": "Requests an evidence-based acceptance review against documented requirements."
+  },
+  {
+    "id": "r-98caf683040dac84",
+    "selected": [
+      "spec-review"
+    ],
+    "rationale": "Requests an evidence-based acceptance review against documented requirements."
+  },
+  {
+    "id": "r-99bc13404852d588",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-9b0a5bd2ecba280b",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-9b231af289e73732",
+    "selected": [
+      "agent-handoff-prompt"
+    ],
+    "rationale": "Requests a reusable agent assignment or assessment of another agent output."
+  },
+  {
+    "id": "r-9edac8d79e46db54",
+    "selected": [
+      "technical-design-interview"
+    ],
+    "rationale": "Requests architecture decisions from product requirements."
+  },
+  {
+    "id": "r-9fa03a1be46b5917",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-a30421711007daaa",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-a544587f6535b833",
+    "selected": [
+      "design-system-workshop"
+    ],
+    "rationale": "Creates or deliberately revises a visual system and its rules."
+  },
+  {
+    "id": "r-a9ce30d85f24a0c1",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-ab2fd2d780f0b82b",
+    "selected": [
+      "product-requirements-interview"
+    ],
+    "rationale": "Defines, revises, or consolidates product requirements and scope."
+  },
+  {
+    "id": "r-ab7877596c555ab1",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-ac127d1dbe36259c",
+    "selected": [
+      "beads-workflow"
+    ],
+    "rationale": "Requests durable issue operations or handoff in an existing Beads project."
+  },
+  {
+    "id": "r-b127f7e32520b11d",
+    "selected": [
+      "product-requirements-interview"
+    ],
+    "rationale": "Defines, revises, or consolidates product requirements and scope."
+  },
+  {
+    "id": "r-b2c2df3924cda43b",
+    "selected": [
+      "diagnose-first"
+    ],
+    "rationale": "A reported failure requires cause investigation before a correction."
+  },
+  {
+    "id": "r-b8452dd0e03977bb",
+    "selected": [
+      "design-system-workshop"
+    ],
+    "rationale": "Creates or deliberately revises a visual system and its rules."
+  },
+  {
+    "id": "r-be84369b70bb5df3",
+    "selected": [
+      "prose-edit"
+    ],
+    "rationale": "Requests a wording edit to existing text."
+  },
+  {
+    "id": "r-c0be5d54c64e7b5b",
+    "selected": [
+      "prose-edit"
+    ],
+    "rationale": "Requests a wording edit to existing text."
+  },
+  {
+    "id": "r-c260053ff51515e6",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-c2be3691a79d27fa",
+    "selected": [
+      "docs-audit"
+    ],
+    "rationale": "Checks documentation claims and coverage against implementation."
+  },
+  {
+    "id": "r-c69cdc7412b9579e",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-c6fc243963ea3cfe",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-c98175fd9f40b740",
+    "selected": [
+      "spec-review"
+    ],
+    "rationale": "Requests an evidence-based acceptance review against documented requirements."
+  },
+  {
+    "id": "r-cf028817c44e78bf",
+    "selected": [
+      "technical-design-interview"
+    ],
+    "rationale": "Requests architecture decisions from product requirements."
+  },
+  {
+    "id": "r-d14c2d53391da075",
+    "selected": [
+      "diagnose-first"
+    ],
+    "rationale": "A reported failure requires cause investigation before a correction."
+  },
+  {
+    "id": "r-d38ae2600f202c9c",
+    "selected": [
+      "docs-audit"
+    ],
+    "rationale": "Checks documentation claims and coverage against implementation."
+  },
+  {
+    "id": "r-d450de8975cf3903",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-d49bf70b8a1c983d",
+    "selected": [
+      "technical-design-interview"
+    ],
+    "rationale": "Requests architecture decisions from product requirements."
+  },
+  {
+    "id": "r-d5d93827b1931e6a",
+    "selected": [
+      "review-findings-triage"
+    ],
+    "rationale": "Processes existing reviewer findings and verifies the gate."
+  },
+  {
+    "id": "r-d760048cccc36d3c",
+    "selected": [
+      "diagnose-first"
+    ],
+    "rationale": "A reported failure requires cause investigation before a correction."
+  },
+  {
+    "id": "r-d96db9680cd99297",
+    "selected": [
+      "review-findings-triage"
+    ],
+    "rationale": "Processes existing reviewer findings and verifies the gate."
+  },
+  {
+    "id": "r-dd10a6eb71165c8e",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-dec370dfba228d3e",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-e3dca1c7ff4c95e6",
+    "selected": [
+      "diagnose-first"
+    ],
+    "rationale": "A reported failure requires cause investigation before a correction."
+  },
+  {
+    "id": "r-e4e82e304c3e8fcb",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-e7f50989f1c27961",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-eff90e0c50afd807",
+    "selected": [
+      "beads-workflow"
+    ],
+    "rationale": "Requests durable issue operations or handoff in an existing Beads project."
+  },
+  {
+    "id": "r-f03fc3fbafec958e",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-f156672a15b3f017",
+    "selected": [],
+    "rationale": "The request does not match a supplied workflow or lacks its defining scope."
+  },
+  {
+    "id": "r-f504ef95227fa2f8",
+    "selected": [
+      "spec-review"
+    ],
+    "rationale": "Requests an evidence-based acceptance review against documented requirements."
+  },
+  {
+    "id": "r-f6df67eac0d408b6",
+    "selected": [
+      "design-system-workshop"
+    ],
+    "rationale": "Creates or deliberately revises a visual system and its rules."
+  },
+  {
+    "id": "r-f9244f574104846d",
+    "selected": [
+      "prose-edit"
+    ],
+    "rationale": "Requests a wording edit to existing text."
+  },
+  {
+    "id": "r-fa1a07e327596da1",
+    "selected": [
+      "spec-review"
+    ],
+    "rationale": "Requests an evidence-based acceptance review against documented requirements."
+  }
+]

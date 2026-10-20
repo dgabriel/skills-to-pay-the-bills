@@ -1,0 +1,82 @@
+{
+  "skills": [
+    {
+      "name": "agent-handoff-prompt",
+      "description": "Write a self-contained copy-pastable brief or work order for another agent/developer, or assess another agent’s output or critique against the request and repository with a verdict and required fixes. Not session close/orientation or direct patch review against a spec."
+    },
+    {
+      "name": "beads-workflow",
+      "description": "Use Beads (bd) for durable tasks, blockers, legacy issue lookup, claiming, completion, and session handoff in a repository that already uses Beads. Not for ephemeral checklists or adopting a new tracker."
+    },
+    {
+      "name": "design-system-workshop",
+      "description": "Create or deliberately revise a visual system from mood and product context, with semantic tokens and component rules; integrate agreed tokens when requested. Not routine screen work within an established system."
+    },
+    {
+      "name": "diagnose-first",
+      "description": "Investigate a reported bug or repeated failed fix before changing code; reproduce it, compare the last working state, and explain evidence and uncertainty. Not patch review against a spec, session orientation, or implementing an already agreed fix."
+    },
+    {
+      "name": "docs-audit",
+      "description": "Audit project documentation for factual accuracy and missing coverage against code and configuration, including help, privacy, terms, about, and architecture diagrams when requested. Not prose-only polishing, patch review against a spec, or legal approval."
+    },
+    {
+      "name": "git-workflow",
+      "description": "Discover and apply a repository’s Git policy when starting or syncing branches, preparing commits or PRs, resolving conflicts, or recovering missing work. Not for ordinary file edits without Git operations."
+    },
+    {
+      "name": "local-test-handoff",
+      "description": "Prepare a completed web feature on its current feature branch for owner testing on local devices, including LAN reachability and a device checklist. Not staging/production deployment, native app distribution, or a test-code-only task."
+    },
+    {
+      "name": "product-requirements-interview",
+      "description": "Define or revise a PRD, users, core journey, MVP scope, and success signals through an interview or immediate drafting from a supplied brief. Not for implementing an already specified feature."
+    },
+    {
+      "name": "prose-edit",
+      "description": "Edit or tighten existing prose in the author’s voice for READMEs, sites, talks, or descriptions, with a shorter and clearer default. Not code changes, new fact research, or writing a new piece without source text."
+    },
+    {
+      "name": "regression-testing",
+      "description": "Write and execute regression tests for a changed behavior, bug, endpoint, or threshold, using specification-derived expectations and reproducible failures. Not prose edits, general testing theory, or a read-only review without test execution."
+    },
+    {
+      "name": "review-findings-triage",
+      "description": "Triage existing automated or adversarial PR findings into fix, approved dismissal, or upstream tool bug, then verify the review gate. Use Flaught by default; not raw patch review, disabling a gate, or automatic merging."
+    },
+    {
+      "name": "session-start-and-close",
+      "description": "Orient or resume repository work after an interruption, give a concise where-we-are status, or close a session with durable task and Git handoff. Use Beads when present; not feature implementation, generic planning, or adopting a tracker."
+    },
+    {
+      "name": "skill-security-review",
+      "description": "Inspect a skill package or update before installation or enablement for prompt injection, risky scripts, excessive authority, and data exposure. Review the full folder and diff; not a general app security audit, automatic installation, or a safety certification."
+    },
+    {
+      "name": "spec-review",
+      "description": "Review a patch for correctness, security, and acceptance against its issue/specification or documented project rules, reporting evidence-ranked deviations without fixes by default. A supplied spec is not required. Use for read-only acceptance reviews, not implementation or free-form visual critique."
+    },
+    {
+      "name": "technical-design-interview",
+      "description": "Derive or revise system architecture and a technical design from a PRD or concrete requirements, proposing data, access, API, and operational decisions. Not routine debugging or implementing a settled design."
+    }
+  ],
+  "requests": [
+    {
+      "id": "q7m2v9",
+      "prompt": "A community author sent me a reusable agent workflow bundle. Before I add it to my assistant, inspect the entire supplied folder, including helper scripts and reference files, for hidden instructions, network uploads, credential access, and permissions beyond its stated purpose. Give me evidence and inspection limits; do not run or install it."
+    },
+    {
+      "id": "c4r8n1",
+      "prompt": "Review this pull request for the account settings endpoint against the attached acceptance criteria. Pay particular attention to whether an authenticated user can change another user's email address. Report concrete security and correctness deviations with file references, without making fixes."
+    },
+    {
+      "id": "h9w3k6",
+      "prompt": "The reusable assistant workflow we already use has a proposed update. Compare the old and new bundles and inspect the complete updated package before we enable it. Determine whether the new helper script or changed instructions introduce command execution, sensitive-data exposure, or broader authority, and identify what could not be verified without executing anything."
+    },
+    {
+      "id": "b6t1p8",
+      "prompt": "Our automated pull request checker flagged possible secret leakage in a logging change and two authorization issues. Triage these existing findings against the code: identify which need fixes, which can be dismissed with evidence, and whether any indicate a checker bug. Then verify the review gate; don't disable it or merge the change."
+    }
+  ]
+}

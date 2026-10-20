@@ -1,0 +1,174 @@
+{
+  "skills": [
+    {
+      "name": "spec-review",
+      "description": "Perform a read-only review of a patch or implementation against its issue, specification, architecture, and style guide; report actionable correctness, security, scope, and test findings. Not a request to fix code."
+    },
+    {
+      "name": "design-system-workshop",
+      "description": "Create or deliberately revise a visual system from mood and product context, with semantic tokens and component rules; integrate agreed tokens when requested. Not routine screen work within an established system."
+    },
+    {
+      "name": "git-workflow",
+      "description": "Discover and apply a repository\u2019s Git policy when starting or syncing branches, preparing commits or PRs, resolving conflicts, or recovering missing work. Not for ordinary file edits without Git operations."
+    },
+    {
+      "name": "beads-workflow",
+      "description": "Use Beads (bd) for durable tasks, blockers, legacy issue lookup, claiming, completion, and session handoff in a repository that already uses Beads. Not for ephemeral checklists or adopting a new tracker."
+    },
+    {
+      "name": "product-requirements-interview",
+      "description": "Define or revise a PRD, users, core journey, MVP scope, and success signals through an interview or immediate drafting from a supplied brief. Not for implementing an already specified feature."
+    },
+    {
+      "name": "technical-design-interview",
+      "description": "Derive or revise system architecture and a technical design from a PRD or concrete requirements, proposing data, access, API, and operational decisions. Not routine debugging or implementing a settled design."
+    },
+    {
+      "name": "regression-testing",
+      "description": "Write or run behavior-focused regression tests for a specified feature or change and report reproducible results, including happy, edge, and error paths. Not for routine prose edits or a read-only spec-review-only request."
+    }
+  ],
+  "requests": [
+    {
+      "id": "route-10",
+      "prompt": "Implement a specified CSS fix."
+    },
+    {
+      "id": "route-13",
+      "prompt": "Define a visual guide only for our new app."
+    },
+    {
+      "id": "route-06",
+      "prompt": "Design the architecture for this MVP."
+    },
+    {
+      "id": "route-21",
+      "prompt": "Find ready Beads work and inspect blockers."
+    },
+    {
+      "id": "route-32",
+      "prompt": "Test happy, edge, and error behavior of these endpoints."
+    },
+    {
+      "id": "route-23",
+      "prompt": "Prepare a Beads issue handoff for another session."
+    },
+    {
+      "id": "route-30",
+      "prompt": "Summarize a product interview."
+    },
+    {
+      "id": "route-17",
+      "prompt": "Plan recovery for commits missing after a squash merge."
+    },
+    {
+      "id": "route-27",
+      "prompt": "Check this implementation against its issue and style guide."
+    },
+    {
+      "id": "route-25",
+      "prompt": "Use Jira in a repo that does not use Beads."
+    },
+    {
+      "id": "route-15",
+      "prompt": "Fix this SQL query."
+    },
+    {
+      "id": "route-11",
+      "prompt": "Create a design system from this mood board."
+    },
+    {
+      "id": "route-12",
+      "prompt": "Revise our brand tokens and component rules."
+    },
+    {
+      "id": "route-28",
+      "prompt": "Give a read-only pre-merge review of these changes."
+    },
+    {
+      "id": "route-09",
+      "prompt": "Diagnose this unit test failure."
+    },
+    {
+      "id": "route-20",
+      "prompt": "Change button text without Git operations."
+    },
+    {
+      "id": "route-31",
+      "prompt": "Write and run regression tests for this change."
+    },
+    {
+      "id": "route-07",
+      "prompt": "Propose data model and auth from our PRD."
+    },
+    {
+      "id": "route-26",
+      "prompt": "Review this patch for correctness and security."
+    },
+    {
+      "id": "route-01",
+      "prompt": "Interview me about an MVP for a tool-sharing app."
+    },
+    {
+      "id": "route-34",
+      "prompt": "Change a heading in documentation."
+    },
+    {
+      "id": "route-14",
+      "prompt": "Build a screen using our approved tokens."
+    },
+    {
+      "id": "route-19",
+      "prompt": "Explain our product audience."
+    },
+    {
+      "id": "route-03",
+      "prompt": "Turn this product brief into requirements without asking questions."
+    },
+    {
+      "id": "route-33",
+      "prompt": "Verify this feature and report exact failures without fixing app code."
+    },
+    {
+      "id": "route-29",
+      "prompt": "Fix this bug directly; no review requested."
+    },
+    {
+      "id": "route-22",
+      "prompt": "Resolve legacy issue OLD-42 to its native ID in this Beads project."
+    },
+    {
+      "id": "route-04",
+      "prompt": "Fix a typo in this handler."
+    },
+    {
+      "id": "route-24",
+      "prompt": "Write an ephemeral checklist for this reply."
+    },
+    {
+      "id": "route-05",
+      "prompt": "Implement this fully specified endpoint."
+    },
+    {
+      "id": "route-35",
+      "prompt": "Review code read-only without running tests."
+    },
+    {
+      "id": "route-16",
+      "prompt": "Prepare my branch for a PR under this repository policy."
+    },
+    {
+      "id": "route-18",
+      "prompt": "Sync this published feature branch with the mainline."
+    },
+    {
+      "id": "route-02",
+      "prompt": "Revise our PRD to narrow launch scope."
+    },
+    {
+      "id": "route-08",
+      "prompt": "Revise our system design for offline operation."
+    }
+  ]
+}

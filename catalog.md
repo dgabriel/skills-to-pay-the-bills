@@ -18,6 +18,7 @@ Use this catalog to select a workflow; read the selected skill's `SKILL.md` befo
 | [diagnose-first](skills/diagnose-first/SKILL.md) | Reported bug or repeated unsuccessful fixes need diagnosis | Symptom, code/logs, last working state | Confirmed facts, hypotheses, safe next check | Agreed implementation or patch acceptance review |
 | [docs-audit](skills/docs-audit/SKILL.md) | Documentation accuracy or missing coverage needs inspection | Documents, code/config, audience | Factual findings, missing-doc inventory, requested diagrams | Prose-only edits or legal approval |
 | [agent-handoff-prompt](skills/agent-handoff-prompt/SKILL.md) | Write an agent/developer brief or assess another agent’s work | Original request, repository evidence, supplied output | Self-contained brief or verdict with required fixes | Session close/orientation or patch review against a spec |
+| [skill-security-review](skills/skill-security-review/SKILL.md) | Before installing, enabling, or updating a skill package | Complete package/revision, intended task/permissions, update baseline | Authority and findings tables, coverage gaps, bounded verdict | General app security audit, automatic installation, or safety certification |
 
 ## Compose only when useful
 

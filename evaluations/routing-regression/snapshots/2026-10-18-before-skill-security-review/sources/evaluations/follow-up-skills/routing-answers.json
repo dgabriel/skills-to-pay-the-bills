@@ -1,0 +1,50 @@
+{
+  "r34f6d5924b": {
+    "skill": "diagnose-first",
+    "expected": true
+  },
+  "r7f4dcacea8": {
+    "skill": "diagnose-first",
+    "expected": true
+  },
+  "rd1b5be6a0e": {
+    "skill": "diagnose-first",
+    "expected": false
+  },
+  "r2753afcf94": {
+    "skill": "diagnose-first",
+    "expected": false
+  },
+  "rc7f6c1463a": {
+    "skill": "docs-audit",
+    "expected": true
+  },
+  "r25381cd4cf": {
+    "skill": "docs-audit",
+    "expected": true
+  },
+  "rd31235d976": {
+    "skill": "docs-audit",
+    "expected": false
+  },
+  "ra79dcd0707": {
+    "skill": "docs-audit",
+    "expected": false
+  },
+  "r873ad193ab": {
+    "skill": "agent-handoff-prompt",
+    "expected": true
+  },
+  "rcd20aac59e": {
+    "skill": "agent-handoff-prompt",
+    "expected": true
+  },
+  "r5791e2c9cb": {
+    "skill": "agent-handoff-prompt",
+    "expected": false
+  },
+  "rcd70b673ef": {
+    "skill": "agent-handoff-prompt",
+    "expected": false
+  }
+}

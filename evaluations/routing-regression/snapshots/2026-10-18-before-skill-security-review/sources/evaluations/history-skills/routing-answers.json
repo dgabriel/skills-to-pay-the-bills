@@ -1,0 +1,66 @@
+{
+  "handoff-positive-1": {
+    "skill": "local-test-handoff",
+    "expected": true
+  },
+  "session-positive-2": {
+    "skill": "session-start-and-close",
+    "expected": true
+  },
+  "session-positive-1": {
+    "skill": "session-start-and-close",
+    "expected": true
+  },
+  "session-negative-2": {
+    "skill": "session-start-and-close",
+    "expected": false
+  },
+  "review-positive-1": {
+    "skill": "review-findings-triage",
+    "expected": true
+  },
+  "review-negative-1": {
+    "skill": "review-findings-triage",
+    "expected": false
+  },
+  "handoff-negative-1": {
+    "skill": "local-test-handoff",
+    "expected": false
+  },
+  "session-negative-1": {
+    "skill": "session-start-and-close",
+    "expected": false
+  },
+  "handoff-positive-2": {
+    "skill": "local-test-handoff",
+    "expected": true
+  },
+  "review-positive-2": {
+    "skill": "review-findings-triage",
+    "expected": true
+  },
+  "review-negative-2": {
+    "skill": "review-findings-triage",
+    "expected": false
+  },
+  "prose-positive-1": {
+    "skill": "prose-edit",
+    "expected": true
+  },
+  "prose-positive-2": {
+    "skill": "prose-edit",
+    "expected": true
+  },
+  "handoff-negative-2": {
+    "skill": "local-test-handoff",
+    "expected": false
+  },
+  "prose-negative-2": {
+    "skill": "prose-edit",
+    "expected": false
+  },
+  "prose-negative-1": {
+    "skill": "prose-edit",
+    "expected": false
+  }
+}

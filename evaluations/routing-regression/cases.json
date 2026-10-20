@@ -284,6 +284,19 @@
     ]
   },
   {
+    "id": "r-3609d47e39e47d1e",
+    "prompt": "Our automated pull request checker flagged possible secret leakage in a logging change and two authorization issues. Triage these existing findings against the code: identify which need fixes, which can be dismissed with evidence, and whether any indicate a checker bug. Then verify the review gate; don't disable it or merge the change.",
+    "target": "skill-security-review",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/skill-security-review/routing-input.json",
+        "answers": "evaluations/skill-security-review/routing-answers.json",
+        "id": "b6t1p8"
+      }
+    ]
+  },
+  {
     "id": "r-4a6277552c3dc556",
     "prompt": "Prepare a Beads issue handoff for another session.",
     "target": "beads-workflow",
@@ -396,6 +409,19 @@
         "input": "evaluations/results/routing-input-current-existing.json",
         "answers": "evaluations/results/routing-answers-current-existing.json",
         "id": "route-17"
+      }
+    ]
+  },
+  {
+    "id": "r-53345aa4309b60f8",
+    "prompt": "A community author sent me a reusable agent workflow bundle. Before I add it to my assistant, inspect the entire supplied folder, including helper scripts and reference files, for hidden instructions, network uploads, credential access, and permissions beyond its stated purpose. Give me evidence and inspection limits; do not run or install it.",
+    "target": "skill-security-review",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/skill-security-review/routing-input.json",
+        "answers": "evaluations/skill-security-review/routing-answers.json",
+        "id": "q7m2v9"
       }
     ]
   },
@@ -607,6 +633,19 @@
         "input": "evaluations/results/routing-input-fresh.json",
         "answers": "evaluations/results/routing-answers-fresh.json",
         "id": "product-requirements-interview-fresh-positive-2"
+      }
+    ]
+  },
+  {
+    "id": "r-6f05924b6934cb0c",
+    "prompt": "Review this pull request for the account settings endpoint against the attached acceptance criteria. Pay particular attention to whether an authenticated user can change another user's email address. Report concrete security and correctness deviations with file references, without making fixes.",
+    "target": "skill-security-review",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/skill-security-review/routing-input.json",
+        "answers": "evaluations/skill-security-review/routing-answers.json",
+        "id": "c4r8n1"
       }
     ]
   },
@@ -1026,6 +1065,19 @@
         "input": "evaluations/results/routing-input-fresh.json",
         "answers": "evaluations/results/routing-answers-fresh.json",
         "id": "beads-workflow-fresh-negative-2"
+      }
+    ]
+  },
+  {
+    "id": "r-aa9a01a59c5e3bad",
+    "prompt": "The reusable assistant workflow we already use has a proposed update. Compare the old and new bundles and inspect the complete updated package before we enable it. Determine whether the new helper script or changed instructions introduce command execution, sensitive-data exposure, or broader authority, and identify what could not be verified without executing anything.",
+    "target": "skill-security-review",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/skill-security-review/routing-input.json",
+        "answers": "evaluations/skill-security-review/routing-answers.json",
+        "id": "h9w3k6"
       }
     ]
   },

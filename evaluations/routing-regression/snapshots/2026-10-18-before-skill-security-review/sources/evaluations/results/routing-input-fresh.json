@@ -1,0 +1,146 @@
+{
+  "skills": [
+    {
+      "name": "beads-workflow",
+      "description": "Use Beads (bd) for durable tasks, blockers, legacy issue lookup, claiming, completion, and session handoff in a repository that already uses Beads. Not for ephemeral checklists or adopting a new tracker."
+    },
+    {
+      "name": "design-system-workshop",
+      "description": "Create or deliberately revise a visual system from mood and product context, with semantic tokens and component rules; integrate agreed tokens when requested. Not routine screen work within an established system."
+    },
+    {
+      "name": "git-workflow",
+      "description": "Discover and apply a repository\u2019s Git policy when starting or syncing branches, preparing commits or PRs, resolving conflicts, or recovering missing work. Not for ordinary file edits without Git operations."
+    },
+    {
+      "name": "product-requirements-interview",
+      "description": "Define or revise a PRD, users, core journey, MVP scope, and success signals through an interview or immediate drafting from a supplied brief. Not for implementing an already specified feature."
+    },
+    {
+      "name": "regression-testing",
+      "description": "Write and execute regression tests for a changed behavior, bug, endpoint, or threshold, using specification-derived expectations and reproducible failures. Not prose edits, general testing theory, or a read-only review without test execution."
+    },
+    {
+      "name": "spec-review",
+      "description": "Review a patch against its issue/specification and documented design rules, reporting evidence-ranked deviations without fixes by default. Use for read-only acceptance reviews, not implementation or free-form visual critique."
+    },
+    {
+      "name": "technical-design-interview",
+      "description": "Derive or revise system architecture and a technical design from a PRD or concrete requirements, proposing data, access, API, and operational decisions. Not routine debugging or implementing a settled design."
+    }
+  ],
+  "requests": [
+    {
+      "id": "product-requirements-interview-fresh-positive-2",
+      "prompt": "Draft a PRD directly from this brief: small bakeries need customers to reserve next-day pickup slots; owners set daily capacity; payment happens at pickup. Define the primary users, end-to-end journey, first-release scope, and success signals, recording assumptions."
+    },
+    {
+      "id": "regression-testing-fresh-negative-2",
+      "prompt": "Explain unit, integration, and end-to-end testing to a new engineer. Use conceptual examples only; there is no repository to modify or run."
+    },
+    {
+      "id": "spec-review-fresh-positive-1",
+      "prompt": "Review this pull request against the attached invoice-export issue and the repository\u2019s documented CSV formatting rules. Report deviations with file and line evidence ranked by severity. Do not change files."
+    },
+    {
+      "id": "technical-design-interview-fresh-negative-2",
+      "prompt": "Our service crashes on startup with this missing environment variable error. Find the configuration mistake and fix it; no architecture change is needed."
+    },
+    {
+      "id": "spec-review-fresh-positive-2",
+      "prompt": "The attached patch claims to satisfy the approved account-deletion specification. Check each acceptance criterion and the documented access-control rules against the code, identify the strongest evidence for any gaps, and provide findings only."
+    },
+    {
+      "id": "technical-design-interview-fresh-negative-1",
+      "prompt": "Implement the already approved booking architecture exactly as written: use the specified schema, endpoints, queue, and retry rules. Do not reopen design decisions."
+    },
+    {
+      "id": "git-workflow-fresh-negative-2",
+      "prompt": "Explain the difference between a hash map and a binary search tree with a small example."
+    },
+    {
+      "id": "spec-review-fresh-negative-1",
+      "prompt": "The search endpoint violates the attached pagination contract. Implement the missing cursor handling and update the code until it meets that contract."
+    },
+    {
+      "id": "git-workflow-fresh-negative-1",
+      "prompt": "Fix the typo in the welcome message in this file. Leave the change in my working tree; do not run any Git operations."
+    },
+    {
+      "id": "technical-design-interview-fresh-positive-2",
+      "prompt": "Revise our technical design for a booking platform so it supports regional data residency and asynchronous confirmation. Start from the attached PRD and propose changes to storage boundaries, authorization, API contracts, queues, and failure handling."
+    },
+    {
+      "id": "regression-testing-fresh-positive-2",
+      "prompt": "Our PATCH /profiles endpoint used to erase the display name when only the timezone was supplied. The contract says omitted fields stay unchanged. Write and execute a regression test that reproduces the bug and verifies the correction."
+    },
+    {
+      "id": "design-system-workshop-fresh-positive-1",
+      "prompt": "Our community gardening app needs its first visual language. Help us turn a calm, earthy mood into a color and type system, semantic tokens, and consistent rules for buttons, forms, and cards."
+    },
+    {
+      "id": "beads-workflow-fresh-positive-1",
+      "prompt": "This repository already tracks work with bd. Find the unresolved issue about CSV exports, check whether it is blocked, and claim it for this session before we begin."
+    },
+    {
+      "id": "beads-workflow-fresh-positive-2",
+      "prompt": "We use bd for this project. Record that the authentication migration is waiting on the security review, close the completed schema task, and leave a durable handoff for whoever takes over tomorrow."
+    },
+    {
+      "id": "design-system-workshop-fresh-negative-2",
+      "prompt": "Read this patch against the approved accessibility and component usage rules. Report any violations with file and line evidence, and leave the files untouched."
+    },
+    {
+      "id": "design-system-workshop-fresh-negative-1",
+      "prompt": "Add a password reset screen using our existing component library and unchanged typography, spacing, and color tokens. The approved mockup specifies every state."
+    },
+    {
+      "id": "product-requirements-interview-fresh-positive-1",
+      "prompt": "I have an idea for a neighborhood tool-lending service but have not settled who it serves or what belongs in the first release. Interview me to define the users, main journey, MVP boundaries, and measures of success, then turn that into a PRD."
+    },
+    {
+      "id": "technical-design-interview-fresh-positive-1",
+      "prompt": "We have approved requirements for a document approval service: multiple organizations, reviewer roles, audit history, and email reminders. Interview me about unresolved constraints and produce an architecture covering data, permissions, APIs, and operational choices."
+    },
+    {
+      "id": "beads-workflow-fresh-negative-1",
+      "prompt": "Give me a short checklist in this chat for proofreading a two-page announcement this afternoon. We do not need to save or track these tasks anywhere."
+    },
+    {
+      "id": "spec-review-fresh-negative-2",
+      "prompt": "Look at this screenshot and tell me whether the hero feels elegant or cluttered. There is no design specification; I want your aesthetic impressions."
+    },
+    {
+      "id": "git-workflow-fresh-positive-2",
+      "prompt": "My feature branch conflicts with the current integration branch. Determine how this repository expects branches to be synced, resolve the conflicts accordingly, and prepare the resulting changes for review."
+    },
+    {
+      "id": "product-requirements-interview-fresh-negative-1",
+      "prompt": "Implement the approved pickup-slot selector exactly as specified in the attached acceptance criteria and mockup. All product decisions are final."
+    },
+    {
+      "id": "design-system-workshop-fresh-positive-2",
+      "prompt": "We are deliberately replacing our finance dashboard\u2019s playful visual identity with a quieter professional direction. Propose revised semantic colors, typography, spacing, and component rules, then integrate the token values once we agree on them."
+    },
+    {
+      "id": "regression-testing-fresh-negative-1",
+      "prompt": "Review the checkout patch against the attached issue and list acceptance gaps with evidence. Do not edit anything or execute tests."
+    },
+    {
+      "id": "product-requirements-interview-fresh-negative-2",
+      "prompt": "The approved PRD calls for a multi-tenant appointment service. Work out the tenant data model, access controls, API boundaries, and deployment architecture in a technical design."
+    },
+    {
+      "id": "regression-testing-fresh-positive-1",
+      "prompt": "The discount calculation was fixed so a subtotal of exactly $100 qualifies for free shipping. Add and run tests for values below, at, and above the threshold, using that rule as the expected behavior and showing the old failure if reproducible."
+    },
+    {
+      "id": "beads-workflow-fresh-negative-2",
+      "prompt": "Our new repository has no issue tracker. Compare three tracking options and recommend one before we adopt anything."
+    },
+    {
+      "id": "git-workflow-fresh-positive-1",
+      "prompt": "I need to start work on the invoice export in this repository. Inspect its contribution rules and branch conventions, then create the appropriate branch from the correct base."
+    }
+  ]
+}

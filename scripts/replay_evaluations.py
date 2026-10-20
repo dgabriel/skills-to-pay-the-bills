@@ -85,6 +85,18 @@ def replay_canonical(root):
     return True
 
 
+def replay_supplemental(root):
+    # Supplemental reports are evidence to retain, never code to import or execute.
+    for manifest_path in sorted((root / 'evaluations').glob('*/supplemental-manifest.json')):
+        folder = manifest_path.parent
+        manifest = json.loads(manifest_path.read_text())
+        for relative, expected in manifest['artifact_sha256'].items():
+            artifact = folder / relative
+            assert artifact.resolve().is_relative_to(folder.resolve()), 'Supplemental artifact escapes evidence folder'
+            assert hashlib.sha256(artifact.read_bytes()).hexdigest() == expected, 'Supplemental evidence changed: ' + relative
+        print(manifest['label'] + ': retained hashes verified; no fixture code or agent response executed')
+
+
 def score_routing(results, version):
     inputs = json.loads((results / f'routing-input-{version}.json').read_text())
     answers = json.loads((results / f'routing-answers-{version}.json').read_text())
@@ -297,6 +309,7 @@ def main():
         print('Current review reproduction: expected unauthorized-state assertion failure, exit 1')
     if (ROOT / 'evaluations/history-skills/manifest.json').is_file():
         replay_history(ROOT)
+    replay_supplemental(ROOT)
     print('PASS: evidence replay complete; intentional fixture failures are expected')
     return 0
 
