@@ -11,9 +11,11 @@
     "evaluations/history-skills/routing-input.json": "sources/evaluations/history-skills/routing-input.json",
     "evaluations/history-skills/routing-answers.json": "sources/evaluations/history-skills/routing-answers.json",
     "evaluations/follow-up-skills/routing-input.json": "sources/evaluations/follow-up-skills/routing-input.json",
-    "evaluations/follow-up-skills/routing-answers.json": "sources/evaluations/follow-up-skills/routing-answers.json"
+    "evaluations/follow-up-skills/routing-answers.json": "sources/evaluations/follow-up-skills/routing-answers.json",
+    "evaluations/skill-security-review/routing-input.json": "sources/evaluations/skill-security-review/routing-input.json",
+    "evaluations/skill-security-review/routing-answers.json": "sources/evaluations/skill-security-review/routing-answers.json"
   },
-  "retained_occurrences": 161,
-  "unique_target_cases": 93,
+  "retained_occurrences": 165,
+  "unique_target_cases": 97,
   "identity": "Exact request text, target skill, and expected boolean; reused occurrences retain every source mapping."
 }

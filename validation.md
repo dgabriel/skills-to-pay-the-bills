@@ -2,11 +2,11 @@
 
 ## Current status
 
-As of 2026-10-18, the library contains **14 skill packages**. Skills are independently selectable; project policy and explicit owner decisions override defaults. Current checks cover structure, portable references, recorded evidence, and executable fixtures, not universal behavioral effectiveness.
+As of 2026-10-18, the library contains **15 skill packages**. Skills are independently selectable; project policy and explicit owner decisions override defaults. Current checks cover structure, portable references, recorded evidence, and executable fixtures, not universal behavioral effectiveness.
 
 **Latest executed checks:** `python3 scripts/check_library.py` and `python3 scripts/replay_evaluations.py` pass. Replay scores saved decisions, checks recorded fingerprints/artifacts, and executes the earlier booking-test, contrast, and review-defect fixtures. Expected assertion failures demonstrate known fixture defects; they are not application passes. These replay commands do not generate agent responses or fresh routing decisions. The old history command forwards to the same full replay; it has no separate verification logic.
 
-**Current-description routing regression:** after the owner-approved spec-review description broadening, one fresh evaluator scored **91/93 target decisions** against the frozen fourteen descriptions and all 93 unchanged cases. The two missed positives are “Prepare an issue handoff for another session.” (target beads-workflow; selected session-start-and-close) and “Verify this feature and report exact failures without fixing app code.” (target regression-testing; selected spec-review). Both broad spec-review positives now pass; the legacy-ID Beads case also passes. The new regression-testing miss is reported, not relabeled. The previous **89/93** canonical snapshot remains preserved separately. This reruns 161 source occurrences mapped to 93 distinct target cases, not fresh case authorship or a behavioral comparison. Historical fresh scores remain **12/12**, **16/16**, **28/28**; older sets remain **32/35**, revised **35/35**, and unchanged rerun **35/35**. See [canonical evidence](evaluations/routing-regression/README.md) for the process note, preserved snapshot, and limits.
+**Current-description routing regression:** one fresh evaluator scored **94/97 target decisions** against fifteen frozen descriptions, with **4/4** new security-review cases authored separately after freeze. All previous 93 cases and labels are unchanged. Current missed positives: bare issue handoff (beads-workflow target; agent-handoff-prompt and session-start-and-close selected), legacy-ID lookup (beads-workflow target; none selected), and feature verification (regression-testing target; spec-review selected). The two Beads originals remain accepted potential misses; the regression-testing miss remains unaccepted. Previous canonical **91/93** and **89/93** trees remain preserved. Historical fresh scores **12/12**, **16/16**, **28/28** and older **32/35**, revised **35/35**, unchanged **35/35** remain separate. See [canonical evidence](evaluations/routing-regression/README.md).
 
 **Retained paired evidence, reviewed statically:** triage and prose were actual text-generation runs on fictional inputs. Both conditions reached the same triage dispositions and preserved the prose facts; no quality gain was demonstrated. Assisted triage made identity/state accounting more explicit; prose was 51 baseline words versus 53 assisted words. No live review, dismissal, dashboard, network, or device workflow ran in those pairs.
 
@@ -15,6 +15,12 @@ As of 2026-10-18, the library contains **14 skill packages**. Skills are indepen
 ## History (newest first)
 
 The sections below retain the original results and pass-specific statements. “Current” inside an unchanged historical paragraph refers to that pass, not today's checkout.
+
+### Skill security review (2026-10-18)
+
+Added an original owner-requested package review workflow with public primary-reference context, not a session-history extraction. A separate author wrote two positive and two negative cases after the fifteen-description freeze; a different evaluator scored the complete 97-case set, with labels and prior results hidden: 94/97 overall and 4/4 new targets. The three misses remain recorded above. No case, label, or response was edited after scoring.
+
+An independent agent performed static review of fictional packages: a local-only sorter received no blocking findings, an update with a changed script and hidden review manipulation was blocked, and missing remote/helper content remained incomplete. The report inspected all files and update differences without executing candidate code or contacting services. These finite visible fixtures support the specific workflow checks, not a detection-rate claim, a paired comparison, or general security assurance. Manual review of the new library package found no executable scripts/hooks/dependencies; its requested authority is reading scoped candidate content and returning evidence. No installation, global policy, or sandbox enforcement was added. Entry/metadata, standalone references, recorded integrity, and scope checks were performed.
 
 ### Spec-review description broadening (2026-10-18)
 

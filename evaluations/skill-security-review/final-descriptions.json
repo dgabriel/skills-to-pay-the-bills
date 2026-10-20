@@ -1,0 +1,81 @@
+{
+  "skills": [
+    {
+      "name": "agent-handoff-prompt",
+      "description": "Write a self-contained copy-pastable brief or work order for another agent/developer, or assess another agent’s output or critique against the request and repository with a verdict and required fixes. Not session close/orientation or direct patch review against a spec."
+    },
+    {
+      "name": "beads-workflow",
+      "description": "Use Beads (bd) for durable tasks, blockers, legacy issue lookup, claiming, completion, and session handoff in a repository that already uses Beads. Not for ephemeral checklists or adopting a new tracker."
+    },
+    {
+      "name": "design-system-workshop",
+      "description": "Create or deliberately revise a visual system from mood and product context, with semantic tokens and component rules; integrate agreed tokens when requested. Not routine screen work within an established system."
+    },
+    {
+      "name": "diagnose-first",
+      "description": "Investigate a reported bug or repeated failed fix before changing code; reproduce it, compare the last working state, and explain evidence and uncertainty. Not patch review against a spec, session orientation, or implementing an already agreed fix."
+    },
+    {
+      "name": "docs-audit",
+      "description": "Audit project documentation for factual accuracy and missing coverage against code and configuration, including help, privacy, terms, about, and architecture diagrams when requested. Not prose-only polishing, patch review against a spec, or legal approval."
+    },
+    {
+      "name": "git-workflow",
+      "description": "Discover and apply a repository’s Git policy when starting or syncing branches, preparing commits or PRs, resolving conflicts, or recovering missing work. Not for ordinary file edits without Git operations."
+    },
+    {
+      "name": "local-test-handoff",
+      "description": "Prepare a completed web feature on its current feature branch for owner testing on local devices, including LAN reachability and a device checklist. Not staging/production deployment, native app distribution, or a test-code-only task."
+    },
+    {
+      "name": "product-requirements-interview",
+      "description": "Define or revise a PRD, users, core journey, MVP scope, and success signals through an interview or immediate drafting from a supplied brief. Not for implementing an already specified feature."
+    },
+    {
+      "name": "prose-edit",
+      "description": "Edit or tighten existing prose in the author’s voice for READMEs, sites, talks, or descriptions, with a shorter and clearer default. Not code changes, new fact research, or writing a new piece without source text."
+    },
+    {
+      "name": "regression-testing",
+      "description": "Write and execute regression tests for a changed behavior, bug, endpoint, or threshold, using specification-derived expectations and reproducible failures. Not prose edits, general testing theory, or a read-only review without test execution."
+    },
+    {
+      "name": "review-findings-triage",
+      "description": "Triage existing automated or adversarial PR findings into fix, approved dismissal, or upstream tool bug, then verify the review gate. Use Flaught by default; not raw patch review, disabling a gate, or automatic merging."
+    },
+    {
+      "name": "session-start-and-close",
+      "description": "Orient or resume repository work after an interruption, give a concise where-we-are status, or close a session with durable task and Git handoff. Use Beads when present; not feature implementation, generic planning, or adopting a tracker."
+    },
+    {
+      "name": "skill-security-review",
+      "description": "Inspect a skill package or update before installation or enablement for prompt injection, risky scripts, excessive authority, and data exposure. Review the full folder and diff; not a general app security audit, automatic installation, or a safety certification."
+    },
+    {
+      "name": "spec-review",
+      "description": "Review a patch for correctness, security, and acceptance against its issue/specification or documented project rules, reporting evidence-ranked deviations without fixes by default. A supplied spec is not required. Use for read-only acceptance reviews, not implementation or free-form visual critique."
+    },
+    {
+      "name": "technical-design-interview",
+      "description": "Derive or revise system architecture and a technical design from a PRD or concrete requirements, proposing data, access, API, and operational decisions. Not routine debugging or implementing a settled design."
+    }
+  ],
+  "entry_sha256": {
+    "agent-handoff-prompt": "1db31117f4a88f3c6b797eee26dcfd779f8774425e66d52f960d75aad5fe4d93",
+    "beads-workflow": "ed6b575a8eed7066ca8df67fd418f85a3b4d8909ee0262b8f41485ac65aa7726",
+    "design-system-workshop": "1318f7297e266ed4c87b65cad4bacf19ce5f475974417d8ec9d048a4927736d7",
+    "diagnose-first": "d16994046ae3ba18e6d91c110446f0ba58f7e0a6c3fff6564a8109f517ab4872",
+    "docs-audit": "a0e72c2b0d68a191b2f2be4e281155e0cccba4114faf0eb28d676eb25eef59bd",
+    "git-workflow": "659324d2b9563987c848350ba2f12bd226d915c5186bcef14b84c9ce0fb602b9",
+    "local-test-handoff": "05e7d77dc44a6beaa0bbe3f349db2c88b7f3f2e8fdc2a3a2383573bd8c431811",
+    "product-requirements-interview": "45629681a822111031fba97850c4e5ab909229114610022ccc92715932ed7217",
+    "prose-edit": "98e4c28b959315f6d5b55f61bdab16f9cb1b3aa2a9fd963f158736b17ca87796",
+    "regression-testing": "fc8be83b22218b81510ce3a823dad1458e8264a1a2787781e1a80fbc16088ca1",
+    "review-findings-triage": "39c4b2e339b21b545d87ffa3111518ec673cd4f23ad549af7b23d48a767235f2",
+    "session-start-and-close": "d4b32026cd8dd6c5f3a3bfa96d691ed7d6122709b1d93a4d4176b4a21b1e9f87",
+    "skill-security-review": "0ecfe4e8b5f3e87123286c29bfdaaea4c82520386852680e1174f6465049da9f",
+    "spec-review": "86b8c3004aa62234098327b60dac32968485005cee5e936bb094d313e4c99d0a",
+    "technical-design-interview": "c21fe96b17d4087ea4ef2fe901d476e50fb765148241a8fa25a614473d361dc6"
+  }
+}

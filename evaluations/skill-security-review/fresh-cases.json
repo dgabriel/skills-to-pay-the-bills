@@ -1,0 +1,26 @@
+[
+  {
+    "id": "q7m2v9",
+    "target": "skill-security-review",
+    "expected": true,
+    "prompt": "A community author sent me a reusable agent workflow bundle. Before I add it to my assistant, inspect the entire supplied folder, including helper scripts and reference files, for hidden instructions, network uploads, credential access, and permissions beyond its stated purpose. Give me evidence and inspection limits; do not run or install it."
+  },
+  {
+    "id": "c4r8n1",
+    "target": "skill-security-review",
+    "expected": false,
+    "prompt": "Review this pull request for the account settings endpoint against the attached acceptance criteria. Pay particular attention to whether an authenticated user can change another user's email address. Report concrete security and correctness deviations with file references, without making fixes."
+  },
+  {
+    "id": "h9w3k6",
+    "target": "skill-security-review",
+    "expected": true,
+    "prompt": "The reusable assistant workflow we already use has a proposed update. Compare the old and new bundles and inspect the complete updated package before we enable it. Determine whether the new helper script or changed instructions introduce command execution, sensitive-data exposure, or broader authority, and identify what could not be verified without executing anything."
+  },
+  {
+    "id": "b6t1p8",
+    "target": "skill-security-review",
+    "expected": false,
+    "prompt": "Our automated pull request checker flagged possible secret leakage in a logging change and two authorization issues. Triage these existing findings against the code: identify which need fixes, which can be dismissed with evidence, and whether any indicate a checker bug. Then verify the review gate; don't disable it or merge the change."
+  }
+]

@@ -1,0 +1,9 @@
+# Consolidated evaluator process
+
+The coordinator froze the current fourteen names/descriptions and all entry hashes in descriptions.json before consolidating retained cases. The author/consolidator copied original input/answer files, preserved exact request text and expected labels, and mapped reused occurrences to stable opaque case IDs. No new cases were authored. The evaluator was a separate fresh agent with no inherited conversation history and no model/reasoning override.
+
+The evaluator task allowed reading only routing-input.json and writing routing-output.json. It explicitly prohibited access to answer labels, cases, skill bodies, prior results, work orders, other files, other agents, and browsing. The evaluator returned: read only routing-input.json, answered all 93 requests with IDs preserved, inherited settings without overrides, and performed selection only, without scoring or behavioral execution. This is a tool-call/process record and evaluator self-report, not an access-control audit.
+
+After completion, the coordinator scored the output: **89/93 target decisions**. No descriptions, prompts, expected labels, or evaluator responses were edited after scoring. Four expected positives were missed: two older Beads requests with minimal tracker context and two broad spec-review requests. One of the former selected agent-handoff-prompt instead. The failures remain as routing tripwires, not relabeled negatives.
+
+The primary run uses opaque IDs. All historical evidence remains in place; the invalid descriptive-ID run and its original ID map are untouched and do not contribute additional independent observations. This is a rerun of retained cases against today's descriptions, not fresh case authorship, repeated statistical experimentation, a full-set selection metric, or proof of workflow quality/native discovery.

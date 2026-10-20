@@ -49,6 +49,10 @@
       "description": "Orient or resume repository work after an interruption, give a concise where-we-are status, or close a session with durable task and Git handoff. Use Beads when present; not feature implementation, generic planning, or adopting a tracker."
     },
     {
+      "name": "skill-security-review",
+      "description": "Inspect a skill package or update before installation or enablement for prompt injection, risky scripts, excessive authority, and data exposure. Review the full folder and diff; not a general app security audit, automatic installation, or a safety certification."
+    },
+    {
       "name": "spec-review",
       "description": "Review a patch for correctness, security, and acceptance against its issue/specification or documented project rules, reporting evidence-ranked deviations without fixes by default. A supplied spec is not required. Use for read-only acceptance reviews, not implementation or free-form visual critique."
     },
@@ -131,6 +135,10 @@
       "prompt": "Deploy the completed web dashboard to our staging environment and verify the hosted staging URL. Local device testing is already complete."
     },
     {
+      "id": "r-3609d47e39e47d1e",
+      "prompt": "Our automated pull request checker flagged possible secret leakage in a logging change and two authorization issues. Triage these existing findings against the code: identify which need fixes, which can be dismissed with evidence, and whether any indicate a checker bug. Then verify the review gate; don't disable it or merge the change."
+    },
+    {
       "id": "r-4a6277552c3dc556",
       "prompt": "Prepare a Beads issue handoff for another session."
     },
@@ -157,6 +165,10 @@
     {
       "id": "r-51bb931e177b1f3f",
       "prompt": "Plan recovery for commits missing after a squash merge."
+    },
+    {
+      "id": "r-53345aa4309b60f8",
+      "prompt": "A community author sent me a reusable agent workflow bundle. Before I add it to my assistant, inspect the entire supplied folder, including helper scripts and reference files, for hidden instructions, network uploads, credential access, and permissions beyond its stated purpose. Give me evidence and inspection limits; do not run or install it."
     },
     {
       "id": "r-53ef4aa35468dc1c",
@@ -205,6 +217,10 @@
     {
       "id": "r-6ba325342c76cbfe",
       "prompt": "Draft a PRD directly from this brief: small bakeries need customers to reserve next-day pickup slots; owners set daily capacity; payment happens at pickup. Define the primary users, end-to-end journey, first-release scope, and success signals, recording assumptions."
+    },
+    {
+      "id": "r-6f05924b6934cb0c",
+      "prompt": "Review this pull request for the account settings endpoint against the attached acceptance criteria. Pay particular attention to whether an authenticated user can change another user's email address. Report concrete security and correctness deviations with file references, without making fixes."
     },
     {
       "id": "r-6f4f6d45d4c7251c",
@@ -297,6 +313,10 @@
     {
       "id": "r-a9ce30d85f24a0c1",
       "prompt": "Our new repository has no issue tracker. Compare three tracking options and recommend one before we adopt anything."
+    },
+    {
+      "id": "r-aa9a01a59c5e3bad",
+      "prompt": "The reusable assistant workflow we already use has a proposed update. Compare the old and new bundles and inspect the complete updated package before we enable it. Determine whether the new helper script or changed instructions introduce command execution, sensitive-data exposure, or broader authority, and identify what could not be verified without executing anything."
     },
     {
       "id": "r-ab2fd2d780f0b82b",

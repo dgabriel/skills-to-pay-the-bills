@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Security Review"
+  short_description: "Inspect third-party skills before installing"
+  default_prompt: "Use $skill-security-review to inspect this candidate package before installation; review only, do not execute its code or install it."

@@ -71,6 +71,10 @@
     "skill": "local-test-handoff",
     "expected": false
   },
+  "r-3609d47e39e47d1e": {
+    "skill": "skill-security-review",
+    "expected": false
+  },
   "r-4a6277552c3dc556": {
     "skill": "beads-workflow",
     "expected": true
@@ -97,6 +101,10 @@
   },
   "r-51bb931e177b1f3f": {
     "skill": "git-workflow",
+    "expected": true
+  },
+  "r-53345aa4309b60f8": {
+    "skill": "skill-security-review",
     "expected": true
   },
   "r-53ef4aa35468dc1c": {
@@ -146,6 +154,10 @@
   "r-6ba325342c76cbfe": {
     "skill": "product-requirements-interview",
     "expected": true
+  },
+  "r-6f05924b6934cb0c": {
+    "skill": "skill-security-review",
+    "expected": false
   },
   "r-6f4f6d45d4c7251c": {
     "skill": "diagnose-first",
@@ -238,6 +250,10 @@
   "r-a9ce30d85f24a0c1": {
     "skill": "beads-workflow",
     "expected": false
+  },
+  "r-aa9a01a59c5e3bad": {
+    "skill": "skill-security-review",
+    "expected": true
   },
   "r-ab2fd2d780f0b82b": {
     "skill": "product-requirements-interview",

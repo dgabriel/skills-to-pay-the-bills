@@ -1,0 +1,18 @@
+{
+  "q7m2v9": {
+    "skill": "skill-security-review",
+    "expected": true
+  },
+  "c4r8n1": {
+    "skill": "skill-security-review",
+    "expected": false
+  },
+  "h9w3k6": {
+    "skill": "skill-security-review",
+    "expected": true
+  },
+  "b6t1p8": {
+    "skill": "skill-security-review",
+    "expected": false
+  }
+}

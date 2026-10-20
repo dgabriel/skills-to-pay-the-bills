@@ -1,0 +1,1551 @@
+[
+  {
+    "id": "r-04e20b970b7af2ad",
+    "prompt": "Revise our PRD to narrow launch scope.",
+    "target": "product-requirements-interview",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-02"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-02"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-02"
+      }
+    ]
+  },
+  {
+    "id": "r-05660660e966af0c",
+    "prompt": "I need to start work on the invoice export in this repository. Inspect its contribution rules and branch conventions, then create the appropriate branch from the correct base.",
+    "target": "git-workflow",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "git-workflow-fresh-positive-1"
+      }
+    ]
+  },
+  {
+    "id": "r-060db610eafabff6",
+    "prompt": "Write an original welcome speech for a neighborhood gardening club. I have no draft or source text; invent the structure and wording from scratch.",
+    "target": "prose-edit",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/history-skills/routing-input.json",
+        "answers": "evaluations/history-skills/routing-answers.json",
+        "id": "prose-negative-1"
+      }
+    ]
+  },
+  {
+    "id": "r-075a5216adbfbe70",
+    "prompt": "Read this patch against the attached acceptance criteria and documented component rules. Report deviations with supporting evidence, and leave the files untouched. There are no existing reviewer findings to process.",
+    "target": "review-findings-triage",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/history-skills/routing-input.json",
+        "answers": "evaluations/history-skills/routing-answers.json",
+        "id": "review-negative-1"
+      }
+    ]
+  },
+  {
+    "id": "r-0b5ba84a1b1c729f",
+    "prompt": "Read this patch against the approved accessibility and component usage rules. Report any violations with file and line evidence, and leave the files untouched.",
+    "target": "design-system-workshop",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "design-system-workshop-fresh-negative-2"
+      }
+    ]
+  },
+  {
+    "id": "r-0ca49f2140662e72",
+    "prompt": "I am returning to this repository after an interruption. Inspect the durable task records and current Git state, then give me a concise account of where work stands and the next unfinished step before making changes.",
+    "target": "session-start-and-close",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/history-skills/routing-input.json",
+        "answers": "evaluations/history-skills/routing-answers.json",
+        "id": "session-positive-1"
+      }
+    ]
+  },
+  {
+    "id": "r-0d54d0bfb2c74bd2",
+    "prompt": "Get the completed web dashboard running from this feature branch for my laptop and phone to try locally. Confirm that another device on my home network can reach it and leave clear steps for checking the new behavior.",
+    "target": "local-test-handoff",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/history-skills/routing-input.json",
+        "answers": "evaluations/history-skills/routing-answers.json",
+        "id": "handoff-positive-2"
+      }
+    ]
+  },
+  {
+    "id": "r-0d872a25160808ae",
+    "prompt": "Customers say the export sometimes drops the final day of results. Two attempts to adjust the date filter have not resolved it. Reproduce the failure, compare with the last release where exports were correct, and tell me what the evidence supports before editing anything.",
+    "target": "diagnose-first",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/follow-up-skills/routing-input.json",
+        "answers": "evaluations/follow-up-skills/routing-answers.json",
+        "id": "r34f6d5924b"
+      }
+    ]
+  },
+  {
+    "id": "r-0dc22a77ff23e044",
+    "prompt": "The discount calculation was fixed so a subtotal of exactly $100 qualifies for free shipping. Add and run tests for values below, at, and above the threshold, using that rule as the expected behavior and showing the old failure if reproducible.",
+    "target": "regression-testing",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "regression-testing-fresh-positive-1"
+      }
+    ]
+  },
+  {
+    "id": "r-115151f72ec81a91",
+    "prompt": "Write an ephemeral checklist for this reply.",
+    "target": "beads-workflow",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-24"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-24"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-24"
+      }
+    ]
+  },
+  {
+    "id": "r-144fe41b55e54aa8",
+    "prompt": "Change a heading in documentation.",
+    "target": "regression-testing",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-34"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-34"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-34"
+      }
+    ]
+  },
+  {
+    "id": "r-19aa598b65f8a132",
+    "prompt": "The web checkout feature is finished on the current feature branch. Prepare it so I can test from my phone and tablet on the same Wi-Fi, check local network reachability, and give me a device testing checklist.",
+    "target": "local-test-handoff",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/history-skills/routing-input.json",
+        "answers": "evaluations/history-skills/routing-answers.json",
+        "id": "handoff-positive-1"
+      }
+    ]
+  },
+  {
+    "id": "r-1cd22973978fafe0",
+    "prompt": "Prepare an issue handoff for another session.",
+    "target": "beads-workflow",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-23"
+      }
+    ]
+  },
+  {
+    "id": "r-1d927285a9e498dd",
+    "prompt": "Test happy, edge, and error behavior of these endpoints.",
+    "target": "regression-testing",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-32"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-32"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-32"
+      }
+    ]
+  },
+  {
+    "id": "r-245448577f534468",
+    "prompt": "We are stopping work for today. Record the unfinished tasks and blockers in the tracker this repository already uses, and leave a durable handoff explaining the Git state and how to resume.",
+    "target": "session-start-and-close",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/history-skills/routing-input.json",
+        "answers": "evaluations/history-skills/routing-answers.json",
+        "id": "session-positive-2"
+      }
+    ]
+  },
+  {
+    "id": "r-2f8409ed25ddd7ef",
+    "prompt": "Sync this published feature branch with the mainline.",
+    "target": "git-workflow",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-18"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-18"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-18"
+      }
+    ]
+  },
+  {
+    "id": "r-30c8815c53040492",
+    "prompt": "Act as the final legal approver for these terms of service. Tell us whether they are enforceable in every market where we sell and whether we can launch without further counsel review.",
+    "target": "docs-audit",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/follow-up-skills/routing-input.json",
+        "answers": "evaluations/follow-up-skills/routing-answers.json",
+        "id": "ra79dcd0707"
+      }
+    ]
+  },
+  {
+    "id": "r-31083efba6e8bff8",
+    "prompt": "Deploy the completed web dashboard to our staging environment and verify the hosted staging URL. Local device testing is already complete.",
+    "target": "local-test-handoff",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/history-skills/routing-input.json",
+        "answers": "evaluations/history-skills/routing-answers.json",
+        "id": "handoff-negative-1"
+      }
+    ]
+  },
+  {
+    "id": "r-4a6277552c3dc556",
+    "prompt": "Prepare a Beads issue handoff for another session.",
+    "target": "beads-workflow",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-23"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-23"
+      }
+    ]
+  },
+  {
+    "id": "r-4d5bd260d667db81",
+    "prompt": "Our PATCH /profiles endpoint used to erase the display name when only the timezone was supplied. The contract says omitted fields stay unchanged. Write and execute a regression test that reproduces the bug and verifies the correction.",
+    "target": "regression-testing",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "regression-testing-fresh-positive-2"
+      }
+    ]
+  },
+  {
+    "id": "r-4dca8ea919dcf4f8",
+    "prompt": "Another model claims our retry design is unsafe and recommends replacing the queue. Assess its critique against my original request and the repository, separate supported concerns from assumptions, and give a verdict plus the corrections that model should make.",
+    "target": "agent-handoff-prompt",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/follow-up-skills/routing-input.json",
+        "answers": "evaluations/follow-up-skills/routing-answers.json",
+        "id": "rcd20aac59e"
+      }
+    ]
+  },
+  {
+    "id": "r-4eaf37d86795c765",
+    "prompt": "Review the attached pagination patch against the issue's acceptance criteria. Check whether empty pages and expired cursors behave as specified, cite any deviations, and leave the code untouched.",
+    "target": "diagnose-first",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/follow-up-skills/routing-input.json",
+        "answers": "evaluations/follow-up-skills/routing-answers.json",
+        "id": "r2753afcf94"
+      }
+    ]
+  },
+  {
+    "id": "r-4f6bc38283874c54",
+    "prompt": "Turn this product brief into requirements without asking questions.",
+    "target": "product-requirements-interview",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-03"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-03"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-03"
+      }
+    ]
+  },
+  {
+    "id": "r-4f8d6fc91ed76325",
+    "prompt": "Give me a short checklist in this chat for proofreading a two-page announcement this afternoon. We do not need to save or track these tasks anywhere.",
+    "target": "beads-workflow",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "beads-workflow-fresh-negative-1"
+      }
+    ]
+  },
+  {
+    "id": "r-51bb931e177b1f3f",
+    "prompt": "Plan recovery for commits missing after a squash merge.",
+    "target": "git-workflow",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-17"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-17"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-17"
+      }
+    ]
+  },
+  {
+    "id": "r-53ef4aa35468dc1c",
+    "prompt": "Find ready Beads work and inspect blockers.",
+    "target": "beads-workflow",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-21"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-21"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-21"
+      }
+    ]
+  },
+  {
+    "id": "r-5746b648722f863f",
+    "prompt": "Summarize a product interview.",
+    "target": "spec-review",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-30"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-30"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-30"
+      }
+    ]
+  },
+  {
+    "id": "r-58b439d8f390ff3c",
+    "prompt": "Change the form validation code so an empty display name produces an inline error. Keep every user-facing string and all documentation exactly as they are.",
+    "target": "prose-edit",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/history-skills/routing-input.json",
+        "answers": "evaluations/history-skills/routing-answers.json",
+        "id": "prose-negative-2"
+      }
+    ]
+  },
+  {
+    "id": "r-5a56d2024e4fd532",
+    "prompt": "Our community gardening app needs its first visual language. Help us turn a calm, earthy mood into a color and type system, semantic tokens, and consistent rules for buttons, forms, and cards.",
+    "target": "design-system-workshop",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "design-system-workshop-fresh-positive-1"
+      }
+    ]
+  },
+  {
+    "id": "r-5c2c0f48cab2ea0d",
+    "prompt": "The approved PRD calls for a multi-tenant appointment service. Work out the tenant data model, access controls, API boundaries, and deployment architecture in a technical design.",
+    "target": "product-requirements-interview",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "product-requirements-interview-fresh-negative-2"
+      }
+    ]
+  },
+  {
+    "id": "r-5f5be1593878a4e1",
+    "prompt": "Propose data model and auth from our PRD.",
+    "target": "technical-design-interview",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-07"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-07"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-07"
+      }
+    ]
+  },
+  {
+    "id": "r-62363f4adba5ec2f",
+    "prompt": "The README facts have already been checked. Tighten the introduction below, keep its friendly voice, and remove repeated phrases. This is a wording pass; use only the supplied text.",
+    "target": "docs-audit",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/follow-up-skills/routing-input.json",
+        "answers": "evaluations/follow-up-skills/routing-answers.json",
+        "id": "rd31235d976"
+      }
+    ]
+  },
+  {
+    "id": "r-654a2bd68472d766",
+    "prompt": "Look at this screenshot and tell me whether the hero feels elegant or cluttered. There is no design specification; I want your aesthetic impressions.",
+    "target": "spec-review",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "spec-review-fresh-negative-2"
+      }
+    ]
+  },
+  {
+    "id": "r-65f01b914ad65f21",
+    "prompt": "Explain our product audience.",
+    "target": "git-workflow",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-19"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-19"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-19"
+      }
+    ]
+  },
+  {
+    "id": "r-67d10bd7ed2bb089",
+    "prompt": "Write and run regression tests for this change.",
+    "target": "regression-testing",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-31"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-31"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-31"
+      }
+    ]
+  },
+  {
+    "id": "r-6b91e4d0c56db9dc",
+    "prompt": "Resolve legacy issue OLD-42 to its native ID in this Beads project.",
+    "target": "beads-workflow",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-22"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-22"
+      }
+    ]
+  },
+  {
+    "id": "r-6ba325342c76cbfe",
+    "prompt": "Draft a PRD directly from this brief: small bakeries need customers to reserve next-day pickup slots; owners set daily capacity; payment happens at pickup. Define the primary users, end-to-end journey, first-release scope, and success signals, recording assumptions.",
+    "target": "product-requirements-interview",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "product-requirements-interview-fresh-positive-2"
+      }
+    ]
+  },
+  {
+    "id": "r-6f4f6d45d4c7251c",
+    "prompt": "We reproduced the duplicate receipt issue and agreed on the fix: enforce the existing idempotency key in the payment handler and return the saved result on retries. Implement that change and run the relevant tests.",
+    "target": "diagnose-first",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/follow-up-skills/routing-input.json",
+        "answers": "evaluations/follow-up-skills/routing-answers.json",
+        "id": "rd1b5be6a0e"
+      }
+    ]
+  },
+  {
+    "id": "r-71022fa13d1ab3d7",
+    "prompt": "Give a read-only pre-merge review of these changes.",
+    "target": "spec-review",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-28"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-28"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-28"
+      }
+    ]
+  },
+  {
+    "id": "r-717b860f6004bd18",
+    "prompt": "Prepare my branch for a PR under this repository policy.",
+    "target": "git-workflow",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-16"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-16"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-16"
+      }
+    ]
+  },
+  {
+    "id": "r-7bcba4affbab225d",
+    "prompt": "My feature branch conflicts with the current integration branch. Determine how this repository expects branches to be synced, resolve the conflicts accordingly, and prepare the resulting changes for review.",
+    "target": "git-workflow",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "git-workflow-fresh-positive-2"
+      }
+    ]
+  },
+  {
+    "id": "r-7f5e95e902ab6947",
+    "prompt": "Design the architecture for this MVP.",
+    "target": "technical-design-interview",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-06"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-06"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-06"
+      }
+    ]
+  },
+  {
+    "id": "r-819965388e771f40",
+    "prompt": "Review this patch for correctness and security.",
+    "target": "spec-review",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-26"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-26"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-26"
+      }
+    ]
+  },
+  {
+    "id": "r-8257262118c2737f",
+    "prompt": "Write and execute regression tests proving that the checkout endpoint rejects an expired coupon. Only change test code; I do not need a running app or device instructions.",
+    "target": "local-test-handoff",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/history-skills/routing-input.json",
+        "answers": "evaluations/history-skills/routing-answers.json",
+        "id": "handoff-negative-2"
+      }
+    ]
+  },
+  {
+    "id": "r-83ddd63616394771",
+    "prompt": "Explain unit, integration, and end-to-end testing to a new engineer. Use conceptual examples only; there is no repository to modify or run.",
+    "target": "regression-testing",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "regression-testing-fresh-negative-2"
+      }
+    ]
+  },
+  {
+    "id": "r-8558674f15d8c943",
+    "prompt": "I'm done for today. Close out this session by recording where we stopped, checking the current Git state, and leaving durable notes on the remaining tasks so I can resume tomorrow.",
+    "target": "agent-handoff-prompt",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/follow-up-skills/routing-input.json",
+        "answers": "evaluations/follow-up-skills/routing-answers.json",
+        "id": "r5791e2c9cb"
+      }
+    ]
+  },
+  {
+    "id": "r-8c6e37f4ca887674",
+    "prompt": "Create a design system from this mood board.",
+    "target": "design-system-workshop",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-11"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-11"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-11"
+      }
+    ]
+  },
+  {
+    "id": "r-90403b89cbccbd94",
+    "prompt": "The search endpoint violates the attached pagination contract. Implement the missing cursor handling and update the code until it meets that contract.",
+    "target": "spec-review",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "spec-review-fresh-negative-1"
+      }
+    ]
+  },
+  {
+    "id": "r-93080eb56126afa2",
+    "prompt": "Change button text without Git operations.",
+    "target": "git-workflow",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-20"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-20"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-20"
+      }
+    ]
+  },
+  {
+    "id": "r-94f22aba78a0460b",
+    "prompt": "Verify this feature and report exact failures without fixing app code.",
+    "target": "regression-testing",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-33"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-33"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-33"
+      }
+    ]
+  },
+  {
+    "id": "r-98216b49c6364312",
+    "prompt": "The attached patch claims to satisfy the approved account-deletion specification. Check each acceptance criterion and the documented access-control rules against the code, identify the strongest evidence for any gaps, and provide findings only.",
+    "target": "spec-review",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "spec-review-fresh-positive-2"
+      }
+    ]
+  },
+  {
+    "id": "r-98caf683040dac84",
+    "prompt": "Check this implementation against its issue and style guide.",
+    "target": "spec-review",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-27"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-27"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-27"
+      }
+    ]
+  },
+  {
+    "id": "r-99bc13404852d588",
+    "prompt": "Fix a typo in this handler.",
+    "target": "product-requirements-interview",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-04"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-04"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-04"
+      }
+    ]
+  },
+  {
+    "id": "r-9b0a5bd2ecba280b",
+    "prompt": "Implement the already specified password visibility toggle on the sign-in form. The acceptance criteria and component design are attached; begin coding the feature.",
+    "target": "session-start-and-close",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/history-skills/routing-input.json",
+        "answers": "evaluations/history-skills/routing-answers.json",
+        "id": "session-negative-1"
+      }
+    ]
+  },
+  {
+    "id": "r-9b231af289e73732",
+    "prompt": "Turn this discussion into a self-contained assignment I can paste into a new coding assistant: add CSV import with a preview, preserve existing validation rules, and avoid changing billing. Include the context it needs, boundaries, expected deliverables, and checks for completion.",
+    "target": "agent-handoff-prompt",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/follow-up-skills/routing-input.json",
+        "answers": "evaluations/follow-up-skills/routing-answers.json",
+        "id": "r873ad193ab"
+      }
+    ]
+  },
+  {
+    "id": "r-9edac8d79e46db54",
+    "prompt": "Revise our system design for offline operation.",
+    "target": "technical-design-interview",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-08"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-08"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-08"
+      }
+    ]
+  },
+  {
+    "id": "r-9fa03a1be46b5917",
+    "prompt": "Help me plan a weekend of household chores. Group cleaning, laundry, and grocery shopping into a sensible order and estimate the time for each.",
+    "target": "session-start-and-close",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/history-skills/routing-input.json",
+        "answers": "evaluations/history-skills/routing-answers.json",
+        "id": "session-negative-2"
+      }
+    ]
+  },
+  {
+    "id": "r-a30421711007daaa",
+    "prompt": "Fix this SQL query.",
+    "target": "design-system-workshop",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-15"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-15"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-15"
+      }
+    ]
+  },
+  {
+    "id": "r-a544587f6535b833",
+    "prompt": "Revise our brand tokens and component rules.",
+    "target": "design-system-workshop",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-12"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-12"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-12"
+      }
+    ]
+  },
+  {
+    "id": "r-a9ce30d85f24a0c1",
+    "prompt": "Our new repository has no issue tracker. Compare three tracking options and recommend one before we adopt anything.",
+    "target": "beads-workflow",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "beads-workflow-fresh-negative-2"
+      }
+    ]
+  },
+  {
+    "id": "r-ab2fd2d780f0b82b",
+    "prompt": "I have an idea for a neighborhood tool-lending service but have not settled who it serves or what belongs in the first release. Interview me to define the users, main journey, MVP boundaries, and measures of success, then turn that into a PRD.",
+    "target": "product-requirements-interview",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "product-requirements-interview-fresh-positive-1"
+      }
+    ]
+  },
+  {
+    "id": "r-ab7877596c555ab1",
+    "prompt": "Use Jira in a repo that does not use Beads.",
+    "target": "beads-workflow",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-25"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-25"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-25"
+      }
+    ]
+  },
+  {
+    "id": "r-ac127d1dbe36259c",
+    "prompt": "This repository already tracks work with bd. Find the unresolved issue about CSV exports, check whether it is blocked, and claim it for this session before we begin.",
+    "target": "beads-workflow",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "beads-workflow-fresh-positive-1"
+      }
+    ]
+  },
+  {
+    "id": "r-b127f7e32520b11d",
+    "prompt": "Interview me about an MVP for a tool-sharing app.",
+    "target": "product-requirements-interview",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-01"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-01"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-01"
+      }
+    ]
+  },
+  {
+    "id": "r-b2c2df3924cda43b",
+    "prompt": "Diagnose this unit test failure.",
+    "target": "technical-design-interview",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-09"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-09"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-09"
+      }
+    ]
+  },
+  {
+    "id": "r-b8452dd0e03977bb",
+    "prompt": "Define a visual guide only for our new app.",
+    "target": "design-system-workshop",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-13"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-13"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-13"
+      }
+    ]
+  },
+  {
+    "id": "r-be84369b70bb5df3",
+    "prompt": "Make this talk opening clearer and less wordy without losing my dry humor: 'Today I am going to talk about a process that we all agreed was simple, right up until the moment when any of us actually had to use it.'",
+    "target": "prose-edit",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/history-skills/routing-input.json",
+        "answers": "evaluations/history-skills/routing-answers.json",
+        "id": "prose-positive-2"
+      }
+    ]
+  },
+  {
+    "id": "r-c0be5d54c64e7b5b",
+    "prompt": "Fix the typo in the welcome message in this file. Leave the change in my working tree; do not run any Git operations.",
+    "target": "git-workflow",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "git-workflow-fresh-negative-1"
+      }
+    ]
+  },
+  {
+    "id": "r-c260053ff51515e6",
+    "prompt": "Add a password reset screen using our existing component library and unchanged typography, spacing, and color tokens. The approved mockup specifies every state.",
+    "target": "design-system-workshop",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "design-system-workshop-fresh-negative-1"
+      }
+    ]
+  },
+  {
+    "id": "r-c2be3691a79d27fa",
+    "prompt": "Our help center says uploaded files are deleted immediately, and the architecture diagram shows a single storage service. Check those descriptions against the current upload pipeline, retention settings, and background jobs. Identify inaccurate statements and gaps in the privacy and help pages.",
+    "target": "docs-audit",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/follow-up-skills/routing-input.json",
+        "answers": "evaluations/follow-up-skills/routing-answers.json",
+        "id": "r25381cd4cf"
+      }
+    ]
+  },
+  {
+    "id": "r-c69cdc7412b9579e",
+    "prompt": "Implement the approved pickup-slot selector exactly as specified in the attached acceptance criteria and mockup. All product decisions are final.",
+    "target": "product-requirements-interview",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "product-requirements-interview-fresh-negative-1"
+      }
+    ]
+  },
+  {
+    "id": "r-c6fc243963ea3cfe",
+    "prompt": "Implement a specified CSS fix.",
+    "target": "technical-design-interview",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-10"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-10"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-10"
+      }
+    ]
+  },
+  {
+    "id": "r-c98175fd9f40b740",
+    "prompt": "Review this pull request against the attached invoice-export issue and the repository’s documented CSV formatting rules. Report deviations with file and line evidence ranked by severity. Do not change files.",
+    "target": "spec-review",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "spec-review-fresh-positive-1"
+      }
+    ]
+  },
+  {
+    "id": "r-cf028817c44e78bf",
+    "prompt": "Revise our technical design for a booking platform so it supports regional data residency and asynchronous confirmation. Start from the attached PRD and propose changes to storage boundaries, authorization, API contracts, queues, and failure handling.",
+    "target": "technical-design-interview",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "technical-design-interview-fresh-positive-2"
+      }
+    ]
+  },
+  {
+    "id": "r-d14c2d53391da075",
+    "prompt": "Fix this bug directly; no review requested.",
+    "target": "spec-review",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-29"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-29"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-29"
+      }
+    ]
+  },
+  {
+    "id": "r-d38ae2600f202c9c",
+    "prompt": "Before we publish the new onboarding guide, check its setup commands, environment variables, and supported authentication options against the repository. Flag stale claims and important setup steps that are missing, with evidence from code or configuration.",
+    "target": "docs-audit",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/follow-up-skills/routing-input.json",
+        "answers": "evaluations/follow-up-skills/routing-answers.json",
+        "id": "rc7f6c1463a"
+      }
+    ]
+  },
+  {
+    "id": "r-d450de8975cf3903",
+    "prompt": "Explain the difference between a hash map and a binary search tree with a small example.",
+    "target": "git-workflow",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "git-workflow-fresh-negative-2"
+      }
+    ]
+  },
+  {
+    "id": "r-d49bf70b8a1c983d",
+    "prompt": "We have approved requirements for a document approval service: multiple organizations, reviewer roles, audit history, and email reminders. Interview me about unresolved constraints and produce an architecture covering data, permissions, APIs, and operational choices.",
+    "target": "technical-design-interview",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "technical-design-interview-fresh-positive-1"
+      }
+    ]
+  },
+  {
+    "id": "r-d5d93827b1931e6a",
+    "prompt": "An adversarial review has already flagged two issues on this PR. One appears to be a defect in the review tool itself. Investigate both, address genuine problems, document the tool bug if confirmed, and verify the gate status.",
+    "target": "review-findings-triage",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/history-skills/routing-input.json",
+        "answers": "evaluations/history-skills/routing-answers.json",
+        "id": "review-positive-2"
+      }
+    ]
+  },
+  {
+    "id": "r-d760048cccc36d3c",
+    "prompt": "After the dependency upgrade, signing in works in development but loops back to the login page in our preview environment. Please investigate the actual cause, checking the previous working revision and relevant configuration. Explain any uncertainty before proposing a change.",
+    "target": "diagnose-first",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/follow-up-skills/routing-input.json",
+        "answers": "evaluations/follow-up-skills/routing-answers.json",
+        "id": "r7f4dcacea8"
+      }
+    ]
+  },
+  {
+    "id": "r-d96db9680cd99297",
+    "prompt": "The automated reviewer left six findings on this pull request. Work through each one, fix the valid defects, explain any dismissal that needs my approval, and check that the review gate passes afterward.",
+    "target": "review-findings-triage",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/history-skills/routing-input.json",
+        "answers": "evaluations/history-skills/routing-answers.json",
+        "id": "review-positive-1"
+      }
+    ]
+  },
+  {
+    "id": "r-dd10a6eb71165c8e",
+    "prompt": "Review code read-only without running tests.",
+    "target": "regression-testing",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-35"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-35"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-35"
+      }
+    ]
+  },
+  {
+    "id": "r-dec370dfba228d3e",
+    "prompt": "Implement this fully specified endpoint.",
+    "target": "product-requirements-interview",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-05"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-05"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-05"
+      }
+    ]
+  },
+  {
+    "id": "r-e3dca1c7ff4c95e6",
+    "prompt": "Our service crashes on startup with this missing environment variable error. Find the configuration mistake and fix it; no architecture change is needed.",
+    "target": "technical-design-interview",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "technical-design-interview-fresh-negative-2"
+      }
+    ]
+  },
+  {
+    "id": "r-e4e82e304c3e8fcb",
+    "prompt": "Explain what a required pull-request review gate is and why a team might use one. I only want a conceptual explanation; do not inspect or change a repository.",
+    "target": "review-findings-triage",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/history-skills/routing-input.json",
+        "answers": "evaluations/history-skills/routing-answers.json",
+        "id": "review-negative-2"
+      }
+    ]
+  },
+  {
+    "id": "r-e7f50989f1c27961",
+    "prompt": "Resolve legacy issue OLD-42 to its native tracker ID.",
+    "target": "beads-workflow",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-22"
+      }
+    ]
+  },
+  {
+    "id": "r-eff90e0c50afd807",
+    "prompt": "We use bd for this project. Record that the authentication migration is waiting on the security review, close the completed schema task, and leave a durable handoff for whoever takes over tomorrow.",
+    "target": "beads-workflow",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "beads-workflow-fresh-positive-2"
+      }
+    ]
+  },
+  {
+    "id": "r-f03fc3fbafec958e",
+    "prompt": "Implement the already approved booking architecture exactly as written: use the specified schema, endpoints, queue, and retry rules. Do not reopen design decisions.",
+    "target": "technical-design-interview",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "technical-design-interview-fresh-negative-1"
+      }
+    ]
+  },
+  {
+    "id": "r-f156672a15b3f017",
+    "prompt": "Build a screen using our approved tokens.",
+    "target": "design-system-workshop",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-v1.json",
+        "answers": "evaluations/results/routing-answers-v1.json",
+        "id": "route-14"
+      },
+      {
+        "input": "evaluations/results/routing-input-v2.json",
+        "answers": "evaluations/results/routing-answers-v2.json",
+        "id": "route-14"
+      },
+      {
+        "input": "evaluations/results/routing-input-current-existing.json",
+        "answers": "evaluations/results/routing-answers-current-existing.json",
+        "id": "route-14"
+      }
+    ]
+  },
+  {
+    "id": "r-f504ef95227fa2f8",
+    "prompt": "Review the checkout patch against the attached issue and list acceptance gaps with evidence. Do not edit anything or execute tests.",
+    "target": "regression-testing",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "regression-testing-fresh-negative-1"
+      }
+    ]
+  },
+  {
+    "id": "r-f6df67eac0d408b6",
+    "prompt": "We are deliberately replacing our finance dashboard’s playful visual identity with a quieter professional direction. Propose revised semantic colors, typography, spacing, and component rules, then integrate the token values once we agree on them.",
+    "target": "design-system-workshop",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/results/routing-input-fresh.json",
+        "answers": "evaluations/results/routing-answers-fresh.json",
+        "id": "design-system-workshop-fresh-positive-2"
+      }
+    ]
+  },
+  {
+    "id": "r-f9244f574104846d",
+    "prompt": "Tighten this README introduction while keeping its friendly voice: 'We made this little tool because we kept finding ourselves doing the same thing over and over again, and we thought perhaps other people might find it useful too.'",
+    "target": "prose-edit",
+    "expected": true,
+    "sources": [
+      {
+        "input": "evaluations/history-skills/routing-input.json",
+        "answers": "evaluations/history-skills/routing-answers.json",
+        "id": "prose-positive-1"
+      }
+    ]
+  },
+  {
+    "id": "r-fa1a07e327596da1",
+    "prompt": "Perform a read-only acceptance review of the current notification-settings diff against the attached specification. Report concrete mismatches with file and line references, ranked by impact. Do not implement fixes.",
+    "target": "agent-handoff-prompt",
+    "expected": false,
+    "sources": [
+      {
+        "input": "evaluations/follow-up-skills/routing-input.json",
+        "answers": "evaluations/follow-up-skills/routing-answers.json",
+        "id": "rcd70b673ef"
+      }
+    ]
+  }
+]
